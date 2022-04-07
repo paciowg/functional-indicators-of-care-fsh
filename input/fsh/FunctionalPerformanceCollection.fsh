@@ -7,7 +7,7 @@ Id:             fp-collection
 Title:          "Functional Performance Collection"
 Description:    "A point in time collection of post-acute care observations for a patient. This profile is used for exchanging a set of observation data collected through the use of a structured resource (e.g. assessment tool, instrument, or screen)."
 
-* code from LNCVS (extensible)
+* code from FunctionalPerformanceLOINCSNOMEDVS (extensible)
 
 * subject 1..1
 * subject only Reference(USCorePatient)

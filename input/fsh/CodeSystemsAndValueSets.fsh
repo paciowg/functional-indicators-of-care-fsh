@@ -40,3 +40,10 @@ Title: "Functional Performance Category Value Set"
 Description: "Codes for the classification of functional indicators."
 Id: fp-category-vs
 * include codes from system FunctionalPerformanceCategoryCS
+
+ValueSet: FunctionalPerformanceLOINCSNOMEDVS
+Title: "Functional Performance ValueSet LOINC SNOMED"
+Description: "This value set contains all of LOINC and SNOMED CT."
+Id: fp-loinc-snomed-vs
+* include codes from system http://loinc.org
+* include codes from system http://snomed.info/sct

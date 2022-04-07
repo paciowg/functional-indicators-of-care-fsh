@@ -7,7 +7,7 @@ Id:             fp-observation
 Title:          "Functional Performance Observation"
 Description:    "An exchange of post-acute care observation for a patient. This profile is used for exchanging a single observation data generally included in a set of observation data collected through the use of a structured resource (e.g. assessment tool, instrument, or screen)."
 
-* code from LNCVS (extensible)
+* code from FunctionalPerformanceLOINCSNOMEDVS (extensible)
 
 * subject 1..1
 * subject only Reference(USCorePatient)
@@ -25,7 +25,7 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 * category[functioning] from FunctionalPerformanceFunctioningVS (extensible)
 * category[functioning].coding = FunctionalPerformanceFunctioningCS#functioning "Functioning"
 * category contains functionalPerformanceDomain 0..*
-* category[functionalPerformanceDomain] from FunctionalPerformanceCategoryVS
+* category[functionalPerformanceDomain] from FunctionalPerformanceCategoryVS (extensible)
 
 * effective[x] 1..1
 * effective[x] only dateTime
