@@ -1,6 +1,6 @@
 Instance: CSC-SNF-BIMS-1
-InstanceOf: FIOCCollection
-Description: "An instance of FIOCCollection"
+InstanceOf: FunctionalPerformanceCollection
+Description: "An instance of FunctionalPerformanceCollection"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -22,8 +22,8 @@ Description: "An instance of FIOCCollection"
 * derivedFrom = Reference(QResponse-SNF-BIMS-1)
 
 Instance: CSC-Hospital-MOCA-1
-InstanceOf: FIOCCollection
-Description: "An instance of FIOCCollection"
+InstanceOf: FunctionalPerformanceCollection
+Description: "An instance of FunctionalPerformanceCollection"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-08T17:32:00-05:00"
@@ -36,8 +36,8 @@ Description: "An instance of FIOCCollection"
 * derivedFrom = Reference(QResponse-Hospital-MOCA-1)
 
 Instance: CSC-SNF-PHQ9-1
-InstanceOf: FIOCCollection
-Description: "An instance of FIOCCollection"
+InstanceOf: FunctionalPerformanceCollection
+Description: "An instance of FunctionalPerformanceCollection"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -68,8 +68,8 @@ Description: "An instance of FIOCCollection"
 * derivedFrom = Reference(QResponse-SNF-PHQ9-1)
 
 Instance: CSC-Hospital-MMSE-1
-InstanceOf: FIOCCollection
-Description: "An instance of FIOCCollection"
+InstanceOf: FunctionalPerformanceCollection
+Description: "An instance of FunctionalPerformanceCollection"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-08T17:32:00-05:00"

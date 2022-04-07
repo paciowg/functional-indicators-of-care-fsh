@@ -9,13 +9,11 @@
 # │  The properties below are used to create the ImplementationGuide resource. For a list of       │
 # │  supported properties, see: https://fshschool.org/sushi/configuration/                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.us.pacio-fioc
-##### use this URL when publishing the IG:
-canonical: http://hl7.org/fhir/us/pacio-fioc
-#####canonical: https://build.fhir.org/ig/HL7/fhir-pacio-pac-clinicalcare
+id: hl7.fhir.us.pacio-fp
+canonical: http://hl7.org/fhir/us/pacio-fp
 version: 1.0.0
-name: PACIOFunctionalIndicatorsOfCareImplementationGuide
-title: PACIO Functional Indicators of Care Implementation Guide
+name: PACIOFunctionalPerformanceImplementationGuide
+title: PACIO Functional Performance Implementation Guide
 status: active
 publisher:
   name: HL7 Patient Care Work Group

@@ -3,19 +3,19 @@ This implementation guide provides a set of resource profiles to define how info
 A note on the use of "Must Support" in the Implementation Guide:
 For profiles defined in other IGs, the meaning of "Must Support" is established in the defining IG. For profiles defined in this IG, [Must Support](http://hl7.org/fhir/us/core/general-guidance.html#must-support) will conform with US Core definition.
 
-### Resource Profile: FIOCCollection
+### Resource Profile: FunctionalPerformanceCollection
 
 This resource profile is intended to be used for the data exchange of a point in time set of post-acute care observations collected through the use of a structured resource (e.g. assessment tool, instrument, or screen). It is derived from the FHIR Observation resource.
 
-### Resource Profile: FIOCObservation
+### Resource Profile: FunctionalPerformanceObservation
 
 This resource profile is intended to be used for the data exchange of a single post-acute care observation generally included in a set of observations collected through the use of a structured resource (e.g. assessment tool, instrument, or screen). It is derived from the FHIR Observation resource.
 
-### Resource Profile: FIOCPriorLevelOfStatus
+### Resource Profile: FunctionalPerformancePriorLevelOfStatus
 
 This resource profile is intended to be used for the data exchange of a summary observation regarding the most recent prior level of status immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level of status assessments. For formal assessments conducted with for example, an assessment instrument, use the PAC Collection and PAC Observation profiles to capture assessment data. They are both derived from the FHIR Observation resource.
 
-### Resource Profile: UseOfDevice
+### Resource Profile: FunctionalPerformanceUseOfDevice
 
 This resource profile is intended to be used for specifying a device used by a patient during a post-acute care assessment. It is derived from the FHIR resource DeviceUseStatement.
 
@@ -44,7 +44,7 @@ In the following set of examples, we provide guidance for using specific codes a
 2. Each ‘linkId’ field should match the ‘linkId’ of the corresponding section title or question from the questionnaire.
 3. The nesting structure of the ‘item’ fields should correspond to the nesting structure as showed in the questionnaire.
 
-### FIOCCollection – CAM Example
+### FunctionalPerformanceCollection – CAM Example
 
 ![BCS CAM Example](BCS_CAM_Example.png){:style="float: none;"}
 
@@ -53,7 +53,7 @@ In the following set of examples, we provide guidance for using specific codes a
 2. Use the right LOINC code to indicate the particular kind of cognitive assessment. In this case the LOINC code ‘86585-7’ is used to indicate ‘Signs and Symptoms of Delirium (from CAM©)’.
 3. The ‘category’ field should contain the value ‘survey’ for a PAC assessment.
 
-### FIOCCollection – BIMS Example
+### FunctionalPerformanceCollection – BIMS Example
 
 ![BCS BIMS Example](BCS_BIMS_Example.png){:style="float: none;"}
 
@@ -61,7 +61,7 @@ In the following set of examples, we provide guidance for using specific codes a
 1. Use the right LOINC code to indicate the particular kind of cognitive assessment. In this case the LOINC code ‘52491-8’ is used to indicate ‘Brief Interview for Mental Status (BIMS)’.
 2. Use multiple ‘performer’ fields to provide references to FHIR Practitioner, PractitionerRole, and Organization resource instances.
 
-### FIOCCollection – MoCA Example
+### FunctionalPerformanceCollection – MoCA Example
 
 ![BCS MOCA Example](BCS_MOCA_Example.png){:style="float: none;"}
 
@@ -69,7 +69,7 @@ In the following set of examples, we provide guidance for using specific codes a
 1. Use the right LOINC code to indicate the particular kind of cognitive assessment. In this case the LOINC code ‘52491-8’ is used to indicate ‘Montreal Cognitive Assessment [MoCA]’.
 2. Use the ‘value’ field of type CodeableConcept to store the total score of the MoCA assessment.
 
-### FIOCCollection – PHQ-9 Two-Column Example
+### FunctionalPerformanceCollection – PHQ-9 Two-Column Example
 
 ![BCS PHQ9 Example](BCS_PHQ9_Example.png){:style="float: none;"}
 
@@ -78,7 +78,7 @@ In the following set of examples, we provide guidance for using specific codes a
 2. An assessment with more than one observation questions would have a number of ‘hasMember’ elements, each of which would point to an observation in the assessment.
 3. The observation questions of the PHQ-9 assessment are grouped under two headings. One way to determine which ‘hasMember’ elements (i.e. observation questions) should be grouped together and under which heading is to examine the CognitionQuestionnaireResponse resource, which has the nesting structure to show how the questions were organized.
 
-### FIOCCollection – Mobility Admission Example
+### FunctionalPerformanceCollection – Mobility Admission Example
 
 ![BFS Admission Example](BFS_Mobility_Admission_Example.png){:style="float: none;"}
 
@@ -87,7 +87,7 @@ In the following set of examples, we provide guidance for using specific codes a
 2. Use the right LOINC code to indicate the particular kind of functional assessment. In this case the LOINC code ‘88330-6’ is used to indicate ‘Mobility - Admission Performance’.
 3. The ‘category’ field should contain the value ‘survey’ for a PAC assessment.
 
-### FIOCCollection – Mobility Discharge and Device Used Example
+### FunctionalPerformanceCollection – Mobility Discharge and Device Used Example
 
 ![BFS Mobility Discharge and DeviceUsed Example](BFS_Mobility_Discharge_and_DeviceUsed_Example.png){:style="float: none;"}
 
@@ -96,7 +96,7 @@ In the following set of examples, we provide guidance for using specific codes a
 2. Use the right LOINC code to indicate the particular kind of functional assessment. In this case the LOINC code ‘88331-4’ is used to indicate ‘Mobility - Discharge Performance’.
 3. Use the ‘performer’ field to reference a US Core PractitionerRole resource instance that specifies a practitioner and an organization.
 
-### FIOCCollection – Self-Care Admission Example
+### FunctionalPerformanceCollection – Self-Care Admission Example
 
 ![BFS SelfCare Admission Example](BFS_SelfCare_Admission_Example.png){:style="float: none;"}
 
@@ -105,9 +105,9 @@ In the following set of examples, we provide guidance for using specific codes a
 2. An assessment with more than one observation questions would have a number of ‘hasMember’ elements, each of which would point to an observation in the assessment.
 3. The 'derivedFrom' points back to the PACIOfunctionalQuestionaireResponse resource, which provides context and structure for the observation-based information.
 
-### PriorLevelOfStatus – Prior Level of Status Example
+### FunctionalPerformanceNarrativeHistoryOfStatus – Narrative History of Status Example
 
-![PLOS Example](PLOS_Example.png){:style="float: none;"}
+![Narrative History of Status Example](Narrative_History_Of_Example.png){:style="float: none;"}
 
 **Guidance and Notes:**
 1. Use the extension to provide indication of 'independent' vs. 'assistance needed'.

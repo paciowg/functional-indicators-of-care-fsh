@@ -3,8 +3,8 @@ NOTE: Aliases are defined in GlobalAliasList.fsh
 **********/
 
 Instance: BSJ-Narrative-History-Of-Status-1
-InstanceOf: FIOCNarrativeHistoryOfStatus
-Description: "An instance of FIOCNarrativeHistoryOfStatus"
+InstanceOf: FunctionalPerformanceNarrativeHistoryOfStatus
+Description: "An instance of FunctionalPerformanceNarrativeHistoryOfStatus"
 * subject = Reference(patientBSJ1)
 * status = #final
 * extension[event-location].valueReference = Reference(provider-org-loc-01)

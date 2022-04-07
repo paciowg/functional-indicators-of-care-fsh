@@ -1,13 +1,13 @@
 Instance: CSC-SNF-BIMS-1-Ob-Question-4
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = LNC#52732-5
 * code.text = "Able to report correct year"
 * code.coding.display = "Temporal orientation - current year [BIMS]"
-* category[0].coding = FIOCFunctioningCS#functioning "Functioning"
+* category[0].coding = FunctionalPerformanceFunctioningCS#functioning "Functioning"
 * category[1].coding = CAT#survey
 * valueCodeableConcept = LNC#LA10008-3
 * valueCodeableConcept.text = "Missed by 1 year"
@@ -17,8 +17,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-BIMS-1)
 
 Instance: CSC-SNF-PHQ9-1-Ob-Question-18
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -34,8 +34,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-PHQ9-1)
 
 Instance: CSC-SNF-PHQ9-1-Ob-Question-19
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -51,8 +51,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-PHQ9-1)
 
 Instance: CSC-SNF-PHQ9-1-Ob-Question-14
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -68,8 +68,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-PHQ9-1)
 
 Instance: CSC-SNF-PHQ9-1-Ob-Question-15
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -85,8 +85,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-PHQ9-1)
 
 Instance: CSC-SNF-PHQ9-1-Ob-Question-16
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -102,8 +102,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-PHQ9-1)
 
 Instance: CSC-SNF-PHQ9-1-Ob-Question-11
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -119,8 +119,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-PHQ9-1)
 
 Instance: CSC-SNF-PHQ9-1-Ob-Question-12
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -136,8 +136,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-PHQ9-1)
 
 Instance: CSC-SNF-PHQ9-1-Ob-Question-13
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -153,8 +153,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-PHQ9-1)
 
 Instance: CSC-SNF-PHQ9-1-Ob-Question-17
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -170,8 +170,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-PHQ9-1)
 
 Instance: CSC-Hospital-MMSE-1-Ob-Question-31
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-08T17:32:00-05:00"
@@ -185,8 +185,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-Hospital-MMSE-1)
 
 Instance: CSC-SNF-PHQ9-1-Ob-Question-25
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -202,8 +202,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-PHQ9-1)
 
 Instance: CSC-SNF-PHQ9-1-Ob-Question-24
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -219,8 +219,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-PHQ9-1)
 
 Instance: CSC-SNF-PHQ9-1-Ob-Question-27
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -236,8 +236,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-PHQ9-1)
 
 Instance: CSC-SNF-PHQ9-1-Ob-Question-26
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -253,8 +253,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-PHQ9-1)
 
 Instance: CSC-SNF-PHQ9-1-Ob-Question-21
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -270,8 +270,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-PHQ9-1)
 
 Instance: CSC-SNF-PHQ9-1-Ob-Question-20
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -287,8 +287,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-PHQ9-1)
 
 Instance: CSC-SNF-PHQ9-1-Ob-Question-23
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -304,8 +304,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-PHQ9-1)
 
 Instance: CSC-SNF-PHQ9-1-Ob-Question-22
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -321,8 +321,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-PHQ9-1)
 
 Instance: CSC-SNF-PHQ9-1-Ob-Question-29
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -336,8 +336,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-PHQ9-1)
 
 Instance: CSC-SNF-PHQ9-1-Ob-Question-28
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -352,8 +352,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-PHQ9-1)
 
 Instance: CSC-SNF-BIMS-1-Ob-Question-9
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -369,8 +369,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-BIMS-1)
 
 Instance: CSC-SNF-BIMS-1-Ob-Question-8
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -386,8 +386,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-BIMS-1)
 
 Instance: CSC-SNF-BIMS-1-Ob-Question-7
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -403,8 +403,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-BIMS-1)
 
 Instance: CSC-SNF-BIMS-1-Ob-Question-6
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -420,8 +420,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-BIMS-1)
 
 Instance: CSC-SNF-BIMS-1-Ob-Question-5
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -437,8 +437,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-BIMS-1)
 
 Instance: CSC-Hospital-MOCA-1-Ob-Question-1
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-08T17:32:00-05:00"
@@ -452,8 +452,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-Hospital-MOCA-1)
 
 Instance: CSC-SNF-BIMS-1-Ob-Question-3
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -469,8 +469,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-BIMS-1)
 
 Instance: CSC-SNF-BIMS-1-Ob-Question-10
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"

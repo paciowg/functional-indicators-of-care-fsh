@@ -5,8 +5,8 @@ Alias: DAR = http://terminology.hl7.org/CodeSystem/data-absent-reason
 **********/
 
 Instance: CSC-SNF-CAM-Admission-1-Ob-Question-1
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-04-09T18:00:00-05:00"
@@ -22,8 +22,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-CAM-Admission-1)
 
 Instance: CSC-SNF-CAM-Admission-1-Ob-Question-3
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-04-09T18:00:00-05:00"
@@ -39,8 +39,8 @@ Description: "An instance of FIOCObservation"
 * derivedFrom = Reference(QResponse-SNF-CAM-Admission-1)
 
 Instance: CSC-SNF-CAM-Admission-1-Ob-Question-5
-InstanceOf: FIOCObservation
-Description: "An instance of FIOCObservation"
+InstanceOf: FunctionalPerformanceObservation
+Description: "An instance of FunctionalPerformanceObservation"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-04-09T18:00:00-05:00"

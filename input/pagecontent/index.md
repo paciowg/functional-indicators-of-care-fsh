@@ -35,7 +35,7 @@ In this IG a set of starter profiles based on some well-established FHIR resourc
 
 ### Content and Organization
 The implementation guide is organized into the following sections:
-* [Use Case Example](pac_clinical_care_use_case.html) Describes an example of its use and provides a high-level overview of expected process flow.
+* [Use Case Example](functional_performance_use_case.html) Describes an example of its use and provides a high-level overview of expected process flow.
 * [Underlying Technologies](underlying_technologies.html) Describes the different specifications this implementation guide relies on and indicates what developers should read and understand prior to implementing this specification.
 * [Profile Highlights and Guidance](profile_highlights_and_guidance.html) Provides a closer look at the IG profiles and guidance for constructing profile instances with examples for data exchange.
 * [Representative Assessments](representative_assessments.html) Presents representative examples of standardized instruments and guidance on the use of standardized code systems.
@@ -50,6 +50,6 @@ This implementation guide relies on the following other specifications:
 This implementation guide defines additional constraints and usage expectations above and beyond the information found in these base specifications.
 
 ### Downloads
-* The full [PACIO Functional Indicators of Care Implementation Guide](full-ig.zip)
-* [FHIR R4 PACIO PAC-CC Resource Definitions](definitions.json.zip) for use with the FHIR PACIO PAC-CC IG validator
-* [FHIR R4 PACIO PAC-CC IG Validator Pack](validator-hl7.fhir.us.pacio-fioc.pack) which can be used to check FHIR PACIO PAC-CC IG resource instance validity
+* The full [PACIO Functional Performance Implementation Guide](full-ig.zip)
+* [FHIR R4 PACIO Functional Performance Resource Definitions](definitions.json.zip) for use with the FHIR PACIO Functional Performance IG validator
+* [FHIR R4 PACIO Functional Performance IG Validator Pack](validator-hl7.fhir.us.pacio-fp.pack) which can be used to check FHIR PACIO Functional Performance IG resource instance validity

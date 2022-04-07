@@ -5,14 +5,14 @@ Alias:  DAR = http://terminology.hl7.org/CodeSystem/data-absent-reason
 *************/
 
 Instance: CSC-SNF-CAM-Admission-1
-InstanceOf: FIOCCollection
-Description: "An instance of FIOCCollection"
+InstanceOf: FunctionalPerformanceCollection
+Description: "An instance of FunctionalPerformanceCollection"
 * subject = Reference(patientBSJ1)
 * status = #final
 * effectiveDateTime = "2020-04-09T18:00:00-05:00"
 * code = LNC#86585-7
 * code.coding.display = "MDS v3.0 - RAI v1.17.2 - Signs and symptoms of delirium (from CAM) [CMS Assessment]"
-//* category[functioning].coding = FIOCFunctioningCategoryCS#functioning "Functioning"
+//* category[functioning].coding = FunctionalPerformanceFunctioningCategoryCS#functioning "Functioning"
 * category[1].coding = CAT#survey "Survey"
 * performer = Reference(Role-SLP-HoneyJones)
 * extension[event-location].valueReference = Reference(Org-Loc-02)
