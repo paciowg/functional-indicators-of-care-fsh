@@ -4,13 +4,6 @@ Id: fp-functioning-cs
 Description: "Defining a specific code for the classification of patient observation regarding individual's functioning."
 * #functioning "Functioning" "Functioning is an umbrella term for body function, body structures, activities, and participation in societal roles. An individual’s functioning represents a dynamic interaction between their health condition, environmental factors, and personal factors. Taking a broad view of health that encompasses physical, mental, and social well-being, includes optimizing functioning as a component of optimizing their health. Characterizing an individual’s functioning includes both understanding the severity of an individual’s signs, symptoms, impairments and limitations, and how they correspond with day-to-day activities. Functioning also serves as a key health outcome within health care."
 
-ValueSet: FunctionalPerformanceFunctioningVS
-Title: "Functional Performance Functioning Category Value Set"
-Description: "Codes for the classification of patient observation. This is an extension of the ObservationCategoryCodes value set"
-Id: fp-functioning-vs
-* include codes from valueset CATVS
-* include codes from system FunctionalPerformanceFunctioningCS
-
 CodeSystem: FunctionalPerformanceCategoryCS
 Title: "Functional Performance Category"
 Id: fp-category-cs
@@ -35,15 +28,3 @@ Description: "Codes for functional performance categories"
 * #activities-and-participation #major-life-areas "Major life areas" "Carrying out the tasks and actions required to engage in education, work and employment and to conduct economic transactions."
 * #activities-and-participation #community-social-and-civic-life "Community, social and civic life" "Actions and tasks required to engage in organized social life outside the family, in community, social and civic areas of life."
 
-ValueSet: FunctionalPerformanceCategoryVS
-Title: "Functional Performance Category Value Set"
-Description: "Codes for the classification of functional indicators."
-Id: fp-category-vs
-* include codes from system FunctionalPerformanceCategoryCS
-
-ValueSet: FunctionalPerformanceLOINCSNOMEDVS
-Title: "Functional Performance ValueSet LOINC SNOMED"
-Description: "This value set contains all of LOINC and SNOMED CT."
-Id: fp-loinc-snomed-vs
-* include codes from system http://loinc.org
-* include codes from system http://snomed.info/sct
