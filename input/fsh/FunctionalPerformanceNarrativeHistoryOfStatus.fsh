@@ -4,8 +4,7 @@ Id:             fp-narrative-history-of-status
 Title:          "Functional Performance Narrative History of Status"
 Description:    "An exchange of summary observation regarding the most recent prior status immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level assessments. For formal assessments conducted with for example, an assessment instrument, use the PAC Collection and PAC Observation profiles to capture assessment data."
 
-* code from LNCVS
-* code = LNC#11332-4 "History of Status Narrative"
+* code from FunctionalPerformanceCategoryVS (extensible)
 
 * value[x] 1..1
 * value[x] only string
