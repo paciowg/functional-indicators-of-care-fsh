@@ -4,7 +4,7 @@ Id:             fp-narrative-history-of-status
 Title:          "Functional Performance Narrative History of Status"
 Description:    "An exchange of summary observation regarding the most recent prior status immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level assessments. For formal assessments conducted with for example, an assessment instrument, use the PAC Collection and PAC Observation profiles to capture assessment data."
 
-* code from FunctionalPerformanceCategoryVS (extensible)
+* code from LNCVS
 
 * value[x] 1..1
 * value[x] only string
@@ -20,9 +20,12 @@ Description:    "An exchange of summary observation regarding the most recent pr
 * category ^slicing.discriminator.path = "coding"
 * category ^slicing.rules = #open
 * category ^slicing.ordered = true
+
 * category contains functioning 1..1
 * category[functioning] from FunctionalPerformanceFunctioningVS (extensible)
 * category[functioning].coding = FunctionalPerformanceFunctioningCS#functioning "Functioning"
+* category contains functionalPerformanceDomain 0..*
+* category[functionalPerformanceDomain] from FunctionalPerformanceCategoryVS (extensible)
 
 * performer 1..*
 * performer only Reference(USCorePractitioner or USCorePractitionerRole or USCoreOrganization)
