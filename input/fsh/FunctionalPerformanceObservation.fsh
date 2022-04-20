@@ -17,14 +17,22 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 * performer 1..*
 * performer only Reference(USCorePractitioner or USCorePractitionerRole or USCoreOrganization)
 
+* category 1..* MS
 * category ^slicing.discriminator.type = #pattern
-* category ^slicing.discriminator.path = "coding"
+* category ^slicing.discriminator.path = "code"
 * category ^slicing.rules = #open
+* category ^slicing.ordered = true
+* category ^slicing.description = "Slice based on code value"
 
-* category contains functioning 1..1
+* category contains 
+	functioning 1..1 MS
+
 * category[functioning] from FunctionalPerformanceFunctioningVS (extensible)
 * category[functioning].coding = FunctionalPerformanceFunctioningCS#functioning "Functioning"
-* category contains functionalPerformanceDomain 0..*
+
+* category contains 
+	functionalPerformanceDomain 0..*
+
 * category[functionalPerformanceDomain] from FunctionalPerformanceCategoryVS (extensible)
 
 * effective[x] 1..1
