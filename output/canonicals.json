@@ -1,0 +1,100 @@
+[
+  {
+    "id": "fp-category-cs",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs",
+    "version": "1.0.0",
+    "name": "FunctionalPerformanceCategoryCS"
+  },
+  {
+    "id": "fp-functioning-cs",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-functioning-cs",
+    "version": "1.0.0",
+    "name": "FunctionalPerformanceFunctioningCS"
+  },
+  {
+    "id": "hl7.fhir.us.pacio-fp",
+    "type": "ImplementationGuide",
+    "url": "http://hl7.org/fhir/us/pacio-fp/ImplementationGuide/hl7.fhir.us.pacio-fp",
+    "version": "1.0.0",
+    "name": "PACIOFunctionalPerformanceImplementationGuide"
+  },
+  {
+    "id": "assistance-required",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/assistance-required",
+    "version": "1.0.0",
+    "name": "AssistanceRequired"
+  },
+  {
+    "id": "device-patient-used",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/device-patient-used",
+    "version": "1.0.0",
+    "name": "DevicePatientUsed"
+  },
+  {
+    "id": "event-location",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/event-location",
+    "version": "1.0.0",
+    "name": "ObservationEventLocation"
+  },
+  {
+    "id": "fp-collection",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-collection",
+    "version": "1.0.0",
+    "name": "FunctionalPerformanceCollection"
+  },
+  {
+    "id": "fp-narrative-history-of-status",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-narrative-history-of-status",
+    "version": "1.0.0",
+    "name": "FunctionalPerformanceNarrativeHistoryOfStatus"
+  },
+  {
+    "id": "fp-observation",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation",
+    "version": "1.0.0",
+    "name": "FunctionalPerformanceObservation"
+  },
+  {
+    "id": "fp-use-of-device",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-use-of-device",
+    "version": "1.0.0",
+    "name": "FunctionalPerformanceUseOfDevice"
+  },
+  {
+    "id": "fp-category-vs",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/pacio-fp/ValueSet/fp-category-vs",
+    "version": "1.0.0",
+    "name": "FunctionalPerformanceCategoryVS"
+  },
+  {
+    "id": "fp-functioning-vs",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/pacio-fp/ValueSet/fp-functioning-vs",
+    "version": "1.0.0",
+    "name": "FunctionalPerformanceFunctioningVS"
+  },
+  {
+    "id": "fp-loinc-snomed-vs",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/pacio-fp/ValueSet/fp-loinc-snomed-vs",
+    "version": "1.0.0",
+    "name": "FunctionalPerformanceLOINCSNOMEDVS"
+  },
+  {
+    "id": "CapabilityStatement-pacio-fp-cap",
+    "type": "CapabilityStatement",
+    "url": "https://build.fhir.org/ig/HL7/fhir-pacio-fp/CapabilityStatement-pacio-fp-cap.html",
+    "version": "1.0.0",
+    "name": "PACIO_Functional_Performance_CapabilityStatement"
+  }
+]

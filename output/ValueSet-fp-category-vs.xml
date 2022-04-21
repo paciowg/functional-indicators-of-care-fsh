@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fp-category-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-fp-category-cs.html"><code>http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs</code></a></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/pacio-fp/ValueSet/fp-category-vs"/>
+  <version value="1.0.0"/>
+  <name value="FunctionalPerformanceCategoryVS"/>
+  <title value="Functional Performance Category Value Set"/>
+  <status value="active"/>
+  <date value="2022-04-19T12:58:34-04:00"/>
+  <publisher value="HL7 Patient Care Work Group"/>
+  <contact>
+    <name value="HL7 Patient Care Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="patientcare@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PACIO project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@pacioproject.org"/>
+    </telecom>
+  </contact>
+  <description value="Codes for the classification of functional indicators."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs"/>
+    </include>
+  </compose>
+</ValueSet>

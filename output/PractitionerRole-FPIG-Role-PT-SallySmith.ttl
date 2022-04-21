@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-PT-SallySmith> a fhir:PractitionerRole;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "FPIG-Role-PT-SallySmith"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"FPIG-Role-PT-SallySmith\" </p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-FPIG-Practitioner-SallySmith.html\">Practitioner/FPIG-Practitioner-SallySmith</a> \" SMITH\"</p><p><b>organization</b>: <a href=\"Organization-FPIG-Org-01.html\">Organization/FPIG-Org-01</a> \"San Antonio General Hospital\"</p><p><b>code</b>: Physiotherapist <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#36682004)</span></p><p><b>location</b>: <a href=\"Location-FPIG-Org-Loc-01.html\">Location/FPIG-Org-Loc-01</a> \"San Antonio General Hospital\"</p></div>"
+  ];
+  fhir:PractitionerRole.active [ fhir:value "true"^^xsd:boolean];
+  fhir:PractitionerRole.practitioner [
+     fhir:link <http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-SallySmith>;
+     fhir:Reference.reference [ fhir:value "Practitioner/FPIG-Practitioner-SallySmith" ]
+  ];
+  fhir:PractitionerRole.organization [
+     fhir:link <http://hl7.org/fhir/us/pacio-fp/Organization/FPIG-Org-01>;
+     fhir:Reference.reference [ fhir:value "Organization/FPIG-Org-01" ]
+  ];
+  fhir:PractitionerRole.code [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:36682004;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "36682004" ];
+       fhir:Coding.display [ fhir:value "Physiotherapist" ]
+     ]
+  ];
+  fhir:PractitionerRole.location [
+     fhir:index 0;
+     fhir:link <http://hl7.org/fhir/us/pacio-fp/Location/FPIG-Org-Loc-01>;
+     fhir:Reference.reference [ fhir:value "Location/FPIG-Org-Loc-01" ]
+  ] .
+
+<http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-SallySmith> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Organization/FPIG-Org-01> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Location/FPIG-Org-Loc-01> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-PT-SallySmith.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/pacio-fp/PractitionerRole/FPIG-Role-PT-SallySmith.ttl> .
+
+# -------------------------------------------------------------------------------------
+

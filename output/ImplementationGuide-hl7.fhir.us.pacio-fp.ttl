@@ -1,0 +1,3188 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/pacio-fp/ImplementationGuide/hl7.fhir.us.pacio-fp> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "hl7.fhir.us.pacio-fp"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PACIOFunctionalPerformanceImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/pacio-fp/ImplementationGuide/hl7.fhir.us.pacio-fp</pre><div><p>FHIR Implementation Guide to exchange functional performance data and assessments between post-acute care (PAC) and other providers, patients, and key stakeholders</p>\n</div></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "http://hl7.org/fhir/us/pacio-fp/ImplementationGuide/hl7.fhir.us.pacio-fp"];
+  fhir:ImplementationGuide.version [ fhir:value "1.0.0"];
+  fhir:ImplementationGuide.name [ fhir:value "PACIOFunctionalPerformanceImplementationGuide"];
+  fhir:ImplementationGuide.title [ fhir:value "PACIO Functional Performance Implementation Guide"];
+  fhir:ImplementationGuide.status [ fhir:value "draft"];
+  fhir:ImplementationGuide.date [ fhir:value "2022-04-19T12:58:34-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.publisher [ fhir:value "HL7 Patient Care Work Group"];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Patient Care Work Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/patientcare" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "patientcare@lists.HL7.org" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "PACIO project" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/patientcare" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "info@pacioproject.org" ]
+     ]
+  ];
+  fhir:ImplementationGuide.description [ fhir:value "FHIR Implementation Guide to exchange functional performance data and assessments between post-acute care (PAC) and other providers, patients, and key stakeholders"];
+  fhir:ImplementationGuide.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:ImplementationGuide.packageId [ fhir:value "hl7.fhir.us.pacio-fp"];
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.1";
+     fhir:index 0
+  ];
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "hl7_fhir_us_core" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core";
+       fhir:link <http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.us.core" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.1.1" ]
+  ], [
+     fhir:index 1;
+     fhir:Element.id [ fhir:value "hl7_fhir_uv_sdc" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/uv/sdc/ImplementationGuide/sdc";
+       fhir:link <http://hl7.org/fhir/uv/sdc/ImplementationGuide/sdc>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.sdc" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "2.7.0" ]
+  ];
+  fhir:ImplementationGuide.definition [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "2020+" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "ci-build" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-expansion-params" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "../../input/_resources/terminology-settings.json" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "show-inherited-invariants" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "false" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/us/pacio-fp/history.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "fmm-definition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "propagate-status" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "excludelogbinaryformat" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ];
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-collection>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fp-collection" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Functional Performance Collection" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A point in time collection of post-acute care observations for a patient. This profile is used for exchanging a set of observation data collected through the use of a structured resource (e.g. assessment tool, instrument, or screen)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-narrative-history-of-status>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fp-narrative-history-of-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Functional Performance Narrative History of Status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An exchange of summary observation regarding the most recent prior status immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level assessments. For formal assessments conducted with for example, an assessment instrument, use the PAC Collection and PAC Observation profiles to capture assessment data." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fp-observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An exchange of post-acute care observation for a patient. This profile is used for exchanging a single observation data generally included in a set of observation data collected through the use of a structured resource (e.g. assessment tool, instrument, or screen)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-use-of-device>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fp-use-of-device" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Functional Performance Use of Device" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A record of an assistive device--e.g. eyeglasses or hearing aid, being used by a patient during a post-acute care observation. This profile based on the DeviceUseStatement resource provides a way to include information about device usage during an assessment." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/assistance-required>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/assistance-required" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AssistanceRequired" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Associated with the Narrative History of Status profile to provide a high-level indication of assistance required for the person’s baseline ability (status immediately preceding the current admission, illness, or exacerbation for a patient). The CMS Assessment answer list LL4309-2 provides possible values for this extension." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/device-patient-used>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/device-patient-used" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DevicePatientUsed" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Associated with the PAC Collection profile to point to a record indicating what healthcare-related assistive device was used by a patient during an observation. This extension leverages the DeviceUseStatement resource instead of Device resource so as to indicate appropriately a record of assistive device usage by a patient." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/event-location>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/event-location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ObservationEventLocation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This extension is used to indicate the principal physical location where an observation event occurred." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/ValueSet/fp-category-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fp-category-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Functional Performance Category Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for the classification of functional indicators." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/ValueSet/fp-functioning-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fp-functioning-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Functional Performance Functioning Category Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for the classification of patient observation. This is an extension of the ObservationCategoryCodes value set" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/ValueSet/fp-loinc-snomed-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fp-loinc-snomed-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Functional Performance ValueSet LOINC SNOMED" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This value set contains all of LOINC and SNOMED CT." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/fp-category-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Functional Performance Category" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for functional performance categories" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-functioning-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/fp-functioning-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Functional Performance Functioning Category Code System" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Defining a specific code for the classification of patient observation regarding individual's functioning." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Device" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Device/FPIG-CMS-Device-BedsideRails>;
+         fhir:Reference.reference [ fhir:value "Device/FPIG-CMS-Device-BedsideRails" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CMS-Device-BedsideRails" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Device" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Device" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Device/FPIG-CMS-Device-Eyeglasses>;
+         fhir:Reference.reference [ fhir:value "Device/FPIG-CMS-Device-Eyeglasses" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CMS-Device-Eyeglasses" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Device" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Device" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Device/FPIG-CMS-Device-HandleBars>;
+         fhir:Reference.reference [ fhir:value "Device/FPIG-CMS-Device-HandleBars" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CMS-Device-HandleBars" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Device" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Device" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Device/FPIG-CMS-Device-HearingAid>;
+         fhir:Reference.reference [ fhir:value "Device/FPIG-CMS-Device-HearingAid" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CMS-Device-HearingAid" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Device" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Device" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Device/FPIG-CMS-Device-RaisedToiletSeat>;
+         fhir:Reference.reference [ fhir:value "Device/FPIG-CMS-Device-RaisedToiletSeat" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CMS-Device-RaisedToiletSeat" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Device" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Device" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Device/FPIG-CMS-Device-RollingWalker>;
+         fhir:Reference.reference [ fhir:value "Device/FPIG-CMS-Device-RollingWalker" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CMS-Device-RollingWalker" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Device" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Device" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Device/FPIG-CMS-Device-Walker>;
+         fhir:Reference.reference [ fhir:value "Device/FPIG-CMS-Device-Walker" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CMS-Device-Walker" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Device" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-Hospital-MMSE-1>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-Hospital-MMSE-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-Hospital-MMSE-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Collection for hospital MMSE assessment" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-collection";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-collection>
+       ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-Hospital-MMSE-1-Ob-Question-31>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-Hospital-MMSE-1-Ob-Question-31" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-Hospital-MMSE-1-Ob-Question-31" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-Hospital-MOCA-1>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-Hospital-MOCA-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-Hospital-MOCA-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Collection for hospital MOCA assessment" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-collection";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-collection>
+       ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-Hospital-MOCA-1-Ob-Question-1>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-Hospital-MOCA-1-Ob-Question-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-Hospital-MOCA-1-Ob-Question-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-BIMS-1>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-BIMS-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-BIMS-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Collection for SNF BIMS assessment" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-collection";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-collection>
+       ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-10>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-10" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-BIMS-1-Ob-Question-10" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-3>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-3" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-BIMS-1-Ob-Question-3" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-4>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-4" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-BIMS-1-Ob-Question-4" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-5>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-5" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-BIMS-1-Ob-Question-5" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-6>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-6" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-BIMS-1-Ob-Question-6" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-7>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-7" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-BIMS-1-Ob-Question-7" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-8>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-8" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-BIMS-1-Ob-Question-8" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-9>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-9" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-BIMS-1-Ob-Question-9" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "DeviceUseStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/DeviceUseStatement/FPIG-CSC-SNF-BIMS-1-UseOfDevice-1>;
+         fhir:Reference.reference [ fhir:value "DeviceUseStatement/FPIG-CSC-SNF-BIMS-1-UseOfDevice-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-BIMS-1-UseOfDevice-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of FunctionalPerformanceUseOfDevice" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-use-of-device";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-use-of-device>
+       ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "DeviceUseStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/DeviceUseStatement/FPIG-CSC-SNF-BIMS-1-UseOfDevice-2>;
+         fhir:Reference.reference [ fhir:value "DeviceUseStatement/FPIG-CSC-SNF-BIMS-1-UseOfDevice-2" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-BIMS-1-UseOfDevice-2" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of FunctionalPerformanceUseOfDevice" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-use-of-device";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-use-of-device>
+       ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-CAM-Admission-1>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-CAM-Admission-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-CAM-Admission-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Collection for SNF CAM assessment" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-collection";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-collection>
+       ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-CAM-Admission-1-Ob-Question-1>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-CAM-Admission-1-Ob-Question-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-CAM-Admission-1-Ob-Question-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-CAM-Admission-1-Ob-Question-3>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-CAM-Admission-1-Ob-Question-3" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-CAM-Admission-1-Ob-Question-3" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-CAM-Admission-1-Ob-Question-5>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-CAM-Admission-1-Ob-Question-5" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-CAM-Admission-1-Ob-Question-5" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-PHQ9-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-PHQ9-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Collection" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-collection";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-collection>
+       ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-11>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-11" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-PHQ9-1-Ob-Question-11" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-12>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-12" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-PHQ9-1-Ob-Question-12" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-13>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-13" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-PHQ9-1-Ob-Question-13" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-14>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-14" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-PHQ9-1-Ob-Question-14" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-15>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-15" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-PHQ9-1-Ob-Question-15" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-16>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-16" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-PHQ9-1-Ob-Question-16" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-17>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-17" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-PHQ9-1-Ob-Question-17" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-18>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-18" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-PHQ9-1-Ob-Question-18" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-19>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-19" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-PHQ9-1-Ob-Question-19" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-20>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-20" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-PHQ9-1-Ob-Question-20" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-21>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-21" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-PHQ9-1-Ob-Question-21" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-22>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-22" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-PHQ9-1-Ob-Question-22" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-23>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-23" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-PHQ9-1-Ob-Question-23" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-24>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-24" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-PHQ9-1-Ob-Question-24" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-25>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-25" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-PHQ9-1-Ob-Question-25" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-26>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-26" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-PHQ9-1-Ob-Question-26" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-27>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-27" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-PHQ9-1-Ob-Question-27" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-28>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-28" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-PHQ9-1-Ob-Question-28" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-29>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-29" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-CSC-SNF-PHQ9-1-Ob-Question-29" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Admission-Mobility-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Admission-Mobility-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Collection" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-collection";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-collection>
+       ]
+     ], [
+       fhir:index 59;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-1>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-11>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-11" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-11" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-13>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-13" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-13" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-15>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-15" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-15" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-17>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-17" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-17" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-19>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-19" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-19" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 65;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-21>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-21" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-21" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 66;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-23>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-23" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-23" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 67;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-25>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-25" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-25" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 68;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-27>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-27" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-27" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 69;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-29>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-29" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-29" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 70;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-3>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-3" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-3" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 71;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-31>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-31" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-31" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 72;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-33>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-33" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-33" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 73;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-5>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-5" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-5" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 74;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-7>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-7" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-7" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 75;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-9>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-9" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-9" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 76;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "DeviceUseStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/DeviceUseStatement/FPIG-FSC-Hospital-Admission-Mobility-1-UseOfDevice-6>;
+         fhir:Reference.reference [ fhir:value "DeviceUseStatement/FPIG-FSC-Hospital-Admission-Mobility-1-UseOfDevice-6" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Admission-Mobility-1-UseOfDevice-6" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of FunctionalPerformanceUseOfDevice" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-use-of-device";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-use-of-device>
+       ]
+     ], [
+       fhir:index 77;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "DeviceUseStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/DeviceUseStatement/FPIG-FSC-Hospital-Admission-Mobility-1-UseOfDevice-7>;
+         fhir:Reference.reference [ fhir:value "DeviceUseStatement/FPIG-FSC-Hospital-Admission-Mobility-1-UseOfDevice-7" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Admission-Mobility-1-UseOfDevice-7" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of FunctionalPerformanceUseOfDevice" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-use-of-device";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-use-of-device>
+       ]
+     ], [
+       fhir:index 78;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Discharge-Mobility-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Discharge-Mobility-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Collection" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-collection";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-collection>
+       ]
+     ], [
+       fhir:index 79;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-10>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-10" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-10" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 80;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-12>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-12" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-12" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 81;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-14>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-14" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-14" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 82;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-16>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-16" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-16" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 83;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-18>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-18" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-18" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 84;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-2>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-2" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-2" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 85;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-20>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-20" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-20" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 86;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-22>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-22" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-22" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 87;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-24>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-24" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-24" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 88;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-26>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-26" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-26" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 89;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-28>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-28" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-28" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 90;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-30>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-30" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-30" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 91;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-32>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-32" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-32" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 92;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-34>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-34" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-34" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 93;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-4>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-4" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-4" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 94;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-6>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-6" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-6" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 95;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-8>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-8" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-8" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 96;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "DeviceUseStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/DeviceUseStatement/FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-1>;
+         fhir:Reference.reference [ fhir:value "DeviceUseStatement/FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of FunctionalPerformanceUseOfDevice" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-use-of-device";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-use-of-device>
+       ]
+     ], [
+       fhir:index 97;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "DeviceUseStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/DeviceUseStatement/FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-2>;
+         fhir:Reference.reference [ fhir:value "DeviceUseStatement/FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-2" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-2" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of FunctionalPerformanceUseOfDevice" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-use-of-device";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-use-of-device>
+       ]
+     ], [
+       fhir:index 98;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "DeviceUseStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/DeviceUseStatement/FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-3>;
+         fhir:Reference.reference [ fhir:value "DeviceUseStatement/FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-3" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-3" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of FunctionalPerformanceUseOfDevice" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-use-of-device";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-use-of-device>
+       ]
+     ], [
+       fhir:index 99;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "DeviceUseStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/DeviceUseStatement/FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-4>;
+         fhir:Reference.reference [ fhir:value "DeviceUseStatement/FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-4" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-4" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of FunctionalPerformanceUseOfDevice" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-use-of-device";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-use-of-device>
+       ]
+     ], [
+       fhir:index 100;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "DeviceUseStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/DeviceUseStatement/FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-5>;
+         fhir:Reference.reference [ fhir:value "DeviceUseStatement/FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-5" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-5" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of FunctionalPerformanceUseOfDevice" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-use-of-device";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-use-of-device>
+       ]
+     ], [
+       fhir:index 101;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-SNF-Admission-Mobility-SelfCare-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Collection" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-collection";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-collection>
+       ]
+     ], [
+       fhir:index 102;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-11>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-11" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-11" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 103;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-15>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-15" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-15" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 104;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-19>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-19" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-19" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 105;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-23>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-23" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-23" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 106;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-27>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-27" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-27" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 107;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-3>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-3" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-3" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 108;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Functional Performance Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation>
+       ]
+     ], [
+       fhir:index 109;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-Narrative-History-Cognitive-Status-1>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-Narrative-History-Cognitive-Status-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Narrative-History-Cognitive-Status-1" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-narrative-history-of-status";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-narrative-history-of-status>
+       ]
+     ], [
+       fhir:index 110;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-Narrative-History-Functional-Status-1>;
+         fhir:Reference.reference [ fhir:value "Observation/FPIG-Narrative-History-Functional-Status-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Narrative-History-Functional-Status-1" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-narrative-history-of-status";
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-narrative-history-of-status>
+       ]
+     ], [
+       fhir:index 111;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Organization/FPIG-Org-01>;
+         fhir:Reference.reference [ fhir:value "Organization/FPIG-Org-01" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Org-01" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Organization" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 112;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Organization/FPIG-Org-02>;
+         fhir:Reference.reference [ fhir:value "Organization/FPIG-Org-02" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Org-02" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Organization" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 113;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Organization/FPIG-Org-03>;
+         fhir:Reference.reference [ fhir:value "Organization/FPIG-Org-03" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Org-03" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Organization" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 114;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Location/FPIG-Org-Loc-01>;
+         fhir:Reference.reference [ fhir:value "Location/FPIG-Org-Loc-01" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Org-Loc-01" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Location" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 115;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Location/FPIG-Org-Loc-02>;
+         fhir:Reference.reference [ fhir:value "Location/FPIG-Org-Loc-02" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Org-Loc-02" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Location" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 116;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Location/FPIG-Org-Loc-03>;
+         fhir:Reference.reference [ fhir:value "Location/FPIG-Org-Loc-03" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Org-Loc-03" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Location" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 117;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-DanielGranger>;
+         fhir:Reference.reference [ fhir:value "Practitioner/FPIG-Practitioner-DanielGranger" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Practitioner-DanielGranger" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Practitioner" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 118;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-HoneyJones>;
+         fhir:Reference.reference [ fhir:value "Practitioner/FPIG-Practitioner-HoneyJones" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Practitioner-HoneyJones" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Practitioner" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 119;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-JenCadbury>;
+         fhir:Reference.reference [ fhir:value "Practitioner/FPIG-Practitioner-JenCadbury" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Practitioner-JenCadbury" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Practitioner" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 120;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-JennyGlass>;
+         fhir:Reference.reference [ fhir:value "Practitioner/FPIG-Practitioner-JennyGlass" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Practitioner-JennyGlass" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Practitioner" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 121;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-JohnSmith>;
+         fhir:Reference.reference [ fhir:value "Practitioner/FPIG-Practitioner-JohnSmith" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Practitioner-JohnSmith" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Practitioner" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 122;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-LunaBaskins>;
+         fhir:Reference.reference [ fhir:value "Practitioner/FPIG-Practitioner-LunaBaskins" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Practitioner-LunaBaskins" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Practitioner" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 123;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-NoraOlogist>;
+         fhir:Reference.reference [ fhir:value "Practitioner/FPIG-Practitioner-NoraOlogist" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Practitioner-NoraOlogist" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Practitioner" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 124;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-RonMarble>;
+         fhir:Reference.reference [ fhir:value "Practitioner/FPIG-Practitioner-RonMarble" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Practitioner-RonMarble" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Practitioner" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 125;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-SallySmith>;
+         fhir:Reference.reference [ fhir:value "Practitioner/FPIG-Practitioner-SallySmith" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Practitioner-SallySmith" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Practitioner" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 126;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-ScottDumble>;
+         fhir:Reference.reference [ fhir:value "Practitioner/FPIG-Practitioner-ScottDumble" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Practitioner-ScottDumble" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Practitioner" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 127;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/QuestionnaireResponse/FPIG-QResponse-Hospital-Admission-Mobility-1>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/FPIG-QResponse-Hospital-Admission-Mobility-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-QResponse-Hospital-Admission-Mobility-1" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 128;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/QuestionnaireResponse/FPIG-QResponse-Hospital-Discharge-Mobility-1>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/FPIG-QResponse-Hospital-Discharge-Mobility-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-QResponse-Hospital-Discharge-Mobility-1" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 129;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/QuestionnaireResponse/FPIG-QResponse-Hospital-MMSE-1>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/FPIG-QResponse-Hospital-MMSE-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-QResponse-Hospital-MMSE-1" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 130;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/QuestionnaireResponse/FPIG-QResponse-Hospital-MOCA-1>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/FPIG-QResponse-Hospital-MOCA-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-QResponse-Hospital-MOCA-1" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 131;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/QuestionnaireResponse/FPIG-QResponse-SNF-Admission-Mobility-SelfCare-1>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/FPIG-QResponse-SNF-Admission-Mobility-SelfCare-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-QResponse-SNF-Admission-Mobility-SelfCare-1" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 132;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/QuestionnaireResponse/FPIG-QResponse-SNF-BIMS-1>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/FPIG-QResponse-SNF-BIMS-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-QResponse-SNF-BIMS-1" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 133;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/QuestionnaireResponse/FPIG-QResponse-SNF-CAM-Admission-1>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/FPIG-QResponse-SNF-CAM-Admission-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-QResponse-SNF-CAM-Admission-1" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 134;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/QuestionnaireResponse/FPIG-QResponse-SNF-PHQ9-1>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/FPIG-QResponse-SNF-PHQ9-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-QResponse-SNF-PHQ9-1" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 135;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-OT-DanielGranger>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/FPIG-Role-OT-DanielGranger" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Role-OT-DanielGranger" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of PractitionerRole" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 136;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-OT-JenCadbury>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/FPIG-Role-OT-JenCadbury" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Role-OT-JenCadbury" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of PractitionerRole" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 137;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-PT-LunaBaskins>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/FPIG-Role-PT-LunaBaskins" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Role-PT-LunaBaskins" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of PractitionerRole" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 138;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-PT-RonMarble>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/FPIG-Role-PT-RonMarble" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Role-PT-RonMarble" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of PractitionerRole" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 139;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-PT-SallySmith>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/FPIG-Role-PT-SallySmith" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Role-PT-SallySmith" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of PractitionerRole" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 140;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-PT-ScottDumble>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/FPIG-Role-PT-ScottDumble" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Role-PT-ScottDumble" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of PractitionerRole" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 141;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-SLP-HoneyJones>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/FPIG-Role-SLP-HoneyJones" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Role-SLP-HoneyJones" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of PractitionerRole" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 142;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-SLP-JennyGlass>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/FPIG-Role-SLP-JennyGlass" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Role-SLP-JennyGlass" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of PractitionerRole" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 143;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-SLP-LunaBaskins>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/FPIG-Role-SLP-LunaBaskins" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-Role-SLP-LunaBaskins" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of PractitionerRole" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 144;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Patient/FPIG-patientBSJ1>;
+         fhir:Reference.reference [ fhir:value "Patient/FPIG-patientBSJ1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-patientBSJ1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of USCorePatientProfile" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 145;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Organization/FPIG-provider-org-01>;
+         fhir:Reference.reference [ fhir:value "Organization/FPIG-provider-org-01" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-provider-org-01" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Organization" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 146;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Organization/FPIG-provider-org-16>;
+         fhir:Reference.reference [ fhir:value "Organization/FPIG-provider-org-16" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-provider-org-16" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Organization" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 147;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Location/FPIG-provider-org-loc-01>;
+         fhir:Reference.reference [ fhir:value "Location/FPIG-provider-org-loc-01" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-provider-org-loc-01" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Location" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 148;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/Location/FPIG-provider-org-loc-16>;
+         fhir:Reference.reference [ fhir:value "Location/FPIG-provider-org-loc-16" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-provider-org-loc-16" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Location" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 149;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-provider-role-neurologist>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/FPIG-provider-role-neurologist" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-provider-role-neurologist" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of PractitionerRole" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 150;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-provider-role-pcp>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/FPIG-provider-role-pcp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FPIG-provider-role-pcp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of PractitionerRole" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 151;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/pacio-fp/CapabilityStatement/CapabilityStatement-pacio-fp-cap>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/CapabilityStatement-pacio-fp-cap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PACIO Functional Performance Capability Statement" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This Capability Statement defines the expected capabilities of a PACIO Functional Performance FHIR server conforming to the PACIO Functional Performance Implementation Guide." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "functional_performance_use_case.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Functional Performance Use Case" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "profile_highlights_and_guidance.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Profile Highlights and Guidance" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "representative_assessments.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Representative Assessments" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 4;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "security_and_data_sharing.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Security and Data Sharing" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 5;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "underlying_technologies.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Underlying Technologies" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ]
+     ];
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index 0;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index 4;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index 5;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index 6;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index 7;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index 8;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/maps" ]
+     ], [
+       fhir:index 9;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index 10;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index 11;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index 12;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 13;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 14;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ]
+  ] .
+
+<http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-collection> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-narrative-history-of-status> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-use-of-device> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/StructureDefinition/assistance-required> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/StructureDefinition/device-patient-used> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/StructureDefinition/event-location> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/ValueSet/fp-category-vs> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/ValueSet/fp-functioning-vs> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/ValueSet/fp-loinc-snomed-vs> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-functioning-cs> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Device/FPIG-CMS-Device-BedsideRails> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Device/FPIG-CMS-Device-Eyeglasses> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Device/FPIG-CMS-Device-HandleBars> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Device/FPIG-CMS-Device-HearingAid> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Device/FPIG-CMS-Device-RaisedToiletSeat> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Device/FPIG-CMS-Device-RollingWalker> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Device/FPIG-CMS-Device-Walker> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-Hospital-MMSE-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-Hospital-MMSE-1-Ob-Question-31> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-Hospital-MOCA-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-Hospital-MOCA-1-Ob-Question-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-BIMS-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-10> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-3> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-4> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-5> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-6> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-7> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-8> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-9> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/DeviceUseStatement/FPIG-CSC-SNF-BIMS-1-UseOfDevice-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/DeviceUseStatement/FPIG-CSC-SNF-BIMS-1-UseOfDevice-2> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-CAM-Admission-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-CAM-Admission-1-Ob-Question-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-CAM-Admission-1-Ob-Question-3> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-CAM-Admission-1-Ob-Question-5> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-11> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-12> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-13> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-14> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-15> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-16> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-17> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-18> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-19> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-20> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-21> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-22> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-23> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-24> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-25> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-26> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-27> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-28> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-29> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-11> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-13> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-15> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-17> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-19> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-21> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-23> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-25> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-27> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-29> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-3> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-31> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-33> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-5> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-7> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-9> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/DeviceUseStatement/FPIG-FSC-Hospital-Admission-Mobility-1-UseOfDevice-6> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/DeviceUseStatement/FPIG-FSC-Hospital-Admission-Mobility-1-UseOfDevice-7> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-10> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-12> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-14> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-16> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-18> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-2> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-20> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-22> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-24> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-26> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-28> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-30> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-32> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-34> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-4> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-6> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-8> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/DeviceUseStatement/FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/DeviceUseStatement/FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-2> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/DeviceUseStatement/FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-3> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/DeviceUseStatement/FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-4> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/DeviceUseStatement/FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-5> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-11> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-15> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-19> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-23> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-27> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-3> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-Narrative-History-Cognitive-Status-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-Narrative-History-Functional-Status-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Organization/FPIG-Org-01> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Organization/FPIG-Org-02> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Organization/FPIG-Org-03> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Location/FPIG-Org-Loc-01> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Location/FPIG-Org-Loc-02> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Location/FPIG-Org-Loc-03> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-DanielGranger> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-HoneyJones> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-JenCadbury> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-JennyGlass> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-JohnSmith> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-LunaBaskins> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-NoraOlogist> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-RonMarble> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-SallySmith> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-ScottDumble> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/QuestionnaireResponse/FPIG-QResponse-Hospital-Admission-Mobility-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/QuestionnaireResponse/FPIG-QResponse-Hospital-Discharge-Mobility-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/QuestionnaireResponse/FPIG-QResponse-Hospital-MMSE-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/QuestionnaireResponse/FPIG-QResponse-Hospital-MOCA-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/QuestionnaireResponse/FPIG-QResponse-SNF-Admission-Mobility-SelfCare-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/QuestionnaireResponse/FPIG-QResponse-SNF-BIMS-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/QuestionnaireResponse/FPIG-QResponse-SNF-CAM-Admission-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/QuestionnaireResponse/FPIG-QResponse-SNF-PHQ9-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-OT-DanielGranger> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-OT-JenCadbury> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-PT-LunaBaskins> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-PT-RonMarble> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-PT-SallySmith> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-PT-ScottDumble> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-SLP-HoneyJones> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-SLP-JennyGlass> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-SLP-LunaBaskins> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Patient/FPIG-patientBSJ1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Organization/FPIG-provider-org-01> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Organization/FPIG-provider-org-16> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Location/FPIG-provider-org-loc-01> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Location/FPIG-provider-org-loc-16> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-provider-role-neurologist> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-provider-role-pcp> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/CapabilityStatement/CapabilityStatement-pacio-fp-cap> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/pacio-fp/ImplementationGuide/hl7.fhir.us.pacio-fp.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/pacio-fp/ImplementationGuide/hl7.fhir.us.pacio-fp.ttl> .
+
+# -------------------------------------------------------------------------------------
+

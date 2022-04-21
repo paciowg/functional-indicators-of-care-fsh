@@ -1,0 +1,1676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.FHIR.US.PACIO-FP\Artifacts Summary - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">PACIO Functional Performance Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li><a href="underlying_technologies.html">Underlying Technologies</a></li>
+  <li><a href="functional_performance_use_case.html">Use Case Example</a></li>
+  <li><a href="profile_highlights_and_guidance.html">Profile Highlights and Guidance</a></li>
+  <li><a href="representative_assessments.html">Representative Assessments</a></li>
+  <li><a href="artifacts.html">Artifacts Summary</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a></li>
+    </ul>
+  </li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">PACIO Functional Performance Implementation Guide - Local Development build (v1.0.0). See the <a href="http://hl7.org/fhir/us/pacio-fp/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Behavior: Capability Statements</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#3">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Behavior: Capability Statements </h3>
+   <p>
+    <p>The following artifacts define the specific capabilities that different types of systems are expected to have in order to comply with this implementation guide.  Systems conforming to this implementation guide are expected to declare conformance to one or more of the following capability statements.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CapabilityStatement-CapabilityStatement-pacio-fp-cap.html"
+                     title="CapabilityStatement/CapabilityStatement-pacio-fp-cap">PACIO Functional Performance Capability Statement</a>
+               </td>
+               <td>
+<p>This Capability Statement defines the expected capabilities of a PACIO Functional Performance FHIR server conforming to the PACIO Functional Performance Implementation Guide.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
+   <h3>Structures: Resource Profiles </h3>
+   <p>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-fp-collection.html"
+                     title="StructureDefinition/fp-collection">Functional Performance Collection</a>
+               </td>
+               <td>
+<p>A point in time collection of post-acute care observations for a patient. This profile is used for exchanging a set of observation data collected through the use of a structured resource (e.g. assessment tool, instrument, or screen).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-fp-narrative-history-of-status.html"
+                     title="StructureDefinition/fp-narrative-history-of-status">Functional Performance Narrative History of Status</a>
+               </td>
+               <td>
+<p>An exchange of summary observation regarding the most recent prior status immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level assessments. For formal assessments conducted with for example, an assessment instrument, use the PAC Collection and PAC Observation profiles to capture assessment data.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-fp-observation.html"
+                     title="StructureDefinition/fp-observation">Functional Performance Observation</a>
+               </td>
+               <td>
+<p>An exchange of post-acute care observation for a patient. This profile is used for exchanging a single observation data generally included in a set of observation data collected through the use of a structured resource (e.g. assessment tool, instrument, or screen).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-fp-use-of-device.html"
+                     title="StructureDefinition/fp-use-of-device">Functional Performance Use of Device</a>
+               </td>
+               <td>
+<p>A record of an assistive device–e.g. eyeglasses or hearing aid, being used by a patient during a post-acute care observation. This profile based on the DeviceUseStatement resource provides a way to include information about device usage during an assessment.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
+   <h3>Structures: Extension Definitions </h3>
+   <p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-assistance-required.html"
+                     title="StructureDefinition/assistance-required">AssistanceRequired</a>
+               </td>
+               <td>
+<p>Associated with the Narrative History of Status profile to provide a high-level indication of assistance required for the person’s baseline ability (status immediately preceding the current admission, illness, or exacerbation for a patient). The CMS Assessment answer list LL4309-2 provides possible values for this extension.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-device-patient-used.html"
+                     title="StructureDefinition/device-patient-used">DevicePatientUsed</a>
+               </td>
+               <td>
+<p>Associated with the PAC Collection profile to point to a record indicating what healthcare-related assistive device was used by a patient during an observation. This extension leverages the DeviceUseStatement resource instead of Device resource so as to indicate appropriately a record of assistive device usage by a patient.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-event-location.html"
+                     title="StructureDefinition/event-location">ObservationEventLocation</a>
+               </td>
+               <td>
+<p>This extension is used to indicate the principal physical location where an observation event occurred.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>These define sets of codes used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-fp-category-vs.html" title="ValueSet/fp-category-vs">Functional Performance Category Value Set</a>
+               </td>
+               <td>
+<p>Codes for the classification of functional indicators.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-fp-functioning-vs.html"
+                     title="ValueSet/fp-functioning-vs">Functional Performance Functioning Category Value Set</a>
+               </td>
+               <td>
+<p>Codes for the classification of patient observation. This is an extension of the ObservationCategoryCodes value set</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-fp-loinc-snomed-vs.html"
+                     title="ValueSet/fp-loinc-snomed-vs">Functional Performance ValueSet LOINC SNOMED</a>
+               </td>
+               <td>
+<p>This value set contains all of LOINC and SNOMED CT.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
+   <h3>Terminology: Code Systems </h3>
+   <p>
+    <p>These define new code systems used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-fp-category-cs.html" title="CodeSystem/fp-category-cs">Functional Performance Category</a>
+               </td>
+               <td>
+<p>Codes for functional performance categories</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-fp-functioning-cs.html"
+                     title="CodeSystem/fp-functioning-cs">Functional Performance Functioning Category Code System</a>
+               </td>
+               <td>
+<p>Defining a specific code for the classification of patient observation regarding individual’s functioning.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="6"> </a>
+   <h3>Example: Example Instances </h3>
+   <p>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Device-FPIG-CMS-Device-BedsideRails.html"
+                     title="Device/FPIG-CMS-Device-BedsideRails">FPIG-CMS-Device-BedsideRails</a>
+               </td>
+               <td>
+<p>An instance of Device</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Device-FPIG-CMS-Device-Eyeglasses.html"
+                     title="Device/FPIG-CMS-Device-Eyeglasses">FPIG-CMS-Device-Eyeglasses</a>
+               </td>
+               <td>
+<p>An instance of Device</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Device-FPIG-CMS-Device-HandleBars.html"
+                     title="Device/FPIG-CMS-Device-HandleBars">FPIG-CMS-Device-HandleBars</a>
+               </td>
+               <td>
+<p>An instance of Device</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Device-FPIG-CMS-Device-HearingAid.html"
+                     title="Device/FPIG-CMS-Device-HearingAid">FPIG-CMS-Device-HearingAid</a>
+               </td>
+               <td>
+<p>An instance of Device</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Device-FPIG-CMS-Device-RaisedToiletSeat.html"
+                     title="Device/FPIG-CMS-Device-RaisedToiletSeat">FPIG-CMS-Device-RaisedToiletSeat</a>
+               </td>
+               <td>
+<p>An instance of Device</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Device-FPIG-CMS-Device-RollingWalker.html"
+                     title="Device/FPIG-CMS-Device-RollingWalker">FPIG-CMS-Device-RollingWalker</a>
+               </td>
+               <td>
+<p>An instance of Device</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Device-FPIG-CMS-Device-Walker.html"
+                     title="Device/FPIG-CMS-Device-Walker">FPIG-CMS-Device-Walker</a>
+               </td>
+               <td>
+<p>An instance of Device</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-Hospital-MMSE-1.html"
+                     title="Observation/FPIG-CSC-Hospital-MMSE-1">FPIG-CSC-Hospital-MMSE-1</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Collection for hospital MMSE assessment</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-Hospital-MMSE-1-Ob-Question-31.html"
+                     title="Observation/FPIG-CSC-Hospital-MMSE-1-Ob-Question-31">FPIG-CSC-Hospital-MMSE-1-Ob-Question-31</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-Hospital-MOCA-1.html"
+                     title="Observation/FPIG-CSC-Hospital-MOCA-1">FPIG-CSC-Hospital-MOCA-1</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Collection for hospital MOCA assessment</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-Hospital-MOCA-1-Ob-Question-1.html"
+                     title="Observation/FPIG-CSC-Hospital-MOCA-1-Ob-Question-1">FPIG-CSC-Hospital-MOCA-1-Ob-Question-1</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-BIMS-1.html"
+                     title="Observation/FPIG-CSC-SNF-BIMS-1">FPIG-CSC-SNF-BIMS-1</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Collection for SNF BIMS assessment</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-BIMS-1-Ob-Question-10.html"
+                     title="Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-10">FPIG-CSC-SNF-BIMS-1-Ob-Question-10</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-BIMS-1-Ob-Question-3.html"
+                     title="Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-3">FPIG-CSC-SNF-BIMS-1-Ob-Question-3</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-BIMS-1-Ob-Question-4.html"
+                     title="Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-4">FPIG-CSC-SNF-BIMS-1-Ob-Question-4</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-BIMS-1-Ob-Question-5.html"
+                     title="Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-5">FPIG-CSC-SNF-BIMS-1-Ob-Question-5</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-BIMS-1-Ob-Question-6.html"
+                     title="Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-6">FPIG-CSC-SNF-BIMS-1-Ob-Question-6</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-BIMS-1-Ob-Question-7.html"
+                     title="Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-7">FPIG-CSC-SNF-BIMS-1-Ob-Question-7</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-BIMS-1-Ob-Question-8.html"
+                     title="Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-8">FPIG-CSC-SNF-BIMS-1-Ob-Question-8</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-BIMS-1-Ob-Question-9.html"
+                     title="Observation/FPIG-CSC-SNF-BIMS-1-Ob-Question-9">FPIG-CSC-SNF-BIMS-1-Ob-Question-9</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DeviceUseStatement-FPIG-CSC-SNF-BIMS-1-UseOfDevice-1.html"
+                     title="DeviceUseStatement/FPIG-CSC-SNF-BIMS-1-UseOfDevice-1">FPIG-CSC-SNF-BIMS-1-UseOfDevice-1</a>
+               </td>
+               <td>
+<p>An instance of FunctionalPerformanceUseOfDevice</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DeviceUseStatement-FPIG-CSC-SNF-BIMS-1-UseOfDevice-2.html"
+                     title="DeviceUseStatement/FPIG-CSC-SNF-BIMS-1-UseOfDevice-2">FPIG-CSC-SNF-BIMS-1-UseOfDevice-2</a>
+               </td>
+               <td>
+<p>An instance of FunctionalPerformanceUseOfDevice</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-CAM-Admission-1.html"
+                     title="Observation/FPIG-CSC-SNF-CAM-Admission-1">FPIG-CSC-SNF-CAM-Admission-1</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Collection for SNF CAM assessment</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-CAM-Admission-1-Ob-Question-1.html"
+                     title="Observation/FPIG-CSC-SNF-CAM-Admission-1-Ob-Question-1">FPIG-CSC-SNF-CAM-Admission-1-Ob-Question-1</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-CAM-Admission-1-Ob-Question-3.html"
+                     title="Observation/FPIG-CSC-SNF-CAM-Admission-1-Ob-Question-3">FPIG-CSC-SNF-CAM-Admission-1-Ob-Question-3</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-CAM-Admission-1-Ob-Question-5.html"
+                     title="Observation/FPIG-CSC-SNF-CAM-Admission-1-Ob-Question-5">FPIG-CSC-SNF-CAM-Admission-1-Ob-Question-5</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-PHQ9-1.html"
+                     title="Observation/FPIG-CSC-SNF-PHQ9-1">FPIG-CSC-SNF-PHQ9-1</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Collection</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-PHQ9-1-Ob-Question-11.html"
+                     title="Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-11">FPIG-CSC-SNF-PHQ9-1-Ob-Question-11</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-PHQ9-1-Ob-Question-12.html"
+                     title="Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-12">FPIG-CSC-SNF-PHQ9-1-Ob-Question-12</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-PHQ9-1-Ob-Question-13.html"
+                     title="Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-13">FPIG-CSC-SNF-PHQ9-1-Ob-Question-13</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-PHQ9-1-Ob-Question-14.html"
+                     title="Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-14">FPIG-CSC-SNF-PHQ9-1-Ob-Question-14</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-PHQ9-1-Ob-Question-15.html"
+                     title="Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-15">FPIG-CSC-SNF-PHQ9-1-Ob-Question-15</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-PHQ9-1-Ob-Question-16.html"
+                     title="Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-16">FPIG-CSC-SNF-PHQ9-1-Ob-Question-16</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-PHQ9-1-Ob-Question-17.html"
+                     title="Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-17">FPIG-CSC-SNF-PHQ9-1-Ob-Question-17</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-PHQ9-1-Ob-Question-18.html"
+                     title="Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-18">FPIG-CSC-SNF-PHQ9-1-Ob-Question-18</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-PHQ9-1-Ob-Question-19.html"
+                     title="Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-19">FPIG-CSC-SNF-PHQ9-1-Ob-Question-19</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-PHQ9-1-Ob-Question-20.html"
+                     title="Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-20">FPIG-CSC-SNF-PHQ9-1-Ob-Question-20</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-PHQ9-1-Ob-Question-21.html"
+                     title="Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-21">FPIG-CSC-SNF-PHQ9-1-Ob-Question-21</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-PHQ9-1-Ob-Question-22.html"
+                     title="Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-22">FPIG-CSC-SNF-PHQ9-1-Ob-Question-22</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-PHQ9-1-Ob-Question-23.html"
+                     title="Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-23">FPIG-CSC-SNF-PHQ9-1-Ob-Question-23</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-PHQ9-1-Ob-Question-24.html"
+                     title="Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-24">FPIG-CSC-SNF-PHQ9-1-Ob-Question-24</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-PHQ9-1-Ob-Question-25.html"
+                     title="Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-25">FPIG-CSC-SNF-PHQ9-1-Ob-Question-25</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-PHQ9-1-Ob-Question-26.html"
+                     title="Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-26">FPIG-CSC-SNF-PHQ9-1-Ob-Question-26</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-PHQ9-1-Ob-Question-27.html"
+                     title="Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-27">FPIG-CSC-SNF-PHQ9-1-Ob-Question-27</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-PHQ9-1-Ob-Question-28.html"
+                     title="Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-28">FPIG-CSC-SNF-PHQ9-1-Ob-Question-28</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-CSC-SNF-PHQ9-1-Ob-Question-29.html"
+                     title="Observation/FPIG-CSC-SNF-PHQ9-1-Ob-Question-29">FPIG-CSC-SNF-PHQ9-1-Ob-Question-29</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Admission-Mobility-1.html"
+                     title="Observation/FPIG-FSC-Hospital-Admission-Mobility-1">FPIG-FSC-Hospital-Admission-Mobility-1</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Collection</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-1.html"
+                     title="Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-1">FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-1</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-11.html"
+                     title="Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-11">FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-11</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-13.html"
+                     title="Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-13">FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-13</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-15.html"
+                     title="Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-15">FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-15</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-17.html"
+                     title="Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-17">FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-17</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-19.html"
+                     title="Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-19">FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-19</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-21.html"
+                     title="Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-21">FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-21</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-23.html"
+                     title="Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-23">FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-23</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-25.html"
+                     title="Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-25">FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-25</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-27.html"
+                     title="Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-27">FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-27</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-29.html"
+                     title="Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-29">FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-29</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-3.html"
+                     title="Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-3">FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-3</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-31.html"
+                     title="Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-31">FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-31</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-33.html"
+                     title="Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-33">FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-33</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-5.html"
+                     title="Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-5">FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-5</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-7.html"
+                     title="Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-7">FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-7</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-9.html"
+                     title="Observation/FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-9">FPIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-9</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DeviceUseStatement-FPIG-FSC-Hospital-Admission-Mobility-1-UseOfDevice-6.html"
+                     title="DeviceUseStatement/FPIG-FSC-Hospital-Admission-Mobility-1-UseOfDevice-6">FPIG-FSC-Hospital-Admission-Mobility-1-UseOfDevice-6</a>
+               </td>
+               <td>
+<p>An instance of FunctionalPerformanceUseOfDevice</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DeviceUseStatement-FPIG-FSC-Hospital-Admission-Mobility-1-UseOfDevice-7.html"
+                     title="DeviceUseStatement/FPIG-FSC-Hospital-Admission-Mobility-1-UseOfDevice-7">FPIG-FSC-Hospital-Admission-Mobility-1-UseOfDevice-7</a>
+               </td>
+               <td>
+<p>An instance of FunctionalPerformanceUseOfDevice</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Discharge-Mobility-1.html"
+                     title="Observation/FPIG-FSC-Hospital-Discharge-Mobility-1">FPIG-FSC-Hospital-Discharge-Mobility-1</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Collection</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-10.html"
+                     title="Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-10">FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-10</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-12.html"
+                     title="Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-12">FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-12</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-14.html"
+                     title="Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-14">FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-14</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-16.html"
+                     title="Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-16">FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-16</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-18.html"
+                     title="Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-18">FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-18</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-2.html"
+                     title="Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-2">FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-2</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-20.html"
+                     title="Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-20">FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-20</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-22.html"
+                     title="Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-22">FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-22</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-24.html"
+                     title="Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-24">FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-24</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-26.html"
+                     title="Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-26">FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-26</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-28.html"
+                     title="Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-28">FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-28</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-30.html"
+                     title="Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-30">FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-30</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-32.html"
+                     title="Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-32">FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-32</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-34.html"
+                     title="Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-34">FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-34</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-4.html"
+                     title="Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-4">FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-4</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-6.html"
+                     title="Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-6">FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-6</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-8.html"
+                     title="Observation/FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-8">FPIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-8</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DeviceUseStatement-FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-1.html"
+                     title="DeviceUseStatement/FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-1">FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-1</a>
+               </td>
+               <td>
+<p>An instance of FunctionalPerformanceUseOfDevice</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DeviceUseStatement-FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-2.html"
+                     title="DeviceUseStatement/FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-2">FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-2</a>
+               </td>
+               <td>
+<p>An instance of FunctionalPerformanceUseOfDevice</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DeviceUseStatement-FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-3.html"
+                     title="DeviceUseStatement/FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-3">FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-3</a>
+               </td>
+               <td>
+<p>An instance of FunctionalPerformanceUseOfDevice</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DeviceUseStatement-FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-4.html"
+                     title="DeviceUseStatement/FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-4">FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-4</a>
+               </td>
+               <td>
+<p>An instance of FunctionalPerformanceUseOfDevice</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DeviceUseStatement-FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-5.html"
+                     title="DeviceUseStatement/FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-5">FPIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-5</a>
+               </td>
+               <td>
+<p>An instance of FunctionalPerformanceUseOfDevice</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-SNF-Admission-Mobility-SelfCare-1.html"
+                     title="Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1">FPIG-FSC-SNF-Admission-Mobility-SelfCare-1</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Collection</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-11.html"
+                     title="Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-11">FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-11</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-15.html"
+                     title="Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-15">FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-15</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-19.html"
+                     title="Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-19">FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-19</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-23.html"
+                     title="Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-23">FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-23</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-27.html"
+                     title="Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-27">FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-27</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-3.html"
+                     title="Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-3">FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-3</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7.html"
+                     title="Observation/FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7">FPIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7</a>
+               </td>
+               <td>
+<p>An instance of Functional Performance Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-Narrative-History-Cognitive-Status-1.html"
+                     title="Observation/FPIG-Narrative-History-Cognitive-Status-1">FPIG-Narrative-History-Cognitive-Status-1</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-FPIG-Narrative-History-Functional-Status-1.html"
+                     title="Observation/FPIG-Narrative-History-Functional-Status-1">FPIG-Narrative-History-Functional-Status-1</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-FPIG-Org-01.html" title="Organization/FPIG-Org-01">FPIG-Org-01</a>
+               </td>
+               <td>
+<p>An instance of Organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-FPIG-Org-02.html" title="Organization/FPIG-Org-02">FPIG-Org-02</a>
+               </td>
+               <td>
+<p>An instance of Organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-FPIG-Org-03.html" title="Organization/FPIG-Org-03">FPIG-Org-03</a>
+               </td>
+               <td>
+<p>An instance of Organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Location-FPIG-Org-Loc-01.html" title="Location/FPIG-Org-Loc-01">FPIG-Org-Loc-01</a>
+               </td>
+               <td>
+<p>An instance of Location</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Location-FPIG-Org-Loc-02.html" title="Location/FPIG-Org-Loc-02">FPIG-Org-Loc-02</a>
+               </td>
+               <td>
+<p>An instance of Location</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Location-FPIG-Org-Loc-03.html" title="Location/FPIG-Org-Loc-03">FPIG-Org-Loc-03</a>
+               </td>
+               <td>
+<p>An instance of Location</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-FPIG-Practitioner-DanielGranger.html"
+                     title="Practitioner/FPIG-Practitioner-DanielGranger">FPIG-Practitioner-DanielGranger</a>
+               </td>
+               <td>
+<p>An instance of Practitioner</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-FPIG-Practitioner-HoneyJones.html"
+                     title="Practitioner/FPIG-Practitioner-HoneyJones">FPIG-Practitioner-HoneyJones</a>
+               </td>
+               <td>
+<p>An instance of Practitioner</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-FPIG-Practitioner-JenCadbury.html"
+                     title="Practitioner/FPIG-Practitioner-JenCadbury">FPIG-Practitioner-JenCadbury</a>
+               </td>
+               <td>
+<p>An instance of Practitioner</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-FPIG-Practitioner-JennyGlass.html"
+                     title="Practitioner/FPIG-Practitioner-JennyGlass">FPIG-Practitioner-JennyGlass</a>
+               </td>
+               <td>
+<p>An instance of Practitioner</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-FPIG-Practitioner-JohnSmith.html"
+                     title="Practitioner/FPIG-Practitioner-JohnSmith">FPIG-Practitioner-JohnSmith</a>
+               </td>
+               <td>
+<p>An instance of Practitioner</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-FPIG-Practitioner-LunaBaskins.html"
+                     title="Practitioner/FPIG-Practitioner-LunaBaskins">FPIG-Practitioner-LunaBaskins</a>
+               </td>
+               <td>
+<p>An instance of Practitioner</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-FPIG-Practitioner-NoraOlogist.html"
+                     title="Practitioner/FPIG-Practitioner-NoraOlogist">FPIG-Practitioner-NoraOlogist</a>
+               </td>
+               <td>
+<p>An instance of Practitioner</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-FPIG-Practitioner-RonMarble.html"
+                     title="Practitioner/FPIG-Practitioner-RonMarble">FPIG-Practitioner-RonMarble</a>
+               </td>
+               <td>
+<p>An instance of Practitioner</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-FPIG-Practitioner-SallySmith.html"
+                     title="Practitioner/FPIG-Practitioner-SallySmith">FPIG-Practitioner-SallySmith</a>
+               </td>
+               <td>
+<p>An instance of Practitioner</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-FPIG-Practitioner-ScottDumble.html"
+                     title="Practitioner/FPIG-Practitioner-ScottDumble">FPIG-Practitioner-ScottDumble</a>
+               </td>
+               <td>
+<p>An instance of Practitioner</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="QuestionnaireResponse-FPIG-QResponse-Hospital-Admission-Mobility-1.html"
+                     title="QuestionnaireResponse/FPIG-QResponse-Hospital-Admission-Mobility-1">FPIG-QResponse-Hospital-Admission-Mobility-1</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="QuestionnaireResponse-FPIG-QResponse-Hospital-Discharge-Mobility-1.html"
+                     title="QuestionnaireResponse/FPIG-QResponse-Hospital-Discharge-Mobility-1">FPIG-QResponse-Hospital-Discharge-Mobility-1</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="QuestionnaireResponse-FPIG-QResponse-Hospital-MMSE-1.html"
+                     title="QuestionnaireResponse/FPIG-QResponse-Hospital-MMSE-1">FPIG-QResponse-Hospital-MMSE-1</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="QuestionnaireResponse-FPIG-QResponse-Hospital-MOCA-1.html"
+                     title="QuestionnaireResponse/FPIG-QResponse-Hospital-MOCA-1">FPIG-QResponse-Hospital-MOCA-1</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="QuestionnaireResponse-FPIG-QResponse-SNF-Admission-Mobility-SelfCare-1.html"
+                     title="QuestionnaireResponse/FPIG-QResponse-SNF-Admission-Mobility-SelfCare-1">FPIG-QResponse-SNF-Admission-Mobility-SelfCare-1</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="QuestionnaireResponse-FPIG-QResponse-SNF-BIMS-1.html"
+                     title="QuestionnaireResponse/FPIG-QResponse-SNF-BIMS-1">FPIG-QResponse-SNF-BIMS-1</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="QuestionnaireResponse-FPIG-QResponse-SNF-CAM-Admission-1.html"
+                     title="QuestionnaireResponse/FPIG-QResponse-SNF-CAM-Admission-1">FPIG-QResponse-SNF-CAM-Admission-1</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="QuestionnaireResponse-FPIG-QResponse-SNF-PHQ9-1.html"
+                     title="QuestionnaireResponse/FPIG-QResponse-SNF-PHQ9-1">FPIG-QResponse-SNF-PHQ9-1</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-FPIG-Role-OT-DanielGranger.html"
+                     title="PractitionerRole/FPIG-Role-OT-DanielGranger">FPIG-Role-OT-DanielGranger</a>
+               </td>
+               <td>
+<p>An instance of PractitionerRole</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-FPIG-Role-OT-JenCadbury.html"
+                     title="PractitionerRole/FPIG-Role-OT-JenCadbury">FPIG-Role-OT-JenCadbury</a>
+               </td>
+               <td>
+<p>An instance of PractitionerRole</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-FPIG-Role-PT-LunaBaskins.html"
+                     title="PractitionerRole/FPIG-Role-PT-LunaBaskins">FPIG-Role-PT-LunaBaskins</a>
+               </td>
+               <td>
+<p>An instance of PractitionerRole</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-FPIG-Role-PT-RonMarble.html"
+                     title="PractitionerRole/FPIG-Role-PT-RonMarble">FPIG-Role-PT-RonMarble</a>
+               </td>
+               <td>
+<p>An instance of PractitionerRole</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-FPIG-Role-PT-SallySmith.html"
+                     title="PractitionerRole/FPIG-Role-PT-SallySmith">FPIG-Role-PT-SallySmith</a>
+               </td>
+               <td>
+<p>An instance of PractitionerRole</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-FPIG-Role-PT-ScottDumble.html"
+                     title="PractitionerRole/FPIG-Role-PT-ScottDumble">FPIG-Role-PT-ScottDumble</a>
+               </td>
+               <td>
+<p>An instance of PractitionerRole</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-FPIG-Role-SLP-HoneyJones.html"
+                     title="PractitionerRole/FPIG-Role-SLP-HoneyJones">FPIG-Role-SLP-HoneyJones</a>
+               </td>
+               <td>
+<p>An instance of PractitionerRole</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-FPIG-Role-SLP-JennyGlass.html"
+                     title="PractitionerRole/FPIG-Role-SLP-JennyGlass">FPIG-Role-SLP-JennyGlass</a>
+               </td>
+               <td>
+<p>An instance of PractitionerRole</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-FPIG-Role-SLP-LunaBaskins.html"
+                     title="PractitionerRole/FPIG-Role-SLP-LunaBaskins">FPIG-Role-SLP-LunaBaskins</a>
+               </td>
+               <td>
+<p>An instance of PractitionerRole</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-FPIG-patientBSJ1.html" title="Patient/FPIG-patientBSJ1">FPIG-patientBSJ1</a>
+               </td>
+               <td>
+<p>An instance of USCorePatientProfile</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-FPIG-provider-org-01.html"
+                     title="Organization/FPIG-provider-org-01">FPIG-provider-org-01</a>
+               </td>
+               <td>
+<p>An instance of Organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-FPIG-provider-org-16.html"
+                     title="Organization/FPIG-provider-org-16">FPIG-provider-org-16</a>
+               </td>
+               <td>
+<p>An instance of Organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Location-FPIG-provider-org-loc-01.html"
+                     title="Location/FPIG-provider-org-loc-01">FPIG-provider-org-loc-01</a>
+               </td>
+               <td>
+<p>An instance of Location</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Location-FPIG-provider-org-loc-16.html"
+                     title="Location/FPIG-provider-org-loc-16">FPIG-provider-org-loc-16</a>
+               </td>
+               <td>
+<p>An instance of Location</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-FPIG-provider-role-neurologist.html"
+                     title="PractitionerRole/FPIG-provider-role-neurologist">FPIG-provider-role-neurologist</a>
+               </td>
+               <td>
+<p>An instance of PractitionerRole</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-FPIG-provider-role-pcp.html"
+                     title="PractitionerRole/FPIG-provider-role-pcp">FPIG-provider-role-pcp</a>
+               </td>
+               <td>
+<p>An instance of PractitionerRole</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/patientcare">HL7 Patient Care Work Group</a>.  Package hl7.fhir.us.pacio-fp#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 19, 2022 12:58-0400">2022-04-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/pacio-fp/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

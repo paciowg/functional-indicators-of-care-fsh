@@ -1,0 +1,92 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/pacio-fp/Patient/FPIG-patientBSJ1> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "FPIG-patientBSJ1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Betsy Smith-Johnson</b> female, DoB Unknown ( id: 10A3D58WH1600)</p></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://example.org/identifiers/patient" ];
+     fhir:Identifier.value [ fhir:value "10A3D58WH1600" ]
+  ];
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "Betsy Smith-Johnson" ];
+     fhir:HumanName.family [ fhir:value "Smith-Johnson" ];
+     fhir:HumanName.given [
+       fhir:value "Betsy";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "210-222-1111" ];
+     fhir:ContactPoint.use [ fhir:value "mobile" ]
+  ];
+  fhir:Patient.gender [ fhir:value "female"];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.text [ fhir:value "111 Maple Ct, San Antonio, TX 78212" ]
+  ];
+  fhir:Patient.maritalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" ];
+       fhir:Coding.code [ fhir:value "U" ]
+     ]
+  ];
+  fhir:Patient.contact [
+     fhir:index 0;
+     fhir:Patient.contact.name [
+       fhir:HumanName.text [ fhir:value "Charles Johnson" ]
+     ];
+     fhir:Patient.contact.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "phone" ];
+       fhir:ContactPoint.value [ fhir:value "(210) 222-3333" ]
+     ];
+     fhir:Patient.contact.address [
+       fhir:Address.text [ fhir:value "100 Montana St., San Antonio, TX 78203" ]
+     ]
+  ];
+  fhir:Patient.communication [
+     fhir:index 0;
+     fhir:Patient.communication.language [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:ietf:bcp:47" ];
+         fhir:Coding.code [ fhir:value "en" ]
+       ]
+     ];
+     fhir:Patient.communication.preferred [ fhir:value "true"^^xsd:boolean ]
+  ];
+  fhir:Patient.generalPractitioner [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "Practitioner-JohnSmith" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/pacio-fp/Patient/FPIG-patientBSJ1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/pacio-fp/Patient/FPIG-patientBSJ1.ttl> .
+
+# -------------------------------------------------------------------------------------
+

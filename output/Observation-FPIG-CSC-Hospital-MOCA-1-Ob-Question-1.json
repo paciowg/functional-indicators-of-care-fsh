@@ -1,0 +1,78 @@
+{
+  "resourceType": "Observation",
+  "id": "FPIG-CSC-Hospital-MOCA-1-Ob-Question-1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-observation"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"FPIG-CSC-Hospital-MOCA-1-Ob-Question-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fp-observation.html\">Functional Performance Observation</a></p></div><p><b>ObservationEventLocation</b>: <a href=\"Location-FPIG-Org-Loc-01.html\">Location/FPIG-Org-Loc-01</a> \"San Antonio General Hospital\"</p><p><b>status</b>: final</p><p><b>category</b>: Functioning <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-fp-functioning-cs.html\">Functional Performance Functioning Category Code System</a>#functioning)</span>, Mental functions <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-fp-category-cs.html\">Functional Performance Category</a>#mental-functions)</span>, Survey <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#survey)</span></p><p><b>code</b>: Total score [MoCA] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#72172-0)</span></p><p><b>subject</b>: <a href=\"Patient-FPIG-patientBSJ1.html\">Patient/FPIG-patientBSJ1</a> \" SMITH-JOHNSON\"</p><p><b>effective</b>: 2020-07-08 05:32:00-0500</p><p><b>performer</b>: <a href=\"PractitionerRole-FPIG-Role-SLP-JennyGlass.html\">PractitionerRole/FPIG-Role-SLP-JennyGlass</a></p><p><b>value</b>: 18 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {score} = '{score}')</span></p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-FPIG-QResponse-Hospital-MOCA-1.html\">QuestionnaireResponse/FPIG-QResponse-Hospital-MOCA-1</a></p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/event-location",
+      "valueReference": {
+        "reference": "Location/FPIG-Org-Loc-01"
+      }
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-functioning-cs",
+          "code": "functioning",
+          "display": "Functioning"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs",
+          "code": "mental-functions",
+          "display": "Mental functions"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "72172-0",
+        "display": "Total score [MoCA]"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/FPIG-patientBSJ1"
+  },
+  "effectiveDateTime": "2020-07-08T17:32:00-05:00",
+  "performer": [
+    {
+      "reference": "PractitionerRole/FPIG-Role-SLP-JennyGlass"
+    }
+  ],
+  "valueQuantity": {
+    "value": 18,
+    "system": "http://unitsofmeasure.org",
+    "code": "{score}"
+  },
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/FPIG-QResponse-Hospital-MOCA-1"
+    }
+  ]
+}

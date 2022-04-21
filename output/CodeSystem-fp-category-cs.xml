@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="fp-category-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs defines the following codes:</p><table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style="white-space:nowrap">body-functions<a name="fp-category-cs-body-functions"> </a></td><td>Body functions</td><td>Body functions are the physiological functions of body systems (including psychological functions). Impairments are problems in body function or structure as a significant deviation or loss. Broad ranges of percentages are provided for those cases in which calibrated assessment instruments or other standards are available to quantify the impairment in body function.</td></tr><tr><td>2</td><td style="white-space:nowrap">  mental-functions<a name="fp-category-cs-mental-functions"> </a></td><td>Mental functions</td><td>Functions of the brain: both global mental functions, such as consciousness, energy and drive, and specific mental functions, such as memory, language and calculation mental functions.</td></tr><tr><td>2</td><td style="white-space:nowrap">  sensory-functions-and-pain<a name="fp-category-cs-sensory-functions-and-pain"> </a></td><td>Sensory functions and pain</td><td>Functions of the senses, seeing, hearing, tasting and so on, as well as the sensation of pain.</td></tr><tr><td>2</td><td style="white-space:nowrap">  voice-and-speech-functions<a name="fp-category-cs-voice-and-speech-functions"> </a></td><td>Voice and speech functions</td><td>Functions of producing sounds and speech.</td></tr><tr><td>2</td><td style="white-space:nowrap">  cardio-heama-immuno-resp-functions<a name="fp-category-cs-cardio-heama-immuno-resp-functions"> </a></td><td>Functions of the cardiovascular, haematological, immunological and respiratory systems</td><td>Functions involved in the cardiovascular system (functions of the heart and blood vessels), the haematological and immunological systems (functions of blood production and immunity), and the respiratory system (functions of respiration and exercise tolerance).</td></tr><tr><td>2</td><td style="white-space:nowrap">  digestive-metabolic-endocrine-systems<a name="fp-category-cs-digestive-metabolic-endocrine-systems"> </a></td><td>Functions of the digestive, metabolic, endocrine systems</td><td>Functions of ingestion, digestion and elimination, as well as functions involved in metabolism and the endocrine glands.</td></tr><tr><td>2</td><td style="white-space:nowrap">  genitourinary-and-reproductive-functions<a name="fp-category-cs-genitourinary-and-reproductive-functions"> </a></td><td>Genitourinary and reproductive functions</td><td>Functions of urination and the reproductive functions, including sexual and procreative functions.</td></tr><tr><td>2</td><td style="white-space:nowrap">  neuromusculoskeletal-movement-functions<a name="fp-category-cs-neuromusculoskeletal-movement-functions"> </a></td><td>Neuromusculoskeletal and movement-related functions</td><td>Functions of movement and mobility, including functions of joints, bones, reflexes and muscles.</td></tr><tr><td>2</td><td style="white-space:nowrap">  skin-and-related-structure-functions<a name="fp-category-cs-skin-and-related-structure-functions"> </a></td><td>Functions of the skin and related structures</td><td>Functions of skin, nails and hair.</td></tr><tr><td>1</td><td style="white-space:nowrap">activities-and-participation<a name="fp-category-cs-activities-and-participation"> </a></td><td>Activities and Participation</td><td>Activity is the execution of a task or action by an individual. Participation is involvement in a life situation. Activity limitations are difficulties an individual may have in executing activities. Participation restrictions are problems an individual may experience in involvement in life situations.</td></tr><tr><td>2</td><td style="white-space:nowrap">  learning-and-applying-knowledge<a name="fp-category-cs-learning-and-applying-knowledge"> </a></td><td>Learning and applying knowledge</td><td>Learning, applying the knowledge that is learned, thinking, solving problems, and making decisions.</td></tr><tr><td>2</td><td style="white-space:nowrap">  general-tasks-and-demands<a name="fp-category-cs-general-tasks-and-demands"> </a></td><td>General tasks and demands</td><td>General aspects of carrying out single or multiple tasks, organizing routines and handling stress. These items can be used in conjunction with more specific tasks or actions to identify the underlying features of the execution of tasks under different circumstances.</td></tr><tr><td>2</td><td style="white-space:nowrap">  communication<a name="fp-category-cs-communication"> </a></td><td>Communication</td><td>General and specific features of communicating by language, signs and symbols, including receiving and producing messages, carrying on conversations, and using communication devices and techniques.</td></tr><tr><td>2</td><td style="white-space:nowrap">  mobility<a name="fp-category-cs-mobility"> </a></td><td>Mobility</td><td>Moving by changing body position or location or by transferring from one place to another, by carrying, moving or manipulating objects, by walking, running or climbing, and by using various forms of transportation.</td></tr><tr><td>2</td><td style="white-space:nowrap">  self-care<a name="fp-category-cs-self-care"> </a></td><td>Self-care</td><td>Caring for oneself, washing and drying oneself, caring for one's body and body parts, dressing, eating and drinking, and looking after one's health.</td></tr><tr><td>2</td><td style="white-space:nowrap">  domestic-life<a name="fp-category-cs-domestic-life"> </a></td><td>Domestic life</td><td>Carrying out domestic and everyday actions and tasks. Areas of domestic life include, caring for one's belongings and space, acquiring food, clothing and other necessities, household cleaning and repairing, caring for personal and other household objects, and assisting others.</td></tr><tr><td>2</td><td style="white-space:nowrap">  interpersonal-interactions-and-relationships<a name="fp-category-cs-interpersonal-interactions-and-relationships"> </a></td><td>Interpersonal interactions and relationships</td><td>Carrying out the actions and tasks required for basic and complex interactions with people (strangers, friends, relatives, family members and lovers) in a contextually and socially appropriate manner.</td></tr><tr><td>2</td><td style="white-space:nowrap">  major-life-areas<a name="fp-category-cs-major-life-areas"> </a></td><td>Major life areas</td><td>Carrying out the tasks and actions required to engage in education, work and employment and to conduct economic transactions.</td></tr><tr><td>2</td><td style="white-space:nowrap">  community-social-and-civic-life<a name="fp-category-cs-community-social-and-civic-life"> </a></td><td>Community, social and civic life</td><td>Actions and tasks required to engage in organized social life outside the family, in community, social and civic areas of life.</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs"/>
+  <version value="1.0.0"/>
+  <name value="FunctionalPerformanceCategoryCS"/>
+  <title value="Functional Performance Category"/>
+  <status value="active"/>
+  <date value="2022-04-19T12:58:34-04:00"/>
+  <publisher value="HL7 Patient Care Work Group"/>
+  <contact>
+    <name value="HL7 Patient Care Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="patientcare@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PACIO project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@pacioproject.org"/>
+    </telecom>
+  </contact>
+  <description value="Codes for functional performance categories"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="19"/>
+  <concept>
+    <code value="body-functions"/>
+    <display value="Body functions"/>
+    <definition value="Body functions are the physiological functions of body systems (including psychological functions). Impairments are problems in body function or structure as a significant deviation or loss. Broad ranges of percentages are provided for those cases in which calibrated assessment instruments or other standards are available to quantify the impairment in body function."/>
+    <concept>
+      <code value="mental-functions"/>
+      <display value="Mental functions"/>
+      <definition value="Functions of the brain: both global mental functions, such as consciousness, energy and drive, and specific mental functions, such as memory, language and calculation mental functions."/>
+    </concept>
+    <concept>
+      <code value="sensory-functions-and-pain"/>
+      <display value="Sensory functions and pain"/>
+      <definition value="Functions of the senses, seeing, hearing, tasting and so on, as well as the sensation of pain."/>
+    </concept>
+    <concept>
+      <code value="voice-and-speech-functions"/>
+      <display value="Voice and speech functions"/>
+      <definition value="Functions of producing sounds and speech."/>
+    </concept>
+    <concept>
+      <code value="cardio-heama-immuno-resp-functions"/>
+      <display value="Functions of the cardiovascular, haematological, immunological and respiratory systems"/>
+      <definition value="Functions involved in the cardiovascular system (functions of the heart and blood vessels), the haematological and immunological systems (functions of blood production and immunity), and the respiratory system (functions of respiration and exercise tolerance)."/>
+    </concept>
+    <concept>
+      <code value="digestive-metabolic-endocrine-systems"/>
+      <display value="Functions of the digestive, metabolic, endocrine systems"/>
+      <definition value="Functions of ingestion, digestion and elimination, as well as functions involved in metabolism and the endocrine glands."/>
+    </concept>
+    <concept>
+      <code value="genitourinary-and-reproductive-functions"/>
+      <display value="Genitourinary and reproductive functions"/>
+      <definition value="Functions of urination and the reproductive functions, including sexual and procreative functions."/>
+    </concept>
+    <concept>
+      <code value="neuromusculoskeletal-movement-functions"/>
+      <display value="Neuromusculoskeletal and movement-related functions"/>
+      <definition value="Functions of movement and mobility, including functions of joints, bones, reflexes and muscles."/>
+    </concept>
+    <concept>
+      <code value="skin-and-related-structure-functions"/>
+      <display value="Functions of the skin and related structures"/>
+      <definition value="Functions of skin, nails and hair."/>
+    </concept>
+  </concept>
+  <concept>
+    <code value="activities-and-participation"/>
+    <display value="Activities and Participation"/>
+    <definition value="Activity is the execution of a task or action by an individual. Participation is involvement in a life situation. Activity limitations are difficulties an individual may have in executing activities. Participation restrictions are problems an individual may experience in involvement in life situations."/>
+    <concept>
+      <code value="learning-and-applying-knowledge"/>
+      <display value="Learning and applying knowledge"/>
+      <definition value="Learning, applying the knowledge that is learned, thinking, solving problems, and making decisions."/>
+    </concept>
+    <concept>
+      <code value="general-tasks-and-demands"/>
+      <display value="General tasks and demands"/>
+      <definition value="General aspects of carrying out single or multiple tasks, organizing routines and handling stress. These items can be used in conjunction with more specific tasks or actions to identify the underlying features of the execution of tasks under different circumstances."/>
+    </concept>
+    <concept>
+      <code value="communication"/>
+      <display value="Communication"/>
+      <definition value="General and specific features of communicating by language, signs and symbols, including receiving and producing messages, carrying on conversations, and using communication devices and techniques."/>
+    </concept>
+    <concept>
+      <code value="mobility"/>
+      <display value="Mobility"/>
+      <definition value="Moving by changing body position or location or by transferring from one place to another, by carrying, moving or manipulating objects, by walking, running or climbing, and by using various forms of transportation."/>
+    </concept>
+    <concept>
+      <code value="self-care"/>
+      <display value="Self-care"/>
+      <definition value="Caring for oneself, washing and drying oneself, caring for one's body and body parts, dressing, eating and drinking, and looking after one's health."/>
+    </concept>
+    <concept>
+      <code value="domestic-life"/>
+      <display value="Domestic life"/>
+      <definition value="Carrying out domestic and everyday actions and tasks. Areas of domestic life include, caring for one's belongings and space, acquiring food, clothing and other necessities, household cleaning and repairing, caring for personal and other household objects, and assisting others."/>
+    </concept>
+    <concept>
+      <code value="interpersonal-interactions-and-relationships"/>
+      <display value="Interpersonal interactions and relationships"/>
+      <definition value="Carrying out the actions and tasks required for basic and complex interactions with people (strangers, friends, relatives, family members and lovers) in a contextually and socially appropriate manner."/>
+    </concept>
+    <concept>
+      <code value="major-life-areas"/>
+      <display value="Major life areas"/>
+      <definition value="Carrying out the tasks and actions required to engage in education, work and employment and to conduct economic transactions."/>
+    </concept>
+    <concept>
+      <code value="community-social-and-civic-life"/>
+      <display value="Community, social and civic life"/>
+      <definition value="Actions and tasks required to engage in organized social life outside the family, in community, social and civic areas of life."/>
+    </concept>
+  </concept>
+</CodeSystem>

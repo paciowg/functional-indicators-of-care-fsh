@@ -1,0 +1,64 @@
+{
+  "resourceType": "ValueSet",
+  "id": "fp-loinc-snomed-vs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a></li><li>Include all codes defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/us/pacio-fp/ValueSet/fp-loinc-snomed-vs",
+  "version": "1.0.0",
+  "name": "FunctionalPerformanceLOINCSNOMEDVS",
+  "title": "Functional Performance ValueSet LOINC SNOMED",
+  "status": "active",
+  "date": "2022-04-19T12:58:34-04:00",
+  "publisher": "HL7 Patient Care Work Group",
+  "contact": [
+    {
+      "name": "HL7 Patient Care Work Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/patientcare"
+        },
+        {
+          "system": "email",
+          "value": "patientcare@lists.HL7.org"
+        }
+      ]
+    },
+    {
+      "name": "PACIO project",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/patientcare"
+        },
+        {
+          "system": "email",
+          "value": "info@pacioproject.org"
+        }
+      ]
+    }
+  ],
+  "description": "This value set contains all of LOINC and SNOMED CT.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org"
+      },
+      {
+        "system": "http://snomed.info/sct"
+      }
+    ]
+  }
+}

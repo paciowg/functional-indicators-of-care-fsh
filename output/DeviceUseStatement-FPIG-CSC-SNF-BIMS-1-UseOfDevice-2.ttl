@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/pacio-fp/DeviceUseStatement/FPIG-CSC-SNF-BIMS-1-UseOfDevice-2> a fhir:DeviceUseStatement;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "FPIG-CSC-SNF-BIMS-1-UseOfDevice-2"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-use-of-device";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-use-of-device>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"FPIG-CSC-SNF-BIMS-1-UseOfDevice-2\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fp-use-of-device.html\">Functional Performance Use of Device</a></p></div><p><b>status</b>: active</p><p><b>subject</b>: <a href=\"Patient-FPIG-patientBSJ1.html\">Patient/FPIG-patientBSJ1</a> \" SMITH-JOHNSON\"</p><p><b>derivedFrom</b>: <a href=\"Observation-FPIG-CSC-SNF-BIMS-1.html\">Observation/FPIG-CSC-SNF-BIMS-1</a></p><p><b>recordedOn</b>: 2020-07-11 11:30:00-0500</p><p><b>source</b>: <a href=\"Practitioner-FPIG-Practitioner-HoneyJones.html\">Practitioner/FPIG-Practitioner-HoneyJones</a> \" JONES\"</p><p><b>device</b>: <a href=\"Device-FPIG-CMS-Device-HearingAid.html\">Device/FPIG-CMS-Device-HearingAid</a></p></div>"
+  ];
+  fhir:DeviceUseStatement.status [ fhir:value "active"];
+  fhir:DeviceUseStatement.subject [
+     fhir:link <http://hl7.org/fhir/us/pacio-fp/Patient/FPIG-patientBSJ1>;
+     fhir:Reference.reference [ fhir:value "Patient/FPIG-patientBSJ1" ]
+  ];
+  fhir:DeviceUseStatement.derivedFrom [
+     fhir:index 0;
+     fhir:link <http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-BIMS-1>;
+     fhir:Reference.reference [ fhir:value "Observation/FPIG-CSC-SNF-BIMS-1" ]
+  ];
+  fhir:DeviceUseStatement.recordedOn [ fhir:value "2020-07-11T11:30:00-05:00"^^xsd:dateTime];
+  fhir:DeviceUseStatement.source [
+     fhir:link <http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-HoneyJones>;
+     fhir:Reference.reference [ fhir:value "Practitioner/FPIG-Practitioner-HoneyJones" ]
+  ];
+  fhir:DeviceUseStatement.device [
+     fhir:link <http://hl7.org/fhir/us/pacio-fp/Device/FPIG-CMS-Device-HearingAid>;
+     fhir:Reference.reference [ fhir:value "Device/FPIG-CMS-Device-HearingAid" ]
+  ] .
+
+<http://hl7.org/fhir/us/pacio-fp/Patient/FPIG-patientBSJ1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Observation/FPIG-CSC-SNF-BIMS-1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-HoneyJones> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-fp/Device/FPIG-CMS-Device-HearingAid> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/pacio-fp/DeviceUseStatement/FPIG-CSC-SNF-BIMS-1-UseOfDevice-2.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/pacio-fp/DeviceUseStatement/FPIG-CSC-SNF-BIMS-1-UseOfDevice-2.ttl> .
+
+# -------------------------------------------------------------------------------------
+

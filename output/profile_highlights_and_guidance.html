@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>HL7.FHIR.US.PACIO-FP\Profile Highlights and Guidance - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/hl7.css"/>
+    <link rel="stylesheet" href="assets/css/fhir-ig.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a no-external="true" id="hl7-logo" href="http://hl7.org">
+            <img src="assets/images/hl7-logo-header.png" alt="Visit the HL7 website" height="50"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">PACIO Functional Performance Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ci-build
+
+
+
+  <img src="assets/images/usa.svg" alt="United States of America flag" title="United States of America" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li><a href="underlying_technologies.html">Underlying Technologies</a></li>
+  <li><a href="functional_performance_use_case.html">Use Case Example</a></li>
+  <li><a href="profile_highlights_and_guidance.html">Profile Highlights and Guidance</a></li>
+  <li><a href="representative_assessments.html">Representative Assessments</a></li>
+  <li><a href="artifacts.html">Artifacts Summary</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec <img src="external.png" style="text-align: baseline"/></a></li>
+    </ul>
+  </li>
+</ul>
+
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Profile Highlights and Guidance</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">PACIO Functional Performance Implementation Guide - Local Development build (v1.0.0). See the <a href="http://hl7.org/fhir/us/pacio-fp/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Profile Highlights and Guidance</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#resource-profile-functionalperformancecollection" id="markdown-toc-resource-profile-functionalperformancecollection">Resource Profile: FunctionalPerformanceCollection</a></li>
+  <li><a href="#resource-profile-functionalperformanceobservation" id="markdown-toc-resource-profile-functionalperformanceobservation">Resource Profile: FunctionalPerformanceObservation</a></li>
+  <li><a href="#resource-profile-functionalperformancepriorlevelofstatus" id="markdown-toc-resource-profile-functionalperformancepriorlevelofstatus">Resource Profile: FunctionalPerformancePriorLevelOfStatus</a></li>
+  <li><a href="#resource-profile-functionalperformanceuseofdevice" id="markdown-toc-resource-profile-functionalperformanceuseofdevice">Resource Profile: FunctionalPerformanceUseOfDevice</a></li>
+  <li><a href="#data-exchange-guidance-and-examples" id="markdown-toc-data-exchange-guidance-and-examples">Data Exchange Guidance and Examples</a></li>
+  <li><a href="#sdcquestionnaireresponse--cam-example" id="markdown-toc-sdcquestionnaireresponse--cam-example">SDCQuestionnaireResponse – CAM Example</a></li>
+  <li><a href="#sdcquestionaireresponse--mobility-example" id="markdown-toc-sdcquestionaireresponse--mobility-example">SDCQuestionaireResponse – Mobility Example</a></li>
+  <li><a href="#functionalperformancecollection--cam-example" id="markdown-toc-functionalperformancecollection--cam-example">FunctionalPerformanceCollection – CAM Example</a></li>
+  <li><a href="#functionalperformancecollection--bims-example" id="markdown-toc-functionalperformancecollection--bims-example">FunctionalPerformanceCollection – BIMS Example</a></li>
+  <li><a href="#functionalperformancecollection--moca-example" id="markdown-toc-functionalperformancecollection--moca-example">FunctionalPerformanceCollection – MoCA Example</a></li>
+  <li><a href="#functionalperformancecollection--phq-9-two-column-example" id="markdown-toc-functionalperformancecollection--phq-9-two-column-example">FunctionalPerformanceCollection – PHQ-9 Two-Column Example</a></li>
+  <li><a href="#functionalperformancecollection--mobility-admission-example" id="markdown-toc-functionalperformancecollection--mobility-admission-example">FunctionalPerformanceCollection – Mobility Admission Example</a></li>
+  <li><a href="#functionalperformancecollection--mobility-discharge-and-device-used-example" id="markdown-toc-functionalperformancecollection--mobility-discharge-and-device-used-example">FunctionalPerformanceCollection – Mobility Discharge and Device Used Example</a></li>
+  <li><a href="#functionalperformancecollection--self-care-admission-example" id="markdown-toc-functionalperformancecollection--self-care-admission-example">FunctionalPerformanceCollection – Self-Care Admission Example</a></li>
+  <li><a href="#functionalperformancenarrativehistoryofstatus--narrative-history-of-status-example" id="markdown-toc-functionalperformancenarrativehistoryofstatus--narrative-history-of-status-example">FunctionalPerformanceNarrativeHistoryOfStatus – Narrative History of Status Example</a></li>
+</ul>
+
+</div>
+<p>This implementation guide provides a set of resource profiles to define how information should be packaged and retrieved in the exchange of PAC observation data. In the following sections the highlights of the key fields of each profile are presented and guidance for building profile instances is provided.</p>
+
+<p>A note on the use of “Must Support” in the Implementation Guide:
+For profiles defined in other IGs, the meaning of “Must Support” is established in the defining IG. For profiles defined in this IG, <a href="http://hl7.org/fhir/us/core/general-guidance.html#must-support">Must Support</a> will conform with US Core definition.</p>
+
+<h3 id="resource-profile-functionalperformancecollection">Resource Profile: FunctionalPerformanceCollection</h3>
+
+<p>This resource profile is intended to be used for the data exchange of a point in time set of post-acute care observations collected through the use of a structured resource (e.g. assessment tool, instrument, or screen). It is derived from the FHIR Observation resource.</p>
+
+<h3 id="resource-profile-functionalperformanceobservation">Resource Profile: FunctionalPerformanceObservation</h3>
+
+<p>This resource profile is intended to be used for the data exchange of a single post-acute care observation generally included in a set of observations collected through the use of a structured resource (e.g. assessment tool, instrument, or screen). It is derived from the FHIR Observation resource.</p>
+
+<h3 id="resource-profile-functionalperformancepriorlevelofstatus">Resource Profile: FunctionalPerformancePriorLevelOfStatus</h3>
+
+<p>This resource profile is intended to be used for the data exchange of a summary observation regarding the most recent prior level of status immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level of status assessments. For formal assessments conducted with for example, an assessment instrument, use the PAC Collection and PAC Observation profiles to capture assessment data. They are both derived from the FHIR Observation resource.</p>
+
+<h3 id="resource-profile-functionalperformanceuseofdevice">Resource Profile: FunctionalPerformanceUseOfDevice</h3>
+
+<p>This resource profile is intended to be used for specifying a device used by a patient during a post-acute care assessment. It is derived from the FHIR resource DeviceUseStatement.</p>
+
+<h3 id="data-exchange-guidance-and-examples">Data Exchange Guidance and Examples</h3>
+
+<p>The PACIO data model as expressed in the resource profiles is designed to be flexible so as to facilitate the exchange of a variety of types of PAC assessment data. The key to effective data exchange and searching of assessment data is the use of content standards. Therefore, it is paramount that nationally accepted, standardized coding systems such as LOINC and SNOMED are used in specifying assessment data elements.</p>
+
+<p>In the following set of examples, we provide guidance for using specific codes and conventions for constructing profile instances for data exchange. Although we reference a number of particular PAC patient/resident assessment instruments and provide examples to show how those particular types of assessment data can be exchanged, we do not endorse any of those assessment instruments over other assessment instruments that we have not mentioned. Our intention is to demonstrate the flexibility and adequacy of the PACIO data model, rather than to suggest the best types of post-acute care data for clinicians to use.</p>
+
+<h3 id="sdcquestionnaireresponse--cam-example">SDCQuestionnaireResponse – CAM Example</h3>
+
+<p><img src="QResponse_CAM_Example.png" alt="QResponse CAM Example" style="float: none;"/></p>
+
+<p><strong>Guidance and Notes:</strong></p>
+<ol>
+  <li>The ‘questionnaire’ field is the URL pointing to the file of the questionnaire that defines and organizes the questions for which answers are being provided.</li>
+  <li>Each ‘linkId’ field should match the ‘linkId’ of the corresponding section title or question from the questionnaire.</li>
+  <li>The nesting structure of the ‘item’ fields should correspond to the nesting structure as showed in the questionnaire.</li>
+</ol>
+
+<h3 id="sdcquestionaireresponse--mobility-example">SDCQuestionaireResponse – Mobility Example</h3>
+
+<p><img src="QResponse_Mobility_Example.png" alt="QResponse Mobility Example" style="float: none;"/></p>
+
+<p><strong>Guidance and Notes:</strong></p>
+<ol>
+  <li>The ‘questionnaire’ field is the URL pointing to the file of the questionnaire that defines and organizes the questions for which answers are being provided.</li>
+  <li>Each ‘linkId’ field should match the ‘linkId’ of the corresponding section title or question from the questionnaire.</li>
+  <li>The nesting structure of the ‘item’ fields should correspond to the nesting structure as showed in the questionnaire.</li>
+</ol>
+
+<h3 id="functionalperformancecollection--cam-example">FunctionalPerformanceCollection – CAM Example</h3>
+
+<p><img src="BCS_CAM_Example.png" alt="BCS CAM Example" style="float: none;"/></p>
+
+<p><strong>Guidance and Notes:</strong></p>
+<ol>
+  <li>Here is how the ‘event-location’ extension is used to point to a FHIR Location resource to indicate where the observation event occurred.</li>
+  <li>Use the right LOINC code to indicate the particular kind of cognitive assessment. In this case the LOINC code ‘86585-7’ is used to indicate ‘Signs and Symptoms of Delirium (from CAM&copy;)’.</li>
+  <li>The ‘category’ field should contain the value ‘survey’ for a PAC assessment.</li>
+</ol>
+
+<h3 id="functionalperformancecollection--bims-example">FunctionalPerformanceCollection – BIMS Example</h3>
+
+<p><img src="BCS_BIMS_Example.png" alt="BCS BIMS Example" style="float: none;"/></p>
+
+<p><strong>Guidance and Notes:</strong></p>
+<ol>
+  <li>Use the right LOINC code to indicate the particular kind of cognitive assessment. In this case the LOINC code ‘52491-8’ is used to indicate ‘Brief Interview for Mental Status (BIMS)’.</li>
+  <li>Use multiple ‘performer’ fields to provide references to FHIR Practitioner, PractitionerRole, and Organization resource instances.</li>
+</ol>
+
+<h3 id="functionalperformancecollection--moca-example">FunctionalPerformanceCollection – MoCA Example</h3>
+
+<p><img src="BCS_MOCA_Example.png" alt="BCS MOCA Example" style="float: none;"/></p>
+
+<p><strong>Guidance and Notes:</strong></p>
+<ol>
+  <li>Use the right LOINC code to indicate the particular kind of cognitive assessment. In this case the LOINC code ‘52491-8’ is used to indicate ‘Montreal Cognitive Assessment [MoCA]’.</li>
+  <li>Use the ‘value’ field of type CodeableConcept to store the total score of the MoCA assessment.</li>
+</ol>
+
+<h3 id="functionalperformancecollection--phq-9-two-column-example">FunctionalPerformanceCollection – PHQ-9 Two-Column Example</h3>
+
+<p><img src="BCS_PHQ9_Example.png" alt="BCS PHQ9 Example" style="float: none;"/></p>
+
+<p><strong>Guidance and Notes:</strong></p>
+<ol>
+  <li>Use the right LOINC code to indicate the particular kind of cognitive assessment. In this case the LOINC code ‘54635-8’ is used to indicate ‘Resident Mood Interview (PHQ-9)’.</li>
+  <li>An assessment with more than one observation questions would have a number of ‘hasMember’ elements, each of which would point to an observation in the assessment.</li>
+  <li>The observation questions of the PHQ-9 assessment are grouped under two headings. One way to determine which ‘hasMember’ elements (i.e. observation questions) should be grouped together and under which heading is to examine the CognitionQuestionnaireResponse resource, which has the nesting structure to show how the questions were organized.</li>
+</ol>
+
+<h3 id="functionalperformancecollection--mobility-admission-example">FunctionalPerformanceCollection – Mobility Admission Example</h3>
+
+<p><img src="BFS_Mobility_Admission_Example.png" alt="BFS Admission Example" style="float: none;"/></p>
+
+<p><strong>Guidance and Notes:</strong></p>
+<ol>
+  <li>Here is how the ‘event-location’ extension is used to point to a FHIR Location resource where the observation event occurred.</li>
+  <li>Use the right LOINC code to indicate the particular kind of functional assessment. In this case the LOINC code ‘88330-6’ is used to indicate ‘Mobility - Admission Performance’.</li>
+  <li>The ‘category’ field should contain the value ‘survey’ for a PAC assessment.</li>
+</ol>
+
+<h3 id="functionalperformancecollection--mobility-discharge-and-device-used-example">FunctionalPerformanceCollection – Mobility Discharge and Device Used Example</h3>
+
+<p><img src="BFS_Mobility_Discharge_and_DeviceUsed_Example.png" alt="BFS Mobility Discharge and DeviceUsed Example" style="float: none;"/></p>
+
+<p><strong>Guidance and Notes:</strong></p>
+<ol>
+  <li>Here is how the ‘device-patient-used’ extension is used to point to a UseOfDevice resource to specify a device used by the patient during assessment.</li>
+  <li>Use the right LOINC code to indicate the particular kind of functional assessment. In this case the LOINC code ‘88331-4’ is used to indicate ‘Mobility - Discharge Performance’.</li>
+  <li>Use the ‘performer’ field to reference a US Core PractitionerRole resource instance that specifies a practitioner and an organization.</li>
+</ol>
+
+<h3 id="functionalperformancecollection--self-care-admission-example">FunctionalPerformanceCollection – Self-Care Admission Example</h3>
+
+<p><img src="BFS_SelfCare_Admission_Example.png" alt="BFS SelfCare Admission Example" style="float: none;"/></p>
+
+<p><strong>Guidance and Notes:</strong></p>
+<ol>
+  <li>Use the right LOINC code to indicate the particular kind of functional assessment. In this case the LOINC code ‘83233-7’ is used to indicate ‘Self-Care - Admission Performance’.</li>
+  <li>An assessment with more than one observation questions would have a number of ‘hasMember’ elements, each of which would point to an observation in the assessment.</li>
+  <li>The ‘derivedFrom’ points back to the PACIOfunctionalQuestionaireResponse resource, which provides context and structure for the observation-based information.</li>
+</ol>
+
+<h3 id="functionalperformancenarrativehistoryofstatus--narrative-history-of-status-example">FunctionalPerformanceNarrativeHistoryOfStatus – Narrative History of Status Example</h3>
+
+<p><a name="l581">​</a><img src="Narrative_History_Of_Example.png" alt="Narrative History of Status Example" style="float: none;"/></p>
+
+<p><strong>Guidance and Notes:</strong></p>
+<ol>
+  <li>Use the extension to provide indication of ‘independent’ vs. ‘assistance needed’.</li>
+  <li>Text summary of the prior level of cognitive function for the patient.</li>
+</ol>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/patientcare">HL7 Patient Care Work Group</a>.  Package hl7.fhir.us.pacio-fp#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 19, 2022 12:58-0400">2022-04-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/pacio-fp/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
+                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change</a>
+          
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

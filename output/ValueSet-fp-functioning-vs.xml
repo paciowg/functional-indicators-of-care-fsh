@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fp-functioning-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="http://hl7.org/fhir/R4/valueset-observation-category.html">http://hl7.org/fhir/ValueSet/observation-category</a></li><li>Include all codes defined in <a href="CodeSystem-fp-functioning-cs.html"><code>http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-functioning-cs</code></a></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/pacio-fp/ValueSet/fp-functioning-vs"/>
+  <version value="1.0.0"/>
+  <name value="FunctionalPerformanceFunctioningVS"/>
+  <title value="Functional Performance Functioning Category Value Set"/>
+  <status value="active"/>
+  <date value="2022-04-19T12:58:34-04:00"/>
+  <publisher value="HL7 Patient Care Work Group"/>
+  <contact>
+    <name value="HL7 Patient Care Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="patientcare@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PACIO project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@pacioproject.org"/>
+    </telecom>
+  </contact>
+  <description value="Codes for the classification of patient observation. This is an extension of the ObservationCategoryCodes value set"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <valueSet value="http://hl7.org/fhir/ValueSet/observation-category"/>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-functioning-cs"/>
+    </include>
+  </compose>
+</ValueSet>

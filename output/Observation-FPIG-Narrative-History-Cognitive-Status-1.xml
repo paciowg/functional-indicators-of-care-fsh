@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="FPIG-Narrative-History-Cognitive-Status-1"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/pacio-fp/StructureDefinition/fp-narrative-history-of-status"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "FPIG-Narrative-History-Cognitive-Status-1" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fp-narrative-history-of-status.html">Functional Performance Narrative History of Status</a></p></div><p><b>ObservationEventLocation</b>: <a href="Location-FPIG-provider-org-loc-01.html">Location/FPIG-provider-org-loc-01</a> "Primary Care INC."</p><p><b>AssistanceRequired</b>: Independent - Patient completed the activities by him/herself, with or without an assistive device, with no assistance from a helper. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#LA11539-6)</span></p><p><b>status</b>: final</p><p><b>category</b>: Functioning <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-fp-functioning-cs.html">Functional Performance Functioning Category Code System</a>#functioning)</span></p><p><b>code</b>: History of Cognitive Function Narrative <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#11332-4)</span></p><p><b>subject</b>: <a href="Patient-FPIG-patientBSJ1.html">Patient/FPIG-patientBSJ1</a> " SMITH-JOHNSON"</p><p><b>effective</b>: 2019-07-01 --&gt; 2020-11-30</p><p><b>performer</b>: <a href="PractitionerRole-FPIG-provider-role-pcp.html">PractitionerRole/FPIG-provider-role-pcp</a></p><p><b>value</b>: Alert and oriented x 3. She is independent in household finances, social and community activities, coeherent and appropriate communication. Appropriate attire for location and weather.</p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/pacio-fp/StructureDefinition/event-location">
+    <valueReference>
+      <reference value="Location/FPIG-provider-org-loc-01"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/pacio-fp/StructureDefinition/assistance-required">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LA11539-6"/>
+        <display value="Independent - Patient completed the activities by him/herself, with or without an assistive device, with no assistance from a helper."/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-functioning-cs"/>
+      <code value="functioning"/>
+      <display value="Functioning"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11332-4"/>
+      <display value="History of Cognitive Function Narrative"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/FPIG-patientBSJ1"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2019-07-01"/>
+    <end value="2020-11-30"/>
+  </effectivePeriod>
+  <performer>
+    <reference value="PractitionerRole/FPIG-provider-role-pcp"/>
+  </performer>
+  <valueString value="Alert and oriented x 3. She is independent in household finances, social and community activities, coeherent and appropriate communication. Appropriate attire for location and weather."/>
+</Observation>

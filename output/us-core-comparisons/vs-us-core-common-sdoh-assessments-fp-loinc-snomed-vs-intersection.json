@@ -1,0 +1,15 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "222ca642-335e-467a-8a98-3899944a86a9-57",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/222ca642-335e-467a-8a98-3899944a86a9-57",
+  "name" : "IntersectionUSCoreCommonSDOHAssessmentsAndFunctionalPerformanceLOINCSNOMEDVS",
+  "title" : "Intersection of US Core Common SDOH Assessments ValueSet And Functional Performance ValueSet LOINC SNOMED",
+  "status" : "active",
+  "date" : "2022-04-19T12:58:43-04:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }]
+}
