@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "222ca642-335e-467a-8a98-3899944a86a9-33",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/222ca642-335e-467a-8a98-3899944a86a9-33",
+  "id" : "c273846d-5c59-455d-b69d-6adf126aabd5-33",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c273846d-5c59-455d-b69d-6adf126aabd5-33",
   "name" : "IntersectionUSCoreHeadCircumferenceProfileAndFunctionalPerformanceCollection",
   "title" : "Intersection of US Core Head Circumference Profile And Functional Performance Collection",
   "status" : "active",
-  "date" : "2022-04-19T12:58:43-04:00",
+  "date" : "2022-04-26T11:43:56-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -578,7 +578,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/222ca642-335e-467a-8a98-3899944a86a9-6"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c273846d-5c59-455d-b69d-6adf126aabd5-6"
       },
       "mapping" : [{
         "identity" : "workflow",

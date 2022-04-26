@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PACIOFunctionalPerformanceImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "PACIO Functional Performance Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-04-19T12:58:34-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-04-26T11:43:49-04:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Patient Care Work Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;

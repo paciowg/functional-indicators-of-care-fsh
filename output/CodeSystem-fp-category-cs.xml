@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="fp-category-cs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs defines the following codes:</p><table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style="white-space:nowrap">body-functions<a name="fp-category-cs-body-functions"> </a></td><td>Body functions</td><td>Body functions are the physiological functions of body systems (including psychological functions). Impairments are problems in body function or structure as a significant deviation or loss. Broad ranges of percentages are provided for those cases in which calibrated assessment instruments or other standards are available to quantify the impairment in body function.</td></tr><tr><td>2</td><td style="white-space:nowrap">  mental-functions<a name="fp-category-cs-mental-functions"> </a></td><td>Mental functions</td><td>Functions of the brain: both global mental functions, such as consciousness, energy and drive, and specific mental functions, such as memory, language and calculation mental functions.</td></tr><tr><td>2</td><td style="white-space:nowrap">  sensory-functions-and-pain<a name="fp-category-cs-sensory-functions-and-pain"> </a></td><td>Sensory functions and pain</td><td>Functions of the senses, seeing, hearing, tasting and so on, as well as the sensation of pain.</td></tr><tr><td>2</td><td style="white-space:nowrap">  voice-and-speech-functions<a name="fp-category-cs-voice-and-speech-functions"> </a></td><td>Voice and speech functions</td><td>Functions of producing sounds and speech.</td></tr><tr><td>2</td><td style="white-space:nowrap">  cardio-heama-immuno-resp-functions<a name="fp-category-cs-cardio-heama-immuno-resp-functions"> </a></td><td>Functions of the cardiovascular, haematological, immunological and respiratory systems</td><td>Functions involved in the cardiovascular system (functions of the heart and blood vessels), the haematological and immunological systems (functions of blood production and immunity), and the respiratory system (functions of respiration and exercise tolerance).</td></tr><tr><td>2</td><td style="white-space:nowrap">  digestive-metabolic-endocrine-systems<a name="fp-category-cs-digestive-metabolic-endocrine-systems"> </a></td><td>Functions of the digestive, metabolic, endocrine systems</td><td>Functions of ingestion, digestion and elimination, as well as functions involved in metabolism and the endocrine glands.</td></tr><tr><td>2</td><td style="white-space:nowrap">  genitourinary-and-reproductive-functions<a name="fp-category-cs-genitourinary-and-reproductive-functions"> </a></td><td>Genitourinary and reproductive functions</td><td>Functions of urination and the reproductive functions, including sexual and procreative functions.</td></tr><tr><td>2</td><td style="white-space:nowrap">  neuromusculoskeletal-movement-functions<a name="fp-category-cs-neuromusculoskeletal-movement-functions"> </a></td><td>Neuromusculoskeletal and movement-related functions</td><td>Functions of movement and mobility, including functions of joints, bones, reflexes and muscles.</td></tr><tr><td>2</td><td style="white-space:nowrap">  skin-and-related-structure-functions<a name="fp-category-cs-skin-and-related-structure-functions"> </a></td><td>Functions of the skin and related structures</td><td>Functions of skin, nails and hair.</td></tr><tr><td>1</td><td style="white-space:nowrap">activities-and-participation<a name="fp-category-cs-activities-and-participation"> </a></td><td>Activities and Participation</td><td>Activity is the execution of a task or action by an individual. Participation is involvement in a life situation. Activity limitations are difficulties an individual may have in executing activities. Participation restrictions are problems an individual may experience in involvement in life situations.</td></tr><tr><td>2</td><td style="white-space:nowrap">  learning-and-applying-knowledge<a name="fp-category-cs-learning-and-applying-knowledge"> </a></td><td>Learning and applying knowledge</td><td>Learning, applying the knowledge that is learned, thinking, solving problems, and making decisions.</td></tr><tr><td>2</td><td style="white-space:nowrap">  general-tasks-and-demands<a name="fp-category-cs-general-tasks-and-demands"> </a></td><td>General tasks and demands</td><td>General aspects of carrying out single or multiple tasks, organizing routines and handling stress. These items can be used in conjunction with more specific tasks or actions to identify the underlying features of the execution of tasks under different circumstances.</td></tr><tr><td>2</td><td style="white-space:nowrap">  communication<a name="fp-category-cs-communication"> </a></td><td>Communication</td><td>General and specific features of communicating by language, signs and symbols, including receiving and producing messages, carrying on conversations, and using communication devices and techniques.</td></tr><tr><td>2</td><td style="white-space:nowrap">  mobility<a name="fp-category-cs-mobility"> </a></td><td>Mobility</td><td>Moving by changing body position or location or by transferring from one place to another, by carrying, moving or manipulating objects, by walking, running or climbing, and by using various forms of transportation.</td></tr><tr><td>2</td><td style="white-space:nowrap">  self-care<a name="fp-category-cs-self-care"> </a></td><td>Self-care</td><td>Caring for oneself, washing and drying oneself, caring for one's body and body parts, dressing, eating and drinking, and looking after one's health.</td></tr><tr><td>2</td><td style="white-space:nowrap">  domestic-life<a name="fp-category-cs-domestic-life"> </a></td><td>Domestic life</td><td>Carrying out domestic and everyday actions and tasks. Areas of domestic life include, caring for one's belongings and space, acquiring food, clothing and other necessities, household cleaning and repairing, caring for personal and other household objects, and assisting others.</td></tr><tr><td>2</td><td style="white-space:nowrap">  interpersonal-interactions-and-relationships<a name="fp-category-cs-interpersonal-interactions-and-relationships"> </a></td><td>Interpersonal interactions and relationships</td><td>Carrying out the actions and tasks required for basic and complex interactions with people (strangers, friends, relatives, family members and lovers) in a contextually and socially appropriate manner.</td></tr><tr><td>2</td><td style="white-space:nowrap">  major-life-areas<a name="fp-category-cs-major-life-areas"> </a></td><td>Major life areas</td><td>Carrying out the tasks and actions required to engage in education, work and employment and to conduct economic transactions.</td></tr><tr><td>2</td><td style="white-space:nowrap">  community-social-and-civic-life<a name="fp-category-cs-community-social-and-civic-life"> </a></td><td>Community, social and civic life</td><td>Actions and tasks required to engage in organized social life outside the family, in community, social and civic areas of life.</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs defines the following codes:</p><table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style="white-space:nowrap">body-functions<a name="fp-category-cs-body-functions"> </a></td><td>Body functions</td><td>Body functions are the physiological functions of body systems (including psychological functions). Impairments are problems in body function or structure as a significant deviation or loss. Broad ranges of percentages are provided for those cases in which calibrated assessment instruments or other standards are available to quantify the impairment in body function.</td></tr><tr><td>2</td><td style="white-space:nowrap">  mental-functions<a name="fp-category-cs-mental-functions"> </a></td><td>Mental functions</td><td>Functions of the brain: both global mental functions, such as consciousness, energy and drive, and specific mental functions, such as memory, language and calculation mental functions.</td></tr><tr><td>2</td><td style="white-space:nowrap">  sensory-functions-and-pain<a name="fp-category-cs-sensory-functions-and-pain"> </a></td><td>Sensory functions and pain</td><td>Functions of the senses, seeing, hearing, tasting and so on, as well as the sensation of pain.</td></tr><tr><td>3</td><td style="white-space:nowrap">    seeing-and-related-functions<a name="fp-category-cs-seeing-and-related-functions"> </a></td><td>Seeing and related functions</td><td>Seeing and related functions.</td></tr><tr><td>3</td><td style="white-space:nowrap">    hearing-and-vestibular-functions<a name="fp-category-cs-hearing-and-vestibular-functions"> </a></td><td>Hearing and vestibular functions</td><td>Hearing and vestibular functions.</td></tr><tr><td>3</td><td style="white-space:nowrap">    additional-sensory-functions<a name="fp-category-cs-additional-sensory-functions"> </a></td><td>Additional sensory functions</td><td>Additional sensory functions.</td></tr><tr><td>3</td><td style="white-space:nowrap">    pain<a name="fp-category-cs-pain"> </a></td><td>Pain</td><td>Pain</td></tr><tr><td>2</td><td style="white-space:nowrap">  voice-and-speech-functions<a name="fp-category-cs-voice-and-speech-functions"> </a></td><td>Voice and speech functions</td><td>Functions of producing sounds and speech.</td></tr><tr><td>2</td><td style="white-space:nowrap">  cardio-heama-immuno-resp-functions<a name="fp-category-cs-cardio-heama-immuno-resp-functions"> </a></td><td>Functions of the cardiovascular, haematological, immunological and respiratory systems</td><td>Functions involved in the cardiovascular system (functions of the heart and blood vessels), the haematological and immunological systems (functions of blood production and immunity), and the respiratory system (functions of respiration and exercise tolerance).</td></tr><tr><td>2</td><td style="white-space:nowrap">  digestive-metabolic-endocrine-systems<a name="fp-category-cs-digestive-metabolic-endocrine-systems"> </a></td><td>Functions of the digestive, metabolic, endocrine systems</td><td>Functions of ingestion, digestion and elimination, as well as functions involved in metabolism and the endocrine glands.</td></tr><tr><td>3</td><td style="white-space:nowrap">    functions-related-to-the-digestive-system<a name="fp-category-cs-functions-related-to-the-digestive-system"> </a></td><td>Functions related to the digestive system</td><td>Functions related to the digestive system.</td></tr><tr><td>4</td><td style="white-space:nowrap">      ingestion-functions<a name="fp-category-cs-ingestion-functions"> </a></td><td>Ingestion functions</td><td>Functions related to taking in and manipulating solids or liquids through the mouth into the body.</td></tr><tr><td>4</td><td style="white-space:nowrap">      digestive-functions<a name="fp-category-cs-digestive-functions"> </a></td><td>Digestive functions</td><td>Functions of transporting food through the gastrointestinal tract, breakdown of food and absorption of nutrients.</td></tr><tr><td>4</td><td style="white-space:nowrap">      assimilation-functions<a name="fp-category-cs-assimilation-functions"> </a></td><td>Assimilation functions</td><td>Functions by which nutrients are converted into components of the living body.</td></tr><tr><td>4</td><td style="white-space:nowrap">      defecation-functions<a name="fp-category-cs-defecation-functions"> </a></td><td>Defecation functions</td><td>Functions of elimination of wastes and undigested food as faeces and related functions.</td></tr><tr><td>4</td><td style="white-space:nowrap">      weight-maintenance-functions<a name="fp-category-cs-weight-maintenance-functions"> </a></td><td>Weight maintenance functions</td><td>Functions of maintaining appropriate body weight, including weight gain during the developmental period.</td></tr><tr><td>4</td><td style="white-space:nowrap">      sensations-associated-with-the-digestive-system<a name="fp-category-cs-sensations-associated-with-the-digestive-system"> </a></td><td>Sensations associated with the digestive system</td><td>Sensations arising from eating, drinking and related digestive functions.</td></tr><tr><td>2</td><td style="white-space:nowrap">  genitourinary-and-reproductive-functions<a name="fp-category-cs-genitourinary-and-reproductive-functions"> </a></td><td>Genitourinary and reproductive functions</td><td>Functions of urination and the reproductive functions, including sexual and procreative functions.</td></tr><tr><td>2</td><td style="white-space:nowrap">  neuromusculoskeletal-movement-functions<a name="fp-category-cs-neuromusculoskeletal-movement-functions"> </a></td><td>Neuromusculoskeletal and movement-related functions</td><td>Functions of movement and mobility, including functions of joints, bones, reflexes and muscles.</td></tr><tr><td>2</td><td style="white-space:nowrap">  skin-and-related-structure-functions<a name="fp-category-cs-skin-and-related-structure-functions"> </a></td><td>Functions of the skin and related structures</td><td>Functions of skin, nails and hair.</td></tr><tr><td>1</td><td style="white-space:nowrap">activities-and-participation<a name="fp-category-cs-activities-and-participation"> </a></td><td>Activities and Participation</td><td>Activity is the execution of a task or action by an individual. Participation is involvement in a life situation. Activity limitations are difficulties an individual may have in executing activities. Participation restrictions are problems an individual may experience in involvement in life situations.</td></tr><tr><td>2</td><td style="white-space:nowrap">  learning-and-applying-knowledge<a name="fp-category-cs-learning-and-applying-knowledge"> </a></td><td>Learning and applying knowledge</td><td>Learning, applying the knowledge that is learned, thinking, solving problems, and making decisions.</td></tr><tr><td>2</td><td style="white-space:nowrap">  general-tasks-and-demands<a name="fp-category-cs-general-tasks-and-demands"> </a></td><td>General tasks and demands</td><td>General aspects of carrying out single or multiple tasks, organizing routines and handling stress. These items can be used in conjunction with more specific tasks or actions to identify the underlying features of the execution of tasks under different circumstances.</td></tr><tr><td>2</td><td style="white-space:nowrap">  communication<a name="fp-category-cs-communication"> </a></td><td>Communication</td><td>General and specific features of communicating by language, signs and symbols, including receiving and producing messages, carrying on conversations, and using communication devices and techniques.</td></tr><tr><td>3</td><td style="white-space:nowrap">    communication-receiving<a name="fp-category-cs-communication-receiving"> </a></td><td>Communication - receiving</td><td>Communication - receiving.</td></tr><tr><td>3</td><td style="white-space:nowrap">    communication-producing<a name="fp-category-cs-communication-producing"> </a></td><td>Communication - producing</td><td>Communication - producing.</td></tr><tr><td>3</td><td style="white-space:nowrap">    conversation-and-use-of-communication-devices-and-techniques<a name="fp-category-cs-conversation-and-use-of-communication-devices-and-techniques"> </a></td><td>Conversation and use of communication devices and techniques</td><td>Conversation and use of communication devices and techniques.</td></tr><tr><td>2</td><td style="white-space:nowrap">  mobility<a name="fp-category-cs-mobility"> </a></td><td>Mobility</td><td>Moving by changing body position or location or by transferring from one place to another, by carrying, moving or manipulating objects, by walking, running or climbing, and by using various forms of transportation.</td></tr><tr><td>2</td><td style="white-space:nowrap">  self-care<a name="fp-category-cs-self-care"> </a></td><td>Self-care</td><td>Caring for oneself, washing and drying oneself, caring for one's body and body parts, dressing, eating and drinking, and looking after one's health.</td></tr><tr><td>2</td><td style="white-space:nowrap">  domestic-life<a name="fp-category-cs-domestic-life"> </a></td><td>Domestic life</td><td>Carrying out domestic and everyday actions and tasks. Areas of domestic life include, caring for one's belongings and space, acquiring food, clothing and other necessities, household cleaning and repairing, caring for personal and other household objects, and assisting others.</td></tr><tr><td>2</td><td style="white-space:nowrap">  interpersonal-interactions-and-relationships<a name="fp-category-cs-interpersonal-interactions-and-relationships"> </a></td><td>Interpersonal interactions and relationships</td><td>Carrying out the actions and tasks required for basic and complex interactions with people (strangers, friends, relatives, family members and lovers) in a contextually and socially appropriate manner.</td></tr><tr><td>2</td><td style="white-space:nowrap">  major-life-areas<a name="fp-category-cs-major-life-areas"> </a></td><td>Major life areas</td><td>Carrying out the tasks and actions required to engage in education, work and employment and to conduct economic transactions.</td></tr><tr><td>2</td><td style="white-space:nowrap">  community-social-and-civic-life<a name="fp-category-cs-community-social-and-civic-life"> </a></td><td>Community, social and civic life</td><td>Actions and tasks required to engage in organized social life outside the family, in community, social and civic areas of life.</td></tr></table></div>
   </text>
   <url value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs"/>
   <version value="1.0.0"/>
   <name value="FunctionalPerformanceCategoryCS"/>
   <title value="Functional Performance Category"/>
   <status value="active"/>
-  <date value="2022-04-19T12:58:34-04:00"/>
+  <date value="2022-04-26T11:43:49-04:00"/>
   <publisher value="HL7 Patient Care Work Group"/>
   <contact>
     <name value="HL7 Patient Care Work Group"/>
@@ -42,7 +42,7 @@
     </coding>
   </jurisdiction>
   <content value="complete"/>
-  <count value="19"/>
+  <count value="33"/>
   <concept>
     <code value="body-functions"/>
     <display value="Body functions"/>
@@ -56,6 +56,26 @@
       <code value="sensory-functions-and-pain"/>
       <display value="Sensory functions and pain"/>
       <definition value="Functions of the senses, seeing, hearing, tasting and so on, as well as the sensation of pain."/>
+      <concept>
+        <code value="seeing-and-related-functions"/>
+        <display value="Seeing and related functions"/>
+        <definition value="Seeing and related functions."/>
+      </concept>
+      <concept>
+        <code value="hearing-and-vestibular-functions"/>
+        <display value="Hearing and vestibular functions"/>
+        <definition value="Hearing and vestibular functions."/>
+      </concept>
+      <concept>
+        <code value="additional-sensory-functions"/>
+        <display value="Additional sensory functions"/>
+        <definition value="Additional sensory functions."/>
+      </concept>
+      <concept>
+        <code value="pain"/>
+        <display value="Pain"/>
+        <definition value="Pain"/>
+      </concept>
     </concept>
     <concept>
       <code value="voice-and-speech-functions"/>
@@ -71,6 +91,41 @@
       <code value="digestive-metabolic-endocrine-systems"/>
       <display value="Functions of the digestive, metabolic, endocrine systems"/>
       <definition value="Functions of ingestion, digestion and elimination, as well as functions involved in metabolism and the endocrine glands."/>
+      <concept>
+        <code value="functions-related-to-the-digestive-system"/>
+        <display value="Functions related to the digestive system"/>
+        <definition value="Functions related to the digestive system."/>
+        <concept>
+          <code value="ingestion-functions"/>
+          <display value="Ingestion functions"/>
+          <definition value="Functions related to taking in and manipulating solids or liquids through the mouth into the body."/>
+        </concept>
+        <concept>
+          <code value="digestive-functions"/>
+          <display value="Digestive functions"/>
+          <definition value="Functions of transporting food through the gastrointestinal tract, breakdown of food and absorption of nutrients."/>
+        </concept>
+        <concept>
+          <code value="assimilation-functions"/>
+          <display value="Assimilation functions"/>
+          <definition value="Functions by which nutrients are converted into components of the living body."/>
+        </concept>
+        <concept>
+          <code value="defecation-functions"/>
+          <display value="Defecation functions"/>
+          <definition value="Functions of elimination of wastes and undigested food as faeces and related functions."/>
+        </concept>
+        <concept>
+          <code value="weight-maintenance-functions"/>
+          <display value="Weight maintenance functions"/>
+          <definition value="Functions of maintaining appropriate body weight, including weight gain during the developmental period."/>
+        </concept>
+        <concept>
+          <code value="sensations-associated-with-the-digestive-system"/>
+          <display value="Sensations associated with the digestive system"/>
+          <definition value="Sensations arising from eating, drinking and related digestive functions."/>
+        </concept>
+      </concept>
     </concept>
     <concept>
       <code value="genitourinary-and-reproductive-functions"/>
@@ -106,6 +161,21 @@
       <code value="communication"/>
       <display value="Communication"/>
       <definition value="General and specific features of communicating by language, signs and symbols, including receiving and producing messages, carrying on conversations, and using communication devices and techniques."/>
+      <concept>
+        <code value="communication-receiving"/>
+        <display value="Communication - receiving"/>
+        <definition value="Communication - receiving."/>
+      </concept>
+      <concept>
+        <code value="communication-producing"/>
+        <display value="Communication - producing"/>
+        <definition value="Communication - producing."/>
+      </concept>
+      <concept>
+        <code value="conversation-and-use-of-communication-devices-and-techniques"/>
+        <display value="Conversation and use of communication devices and techniques"/>
+        <definition value="Conversation and use of communication devices and techniques."/>
+      </concept>
     </concept>
     <concept>
       <code value="mobility"/>

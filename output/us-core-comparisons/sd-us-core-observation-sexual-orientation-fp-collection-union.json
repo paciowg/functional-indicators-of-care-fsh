@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "222ca642-335e-467a-8a98-3899944a86a9-59",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/222ca642-335e-467a-8a98-3899944a86a9-59",
+  "id" : "c273846d-5c59-455d-b69d-6adf126aabd5-59",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c273846d-5c59-455d-b69d-6adf126aabd5-59",
   "name" : "UnionUSCoreSexualOrientationObservationProfileAndFunctionalPerformanceCollection",
   "title" : "Union of US Core Sexual Orientation Observation Profile And Functional Performance Collection",
   "status" : "active",
-  "date" : "2022-04-19T12:58:43-04:00",
+  "date" : "2022-04-26T11:43:56-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -569,7 +569,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/222ca642-335e-467a-8a98-3899944a86a9-50"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c273846d-5c59-455d-b69d-6adf126aabd5-50"
       },
       "mapping" : [{
         "identity" : "workflow",

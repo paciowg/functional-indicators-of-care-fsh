@@ -3,7 +3,7 @@
   "name": "PACIOFunctionalPerformanceImplementationGuide",
   "package-id": "hl7.fhir.us.pacio-fp",
   "ig-ver": "1.0.0",
-  "date": "Tue, 19 Apr, 2022 12:58:34 -0400",
+  "date": "Tue, 26 Apr, 2022 11:43:49 -0400",
   "errs": 500,
   "warnings": 25,
   "hints": 83,

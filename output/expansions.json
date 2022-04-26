@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "7b81686f-4f55-42f8-99d5-f039b8695c9c",
+  "id" : "b7a9db22-1292-40d0-9355-d0017d955729",
   "meta" : {
-    "lastUpdated" : "2022-04-19T12:58:34.779-04:00"
+    "lastUpdated" : "2022-04-26T11:43:49.170-04:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "FunctionalPerformanceFunctioningVS",
       "title" : "Functional Performance Functioning Category Value Set",
       "status" : "active",
-      "date" : "2022-04-19T12:58:34-04:00",
+      "date" : "2022-04-26T11:43:49-04:00",
       "publisher" : "HL7 Patient Care Work Group",
       "contact" : [{
         "name" : "HL7 Patient Care Work Group",
@@ -51,8 +51,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ab273cc9-cc52-4041-9853-9b6cdcad6b05",
-        "timestamp" : "2022-04-19T12:58:53-04:00",
+        "identifier" : "urn:uuid:3fbe1266-fbfc-453a-9e1e-ff3b67f7f652",
+        "timestamp" : "2022-04-26T11:44:06-04:00",
         "total" : 10,
         "parameter" : [{
           "name" : "excludeNested",
@@ -130,14 +130,14 @@
       "id" : "fp-category-vs",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 19 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-fp-category-cs.html\">Functional Performance Category v1.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-fp-category-cs.html\"><code>http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs</code></a></p><table class=\"codes\"><tr><td><b>Level</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-body-functions\"> </a>1</td><td style=\"white-space:nowrap\">  <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-body-functions\">body-functions</a></td><td>Body functions</td><td>Body functions are the physiological functions of body systems (including psychological functions). Impairments are problems in body function or structure as a significant deviation or loss. Broad ranges of percentages are provided for those cases in which calibrated assessment instruments or other standards are available to quantify the impairment in body function.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-mental-functions\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-mental-functions\">mental-functions</a></td><td>Mental functions</td><td>Functions of the brain: both global mental functions, such as consciousness, energy and drive, and specific mental functions, such as memory, language and calculation mental functions.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-sensory-functions-and-pain\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-sensory-functions-and-pain\">sensory-functions-and-pain</a></td><td>Sensory functions and pain</td><td>Functions of the senses, seeing, hearing, tasting and so on, as well as the sensation of pain.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-voice-and-speech-functions\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-voice-and-speech-functions\">voice-and-speech-functions</a></td><td>Voice and speech functions</td><td>Functions of producing sounds and speech.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-cardio-heama-immuno-resp-functions\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-cardio-heama-immuno-resp-functions\">cardio-heama-immuno-resp-functions</a></td><td>Functions of the cardiovascular, haematological, immunological and respiratory systems</td><td>Functions involved in the cardiovascular system (functions of the heart and blood vessels), the haematological and immunological systems (functions of blood production and immunity), and the respiratory system (functions of respiration and exercise tolerance).</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-digestive-metabolic-endocrine-systems\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-digestive-metabolic-endocrine-systems\">digestive-metabolic-endocrine-systems</a></td><td>Functions of the digestive, metabolic, endocrine systems</td><td>Functions of ingestion, digestion and elimination, as well as functions involved in metabolism and the endocrine glands.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-genitourinary-and-reproductive-functions\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-genitourinary-and-reproductive-functions\">genitourinary-and-reproductive-functions</a></td><td>Genitourinary and reproductive functions</td><td>Functions of urination and the reproductive functions, including sexual and procreative functions.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-neuromusculoskeletal-movement-functions\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-neuromusculoskeletal-movement-functions\">neuromusculoskeletal-movement-functions</a></td><td>Neuromusculoskeletal and movement-related functions</td><td>Functions of movement and mobility, including functions of joints, bones, reflexes and muscles.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-skin-and-related-structure-functions\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-skin-and-related-structure-functions\">skin-and-related-structure-functions</a></td><td>Functions of the skin and related structures</td><td>Functions of skin, nails and hair.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-activities-and-participation\"> </a>1</td><td style=\"white-space:nowrap\">  <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-activities-and-participation\">activities-and-participation</a></td><td>Activities and Participation</td><td>Activity is the execution of a task or action by an individual. Participation is involvement in a life situation. Activity limitations are difficulties an individual may have in executing activities. Participation restrictions are problems an individual may experience in involvement in life situations.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-learning-and-applying-knowledge\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-learning-and-applying-knowledge\">learning-and-applying-knowledge</a></td><td>Learning and applying knowledge</td><td>Learning, applying the knowledge that is learned, thinking, solving problems, and making decisions.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-general-tasks-and-demands\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-general-tasks-and-demands\">general-tasks-and-demands</a></td><td>General tasks and demands</td><td>General aspects of carrying out single or multiple tasks, organizing routines and handling stress. These items can be used in conjunction with more specific tasks or actions to identify the underlying features of the execution of tasks under different circumstances.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-communication\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-communication\">communication</a></td><td>Communication</td><td>General and specific features of communicating by language, signs and symbols, including receiving and producing messages, carrying on conversations, and using communication devices and techniques.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-mobility\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-mobility\">mobility</a></td><td>Mobility</td><td>Moving by changing body position or location or by transferring from one place to another, by carrying, moving or manipulating objects, by walking, running or climbing, and by using various forms of transportation.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-self-care\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-self-care\">self-care</a></td><td>Self-care</td><td>Caring for oneself, washing and drying oneself, caring for one's body and body parts, dressing, eating and drinking, and looking after one's health.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-domestic-life\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-domestic-life\">domestic-life</a></td><td>Domestic life</td><td>Carrying out domestic and everyday actions and tasks. Areas of domestic life include, caring for one's belongings and space, acquiring food, clothing and other necessities, household cleaning and repairing, caring for personal and other household objects, and assisting others.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-interpersonal-interactions-and-relationships\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-interpersonal-interactions-and-relationships\">interpersonal-interactions-and-relationships</a></td><td>Interpersonal interactions and relationships</td><td>Carrying out the actions and tasks required for basic and complex interactions with people (strangers, friends, relatives, family members and lovers) in a contextually and socially appropriate manner.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-major-life-areas\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-major-life-areas\">major-life-areas</a></td><td>Major life areas</td><td>Carrying out the tasks and actions required to engage in education, work and employment and to conduct economic transactions.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-community-social-and-civic-life\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-community-social-and-civic-life\">community-social-and-civic-life</a></td><td>Community, social and civic life</td><td>Actions and tasks required to engage in organized social life outside the family, in community, social and civic areas of life.</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 33 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-fp-category-cs.html\">Functional Performance Category v1.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-fp-category-cs.html\"><code>http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs</code></a></p><table class=\"codes\"><tr><td><b>Level</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-body-functions\"> </a>1</td><td style=\"white-space:nowrap\">  <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-body-functions\">body-functions</a></td><td>Body functions</td><td>Body functions are the physiological functions of body systems (including psychological functions). Impairments are problems in body function or structure as a significant deviation or loss. Broad ranges of percentages are provided for those cases in which calibrated assessment instruments or other standards are available to quantify the impairment in body function.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-mental-functions\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-mental-functions\">mental-functions</a></td><td>Mental functions</td><td>Functions of the brain: both global mental functions, such as consciousness, energy and drive, and specific mental functions, such as memory, language and calculation mental functions.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-sensory-functions-and-pain\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-sensory-functions-and-pain\">sensory-functions-and-pain</a></td><td>Sensory functions and pain</td><td>Functions of the senses, seeing, hearing, tasting and so on, as well as the sensation of pain.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-seeing-and-related-functions\"> </a>3</td><td style=\"white-space:nowrap\">      <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-seeing-and-related-functions\">seeing-and-related-functions</a></td><td>Seeing and related functions</td><td>Seeing and related functions.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-hearing-and-vestibular-functions\"> </a>3</td><td style=\"white-space:nowrap\">      <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-hearing-and-vestibular-functions\">hearing-and-vestibular-functions</a></td><td>Hearing and vestibular functions</td><td>Hearing and vestibular functions.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-additional-sensory-functions\"> </a>3</td><td style=\"white-space:nowrap\">      <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-additional-sensory-functions\">additional-sensory-functions</a></td><td>Additional sensory functions</td><td>Additional sensory functions.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-pain\"> </a>3</td><td style=\"white-space:nowrap\">      <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-pain\">pain</a></td><td>Pain</td><td>Pain</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-voice-and-speech-functions\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-voice-and-speech-functions\">voice-and-speech-functions</a></td><td>Voice and speech functions</td><td>Functions of producing sounds and speech.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-cardio-heama-immuno-resp-functions\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-cardio-heama-immuno-resp-functions\">cardio-heama-immuno-resp-functions</a></td><td>Functions of the cardiovascular, haematological, immunological and respiratory systems</td><td>Functions involved in the cardiovascular system (functions of the heart and blood vessels), the haematological and immunological systems (functions of blood production and immunity), and the respiratory system (functions of respiration and exercise tolerance).</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-digestive-metabolic-endocrine-systems\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-digestive-metabolic-endocrine-systems\">digestive-metabolic-endocrine-systems</a></td><td>Functions of the digestive, metabolic, endocrine systems</td><td>Functions of ingestion, digestion and elimination, as well as functions involved in metabolism and the endocrine glands.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-functions-related-to-the-digestive-system\"> </a>3</td><td style=\"white-space:nowrap\">      <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-functions-related-to-the-digestive-system\">functions-related-to-the-digestive-system</a></td><td>Functions related to the digestive system</td><td>Functions related to the digestive system.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-ingestion-functions\"> </a>4</td><td style=\"white-space:nowrap\">        <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-ingestion-functions\">ingestion-functions</a></td><td>Ingestion functions</td><td>Functions related to taking in and manipulating solids or liquids through the mouth into the body.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-digestive-functions\"> </a>4</td><td style=\"white-space:nowrap\">        <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-digestive-functions\">digestive-functions</a></td><td>Digestive functions</td><td>Functions of transporting food through the gastrointestinal tract, breakdown of food and absorption of nutrients.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-assimilation-functions\"> </a>4</td><td style=\"white-space:nowrap\">        <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-assimilation-functions\">assimilation-functions</a></td><td>Assimilation functions</td><td>Functions by which nutrients are converted into components of the living body.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-defecation-functions\"> </a>4</td><td style=\"white-space:nowrap\">        <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-defecation-functions\">defecation-functions</a></td><td>Defecation functions</td><td>Functions of elimination of wastes and undigested food as faeces and related functions.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-weight-maintenance-functions\"> </a>4</td><td style=\"white-space:nowrap\">        <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-weight-maintenance-functions\">weight-maintenance-functions</a></td><td>Weight maintenance functions</td><td>Functions of maintaining appropriate body weight, including weight gain during the developmental period.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-sensations-associated-with-the-digestive-system\"> </a>4</td><td style=\"white-space:nowrap\">        <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-sensations-associated-with-the-digestive-system\">sensations-associated-with-the-digestive-system</a></td><td>Sensations associated with the digestive system</td><td>Sensations arising from eating, drinking and related digestive functions.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-genitourinary-and-reproductive-functions\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-genitourinary-and-reproductive-functions\">genitourinary-and-reproductive-functions</a></td><td>Genitourinary and reproductive functions</td><td>Functions of urination and the reproductive functions, including sexual and procreative functions.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-neuromusculoskeletal-movement-functions\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-neuromusculoskeletal-movement-functions\">neuromusculoskeletal-movement-functions</a></td><td>Neuromusculoskeletal and movement-related functions</td><td>Functions of movement and mobility, including functions of joints, bones, reflexes and muscles.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-skin-and-related-structure-functions\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-skin-and-related-structure-functions\">skin-and-related-structure-functions</a></td><td>Functions of the skin and related structures</td><td>Functions of skin, nails and hair.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-activities-and-participation\"> </a>1</td><td style=\"white-space:nowrap\">  <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-activities-and-participation\">activities-and-participation</a></td><td>Activities and Participation</td><td>Activity is the execution of a task or action by an individual. Participation is involvement in a life situation. Activity limitations are difficulties an individual may have in executing activities. Participation restrictions are problems an individual may experience in involvement in life situations.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-learning-and-applying-knowledge\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-learning-and-applying-knowledge\">learning-and-applying-knowledge</a></td><td>Learning and applying knowledge</td><td>Learning, applying the knowledge that is learned, thinking, solving problems, and making decisions.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-general-tasks-and-demands\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-general-tasks-and-demands\">general-tasks-and-demands</a></td><td>General tasks and demands</td><td>General aspects of carrying out single or multiple tasks, organizing routines and handling stress. These items can be used in conjunction with more specific tasks or actions to identify the underlying features of the execution of tasks under different circumstances.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-communication\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-communication\">communication</a></td><td>Communication</td><td>General and specific features of communicating by language, signs and symbols, including receiving and producing messages, carrying on conversations, and using communication devices and techniques.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-communication-receiving\"> </a>3</td><td style=\"white-space:nowrap\">      <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-communication-receiving\">communication-receiving</a></td><td>Communication - receiving</td><td>Communication - receiving.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-communication-producing\"> </a>3</td><td style=\"white-space:nowrap\">      <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-communication-producing\">communication-producing</a></td><td>Communication - producing</td><td>Communication - producing.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-conversation-and-use-of-communication-devices-and-techniques\"> </a>3</td><td style=\"white-space:nowrap\">      <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-conversation-and-use-of-communication-devices-and-techniques\">conversation-and-use-of-communication-devices-and-techniques</a></td><td>Conversation and use of communication devices and techniques</td><td>Conversation and use of communication devices and techniques.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-mobility\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-mobility\">mobility</a></td><td>Mobility</td><td>Moving by changing body position or location or by transferring from one place to another, by carrying, moving or manipulating objects, by walking, running or climbing, and by using various forms of transportation.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-self-care\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-self-care\">self-care</a></td><td>Self-care</td><td>Caring for oneself, washing and drying oneself, caring for one's body and body parts, dressing, eating and drinking, and looking after one's health.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-domestic-life\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-domestic-life\">domestic-life</a></td><td>Domestic life</td><td>Carrying out domestic and everyday actions and tasks. Areas of domestic life include, caring for one's belongings and space, acquiring food, clothing and other necessities, household cleaning and repairing, caring for personal and other household objects, and assisting others.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-interpersonal-interactions-and-relationships\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-interpersonal-interactions-and-relationships\">interpersonal-interactions-and-relationships</a></td><td>Interpersonal interactions and relationships</td><td>Carrying out the actions and tasks required for basic and complex interactions with people (strangers, friends, relatives, family members and lovers) in a contextually and socially appropriate manner.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-major-life-areas\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-major-life-areas\">major-life-areas</a></td><td>Major life areas</td><td>Carrying out the tasks and actions required to engage in education, work and employment and to conduct economic transactions.</td></tr><tr><td><a name=\"http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-community-social-and-civic-life\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-fp-category-cs.html#fp-category-cs-community-social-and-civic-life\">community-social-and-civic-life</a></td><td>Community, social and civic life</td><td>Actions and tasks required to engage in organized social life outside the family, in community, social and civic areas of life.</td></tr></table></div>"
       },
       "url" : "http://hl7.org/fhir/us/pacio-fp/ValueSet/fp-category-vs",
       "version" : "1.0.0",
       "name" : "FunctionalPerformanceCategoryVS",
       "title" : "Functional Performance Category Value Set",
       "status" : "active",
-      "date" : "2022-04-19T12:58:34-04:00",
+      "date" : "2022-04-26T11:43:49-04:00",
       "publisher" : "HL7 Patient Care Work Group",
       "contact" : [{
         "name" : "HL7 Patient Care Work Group",
@@ -169,9 +169,9 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7f26d453-aa44-4c5e-8ed2-05730ccd7d07",
-        "timestamp" : "2022-04-19T12:58:54-04:00",
-        "total" : 19,
+        "identifier" : "urn:uuid:bfc62352-96aa-420f-8b89-32b101b1fa6d",
+        "timestamp" : "2022-04-26T11:44:07-04:00",
+        "total" : 33,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -192,7 +192,27 @@
           {
             "system" : "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs",
             "code" : "sensory-functions-and-pain",
-            "display" : "Sensory functions and pain"
+            "display" : "Sensory functions and pain",
+            "contains" : [{
+              "system" : "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs",
+              "code" : "seeing-and-related-functions",
+              "display" : "Seeing and related functions"
+            },
+            {
+              "system" : "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs",
+              "code" : "hearing-and-vestibular-functions",
+              "display" : "Hearing and vestibular functions"
+            },
+            {
+              "system" : "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs",
+              "code" : "additional-sensory-functions",
+              "display" : "Additional sensory functions"
+            },
+            {
+              "system" : "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs",
+              "code" : "pain",
+              "display" : "Pain"
+            }]
           },
           {
             "system" : "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs",
@@ -207,7 +227,42 @@
           {
             "system" : "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs",
             "code" : "digestive-metabolic-endocrine-systems",
-            "display" : "Functions of the digestive, metabolic, endocrine systems"
+            "display" : "Functions of the digestive, metabolic, endocrine systems",
+            "contains" : [{
+              "system" : "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs",
+              "code" : "functions-related-to-the-digestive-system",
+              "display" : "Functions related to the digestive system",
+              "contains" : [{
+                "system" : "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs",
+                "code" : "ingestion-functions",
+                "display" : "Ingestion functions"
+              },
+              {
+                "system" : "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs",
+                "code" : "digestive-functions",
+                "display" : "Digestive functions"
+              },
+              {
+                "system" : "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs",
+                "code" : "assimilation-functions",
+                "display" : "Assimilation functions"
+              },
+              {
+                "system" : "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs",
+                "code" : "defecation-functions",
+                "display" : "Defecation functions"
+              },
+              {
+                "system" : "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs",
+                "code" : "weight-maintenance-functions",
+                "display" : "Weight maintenance functions"
+              },
+              {
+                "system" : "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs",
+                "code" : "sensations-associated-with-the-digestive-system",
+                "display" : "Sensations associated with the digestive system"
+              }]
+            }]
           },
           {
             "system" : "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs",
@@ -242,7 +297,22 @@
           {
             "system" : "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs",
             "code" : "communication",
-            "display" : "Communication"
+            "display" : "Communication",
+            "contains" : [{
+              "system" : "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs",
+              "code" : "communication-receiving",
+              "display" : "Communication - receiving"
+            },
+            {
+              "system" : "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs",
+              "code" : "communication-producing",
+              "display" : "Communication - producing"
+            },
+            {
+              "system" : "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs",
+              "code" : "conversation-and-use-of-communication-devices-and-techniques",
+              "display" : "Conversation and use of communication devices and techniques"
+            }]
           },
           {
             "system" : "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs",
@@ -292,7 +362,7 @@
       "name" : "FunctionalPerformanceLOINCSNOMEDVS",
       "title" : "Functional Performance ValueSet LOINC SNOMED",
       "status" : "active",
-      "date" : "2022-04-19T12:58:34-04:00",
+      "date" : "2022-04-26T11:43:49-04:00",
       "publisher" : "HL7 Patient Care Work Group",
       "contact" : [{
         "name" : "HL7 Patient Care Work Group",
@@ -328,8 +398,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:f19e1597-4b77-4609-8e54-ee970dc2f74d",
-        "timestamp" : "2022-04-19T12:59:00-04:00",
+        "identifier" : "urn:uuid:7c108745-2773-4d15-b9b1-071ae43373bd",
+        "timestamp" : "2022-04-26T11:44:12-04:00",
         "total" : 1000,
         "parameter" : [{
           "name" : "excludeNested",

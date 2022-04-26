@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="7b81686f-4f55-42f8-99d5-f039b8695c9c"/>
+  <id value="b7a9db22-1292-40d0-9355-d0017d955729"/>
   <meta>
-    <lastUpdated value="2022-04-19T12:58:34.779-04:00"/>
+    <lastUpdated value="2022-04-26T11:43:49.170-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -142,7 +142,7 @@
         <name value="FunctionalPerformanceFunctioningVS"/>
         <title value="Functional Performance Functioning Category Value Set"/>
         <status value="active"/>
-        <date value="2022-04-19T12:58:34-04:00"/>
+        <date value="2022-04-26T11:43:49-04:00"/>
         <publisher value="HL7 Patient Care Work Group"/>
         <contact>
           <name value="HL7 Patient Care Work Group"/>
@@ -174,8 +174,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ab273cc9-cc52-4041-9853-9b6cdcad6b05"/>
-          <timestamp value="2022-04-19T12:58:53-04:00"/>
+          <identifier value="urn:uuid:3fbe1266-fbfc-453a-9e1e-ff3b67f7f652"/>
+          <timestamp value="2022-04-26T11:44:06-04:00"/>
           <total value="10"/>
           <parameter>
             <name value="excludeNested"/>
@@ -255,7 +255,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 19 concepts</p>
+            <p>This value set contains 33 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-fp-category-cs.html">Functional Performance Category v1.0.0 (CodeSystem)</a>
             </p>
@@ -311,6 +311,46 @@
               </tr>
               <tr>
                 <td>
+                  <a name="http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-seeing-and-related-functions"> </a>3
+                </td>
+                <td style="white-space:nowrap">      
+                  <a href="CodeSystem-fp-category-cs.html#fp-category-cs-seeing-and-related-functions">seeing-and-related-functions</a>
+                </td>
+                <td>Seeing and related functions</td>
+                <td>Seeing and related functions.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-hearing-and-vestibular-functions"> </a>3
+                </td>
+                <td style="white-space:nowrap">      
+                  <a href="CodeSystem-fp-category-cs.html#fp-category-cs-hearing-and-vestibular-functions">hearing-and-vestibular-functions</a>
+                </td>
+                <td>Hearing and vestibular functions</td>
+                <td>Hearing and vestibular functions.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-additional-sensory-functions"> </a>3
+                </td>
+                <td style="white-space:nowrap">      
+                  <a href="CodeSystem-fp-category-cs.html#fp-category-cs-additional-sensory-functions">additional-sensory-functions</a>
+                </td>
+                <td>Additional sensory functions</td>
+                <td>Additional sensory functions.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-pain"> </a>3
+                </td>
+                <td style="white-space:nowrap">      
+                  <a href="CodeSystem-fp-category-cs.html#fp-category-cs-pain">pain</a>
+                </td>
+                <td>Pain</td>
+                <td>Pain</td>
+              </tr>
+              <tr>
+                <td>
                   <a name="http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-voice-and-speech-functions"> </a>2
                 </td>
                 <td style="white-space:nowrap">    
@@ -338,6 +378,76 @@
                 </td>
                 <td>Functions of the digestive, metabolic, endocrine systems</td>
                 <td>Functions of ingestion, digestion and elimination, as well as functions involved in metabolism and the endocrine glands.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-functions-related-to-the-digestive-system"> </a>3
+                </td>
+                <td style="white-space:nowrap">      
+                  <a href="CodeSystem-fp-category-cs.html#fp-category-cs-functions-related-to-the-digestive-system">functions-related-to-the-digestive-system</a>
+                </td>
+                <td>Functions related to the digestive system</td>
+                <td>Functions related to the digestive system.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-ingestion-functions"> </a>4
+                </td>
+                <td style="white-space:nowrap">        
+                  <a href="CodeSystem-fp-category-cs.html#fp-category-cs-ingestion-functions">ingestion-functions</a>
+                </td>
+                <td>Ingestion functions</td>
+                <td>Functions related to taking in and manipulating solids or liquids through the mouth into the body.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-digestive-functions"> </a>4
+                </td>
+                <td style="white-space:nowrap">        
+                  <a href="CodeSystem-fp-category-cs.html#fp-category-cs-digestive-functions">digestive-functions</a>
+                </td>
+                <td>Digestive functions</td>
+                <td>Functions of transporting food through the gastrointestinal tract, breakdown of food and absorption of nutrients.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-assimilation-functions"> </a>4
+                </td>
+                <td style="white-space:nowrap">        
+                  <a href="CodeSystem-fp-category-cs.html#fp-category-cs-assimilation-functions">assimilation-functions</a>
+                </td>
+                <td>Assimilation functions</td>
+                <td>Functions by which nutrients are converted into components of the living body.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-defecation-functions"> </a>4
+                </td>
+                <td style="white-space:nowrap">        
+                  <a href="CodeSystem-fp-category-cs.html#fp-category-cs-defecation-functions">defecation-functions</a>
+                </td>
+                <td>Defecation functions</td>
+                <td>Functions of elimination of wastes and undigested food as faeces and related functions.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-weight-maintenance-functions"> </a>4
+                </td>
+                <td style="white-space:nowrap">        
+                  <a href="CodeSystem-fp-category-cs.html#fp-category-cs-weight-maintenance-functions">weight-maintenance-functions</a>
+                </td>
+                <td>Weight maintenance functions</td>
+                <td>Functions of maintaining appropriate body weight, including weight gain during the developmental period.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-sensations-associated-with-the-digestive-system"> </a>4
+                </td>
+                <td style="white-space:nowrap">        
+                  <a href="CodeSystem-fp-category-cs.html#fp-category-cs-sensations-associated-with-the-digestive-system">sensations-associated-with-the-digestive-system</a>
+                </td>
+                <td>Sensations associated with the digestive system</td>
+                <td>Sensations arising from eating, drinking and related digestive functions.</td>
               </tr>
               <tr>
                 <td>
@@ -411,6 +521,36 @@
               </tr>
               <tr>
                 <td>
+                  <a name="http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-communication-receiving"> </a>3
+                </td>
+                <td style="white-space:nowrap">      
+                  <a href="CodeSystem-fp-category-cs.html#fp-category-cs-communication-receiving">communication-receiving</a>
+                </td>
+                <td>Communication - receiving</td>
+                <td>Communication - receiving.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-communication-producing"> </a>3
+                </td>
+                <td style="white-space:nowrap">      
+                  <a href="CodeSystem-fp-category-cs.html#fp-category-cs-communication-producing">communication-producing</a>
+                </td>
+                <td>Communication - producing</td>
+                <td>Communication - producing.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-conversation-and-use-of-communication-devices-and-techniques"> </a>3
+                </td>
+                <td style="white-space:nowrap">      
+                  <a href="CodeSystem-fp-category-cs.html#fp-category-cs-conversation-and-use-of-communication-devices-and-techniques">conversation-and-use-of-communication-devices-and-techniques</a>
+                </td>
+                <td>Conversation and use of communication devices and techniques</td>
+                <td>Conversation and use of communication devices and techniques.</td>
+              </tr>
+              <tr>
+                <td>
                   <a name="http---hl7.org-fhir-us-pacio-fp-CodeSystem-fp-category-cs-mobility"> </a>2
                 </td>
                 <td style="white-space:nowrap">    
@@ -477,7 +617,7 @@
         <name value="FunctionalPerformanceCategoryVS"/>
         <title value="Functional Performance Category Value Set"/>
         <status value="active"/>
-        <date value="2022-04-19T12:58:34-04:00"/>
+        <date value="2022-04-26T11:43:49-04:00"/>
         <publisher value="HL7 Patient Care Work Group"/>
         <contact>
           <name value="HL7 Patient Care Work Group"/>
@@ -509,9 +649,9 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7f26d453-aa44-4c5e-8ed2-05730ccd7d07"/>
-          <timestamp value="2022-04-19T12:58:54-04:00"/>
-          <total value="19"/>
+          <identifier value="urn:uuid:bfc62352-96aa-420f-8b89-32b101b1fa6d"/>
+          <timestamp value="2022-04-26T11:44:07-04:00"/>
+          <total value="33"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -533,6 +673,26 @@
               <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs"/>
               <code value="sensory-functions-and-pain"/>
               <display value="Sensory functions and pain"/>
+              <contains>
+                <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs"/>
+                <code value="seeing-and-related-functions"/>
+                <display value="Seeing and related functions"/>
+              </contains>
+              <contains>
+                <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs"/>
+                <code value="hearing-and-vestibular-functions"/>
+                <display value="Hearing and vestibular functions"/>
+              </contains>
+              <contains>
+                <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs"/>
+                <code value="additional-sensory-functions"/>
+                <display value="Additional sensory functions"/>
+              </contains>
+              <contains>
+                <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs"/>
+                <code value="pain"/>
+                <display value="Pain"/>
+              </contains>
             </contains>
             <contains>
               <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs"/>
@@ -548,6 +708,41 @@
               <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs"/>
               <code value="digestive-metabolic-endocrine-systems"/>
               <display value="Functions of the digestive, metabolic, endocrine systems"/>
+              <contains>
+                <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs"/>
+                <code value="functions-related-to-the-digestive-system"/>
+                <display value="Functions related to the digestive system"/>
+                <contains>
+                  <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs"/>
+                  <code value="ingestion-functions"/>
+                  <display value="Ingestion functions"/>
+                </contains>
+                <contains>
+                  <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs"/>
+                  <code value="digestive-functions"/>
+                  <display value="Digestive functions"/>
+                </contains>
+                <contains>
+                  <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs"/>
+                  <code value="assimilation-functions"/>
+                  <display value="Assimilation functions"/>
+                </contains>
+                <contains>
+                  <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs"/>
+                  <code value="defecation-functions"/>
+                  <display value="Defecation functions"/>
+                </contains>
+                <contains>
+                  <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs"/>
+                  <code value="weight-maintenance-functions"/>
+                  <display value="Weight maintenance functions"/>
+                </contains>
+                <contains>
+                  <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs"/>
+                  <code value="sensations-associated-with-the-digestive-system"/>
+                  <display value="Sensations associated with the digestive system"/>
+                </contains>
+              </contains>
             </contains>
             <contains>
               <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs"/>
@@ -583,6 +778,21 @@
               <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs"/>
               <code value="communication"/>
               <display value="Communication"/>
+              <contains>
+                <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs"/>
+                <code value="communication-receiving"/>
+                <display value="Communication - receiving"/>
+              </contains>
+              <contains>
+                <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs"/>
+                <code value="communication-producing"/>
+                <display value="Communication - producing"/>
+              </contains>
+              <contains>
+                <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs"/>
+                <code value="conversation-and-use-of-communication-devices-and-techniques"/>
+                <display value="Conversation and use of communication devices and techniques"/>
+              </contains>
             </contains>
             <contains>
               <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-category-cs"/>
@@ -7651,7 +7861,7 @@
         <name value="FunctionalPerformanceLOINCSNOMEDVS"/>
         <title value="Functional Performance ValueSet LOINC SNOMED"/>
         <status value="active"/>
-        <date value="2022-04-19T12:58:34-04:00"/>
+        <date value="2022-04-26T11:43:49-04:00"/>
         <publisher value="HL7 Patient Care Work Group"/>
         <contact>
           <name value="HL7 Patient Care Work Group"/>
@@ -7686,8 +7896,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-toocostly">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:f19e1597-4b77-4609-8e54-ee970dc2f74d"/>
-          <timestamp value="2022-04-19T12:59:00-04:00"/>
+          <identifier value="urn:uuid:7c108745-2773-4d15-b9b1-071ae43373bd"/>
+          <timestamp value="2022-04-26T11:44:12-04:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
