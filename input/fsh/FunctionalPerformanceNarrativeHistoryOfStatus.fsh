@@ -18,7 +18,7 @@ Description:    "An exchange of summary observation regarding the most recent pr
 
 * category 1..* MS
 * category ^slicing.discriminator.type = #pattern
-* category ^slicing.discriminator.path = "code"
+* category ^slicing.discriminator.path = "coding"
 * category ^slicing.rules = #open
 * category ^slicing.ordered = true
 * category ^slicing.description = "Slice based on code value"
@@ -33,6 +33,7 @@ Description:    "An exchange of summary observation regarding the most recent pr
 	functionalPerformanceDomain 0..*
 
 * category[functionalPerformanceDomain] from FunctionalPerformanceCategoryVS (extensible)
+* category[functionalPerformanceDomain].coding = FunctionalPerformanceCategoryCS#mental-functions
 
 * performer 1..*
 * performer only Reference(USCorePractitioner or USCorePractitionerRole or USCoreOrganization)
