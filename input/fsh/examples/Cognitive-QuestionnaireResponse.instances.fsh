@@ -8,7 +8,7 @@ Usage: #example
 * status = #completed
 * subject = Reference(Patient/FPIG-patientBSJ1)
 * authored = "2020-07-08T17:32:00-05:00"
-* author = Reference(PractitionerRole/Role-SLP-JennyGlass)
+* author = Reference(PractitionerRole/FPIG-Role-SLP-JennyGlass)
 * item.linkId = "MMSE"
 * item.text = "Mini-Mental State Examination [MMSE]"
 * item.item.linkId = "MMSE/ToTalScore"
@@ -25,7 +25,7 @@ Usage: #example
 * status = #completed
 * subject = Reference(Patient/FPIG-patientBSJ1)
 * authored = "2020-07-08T17:32:00-05:00"
-* author = Reference(PractitionerRole/Role-SLP-JennyGlass)
+* author = Reference(PractitionerRole/FPIG-Role-SLP-JennyGlass)
 * item.linkId = "MoCA"
 * item.text = "Montreal Cognitive Assessment [MoCA]"
 * item.item.linkId = "MoCA/TotalScore"
@@ -42,7 +42,7 @@ Usage: #example
 * status = #completed
 * subject = Reference(Patient/FPIG-patientBSJ1)
 * authored = "2020-07-11T11:30:00-05:00"
-* author = Reference(PractitionerRole/Role-SLP-HoneyJones)
+* author = Reference(PractitionerRole/FPIG-Role-SLP-HoneyJones)
 * item.linkId = "Section-3"
 * item.text = "MDS v3.0 - RAI v1.17.2 - Cognitive patterns [CMS Assessment]"
 * item.item.linkId = "Section-3/C0200-C0500"
@@ -110,7 +110,7 @@ Usage: #example
 * status = #completed
 * subject = Reference(Patient/FPIG-patientBSJ1)
 * authored = "2020-07-11T11:30:00-05:00"
-* author = Reference(PractitionerRole/Role-SLP-LunaBaskins)
+* author = Reference(PractitionerRole/FPIG-Role-SLP-LunaBaskins)
 * item.linkId = "Section-4"
 * item.text = "MDS v3.0 - RAI v1.18.1 - Mood - OSA [CMS Assessment]"
 * item.item[0].linkId = "Section-4/D0200"
