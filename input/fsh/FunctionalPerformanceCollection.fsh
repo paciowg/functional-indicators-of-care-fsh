@@ -34,7 +34,7 @@ Description:    "A point in time collection of post-acute care observations for 
 	functionalPerformanceDomain 0..*
 
 * category[functionalPerformanceDomain] from FunctionalPerformanceCategoryVS (extensible)
-* category[functionalPerformanceDomain].coding = FunctionalPerformanceCategoryCS#mental-functions
+* category[functionalPerformanceDomain].coding from FunctionalPerformanceCategoryVS
 
 * effective[x] 1..1
 * effective[x] only dateTime or Period

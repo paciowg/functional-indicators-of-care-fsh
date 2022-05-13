@@ -33,7 +33,7 @@ Description:    "An exchange of summary observation regarding the most recent pr
 	functionalPerformanceDomain 0..*
 
 * category[functionalPerformanceDomain] from FunctionalPerformanceCategoryVS (extensible)
-* category[functionalPerformanceDomain].coding = FunctionalPerformanceCategoryCS#mental-functions
+* category[functionalPerformanceDomain].coding from FunctionalPerformanceCategoryVS
 
 * performer 1..*
 * performer only Reference(USCorePractitioner or USCorePractitionerRole or USCoreOrganization)
