@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "FunctionalPerformanceLOINCSNOMEDVS"];
   fhir:ValueSet.title [ fhir:value "Functional Performance ValueSet LOINC SNOMED"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-04-26T11:43:49-04:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-05-13T16:07:55-04:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Patient Care Work Group"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -53,6 +53,7 @@
        fhir:Coding.code [ fhir:value "US" ]
      ]
   ];
+  fhir:ValueSet.copyright [ fhir:value "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;

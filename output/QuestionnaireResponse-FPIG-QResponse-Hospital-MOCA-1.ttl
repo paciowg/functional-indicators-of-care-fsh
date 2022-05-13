@@ -35,8 +35,8 @@
   ];
   fhir:QuestionnaireResponse.authored [ fhir:value "2020-07-08T17:32:00-05:00"^^xsd:dateTime];
   fhir:QuestionnaireResponse.author [
-     fhir:link <http://hl7.org/fhir/us/pacio-fp/PractitionerRole/Role-SLP-JennyGlass>;
-     fhir:Reference.reference [ fhir:value "PractitionerRole/Role-SLP-JennyGlass" ]
+     fhir:link <http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-SLP-JennyGlass>;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/FPIG-Role-SLP-JennyGlass" ]
   ];
   fhir:QuestionnaireResponse.item [
      fhir:index 0;
@@ -59,7 +59,7 @@
 
 <http://hl7.org/fhir/us/pacio-fp/Patient/FPIG-patientBSJ1> a fhir:us .
 
-<http://hl7.org/fhir/us/pacio-fp/PractitionerRole/Role-SLP-JennyGlass> a fhir:us .
+<http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-SLP-JennyGlass> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 

@@ -78,7 +78,7 @@
   ],
   "generalPractitioner": [
     {
-      "reference": "Practitioner-JohnSmith"
+      "reference": "Practitioner/FPIG-Practitioner-JohnSmith"
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "c273846d-5c59-455d-b69d-6adf126aabd5-48",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c273846d-5c59-455d-b69d-6adf126aabd5-48",
+  "id" : "9c6b32b9-bc76-4e01-9cc2-4b645a97d4eb-51",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9c6b32b9-bc76-4e01-9cc2-4b645a97d4eb-51",
   "name" : "IntersectionUSCoreLaboratoryResultObservationProfileAndFunctionalPerformanceCollection",
   "title" : "Intersection of US Core Laboratory Result Observation Profile And Functional Performance Collection",
   "status" : "active",
-  "date" : "2022-04-26T11:43:56-04:00",
+  "date" : "2022-05-13T16:08:16-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -16,8 +16,8 @@
     "element" : [{
       "path" : "Observation",
       "short" : "Measurements and simple assertions",
-      "definition" : "left: This profile is  created to meet the 2015 Edition Common Clinical Data Set 'Laboratory test(s) and Laboratory value(s)/result(s)' requirements.; right: Measurements and simple assertions made about a patient, device or other subject.",
-      "comment" : "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.",
+      "definition" : "left: \\-; right: Measurements and simple assertions made about a patient, device or other subject.",
+      "comment" : "left: \\-; right: Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.",
       "alias" : ["Vital Signs",
       "Measurement",
       "Results",
@@ -567,7 +567,7 @@
       "path" : "Observation.code",
       "short" : "left: Laboratory Test Name; right: For a Post-Acute Care structured assessment resource such as an instrument or screen, use a LOINC code to identify the instrument/screen name or panel/section title to indicate the kind of assessment.",
       "definition" : "left: The test that was performed.  A LOINC **SHALL** be used if the concept is present in LOINC.; right: Describes what was observed. Sometimes this is called the observation \"name\".",
-      "comment" : "left: The typical patterns for codes are:  1)  a LOINC code either as a  translation from a \"local\" code or as a primary code, or 2)  a local code only if no suitable LOINC exists,  or 3)  both the local and the LOINC translation.   Systems SHALL be capable of sending the local code if one exists.  When using LOINC , Use either the SHORTNAME or LONG_COMMON_NAME field for the display.; right: *All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.",
+      "comment" : "left: The typical patterns for codes are:  1)  a LOINC code either as a translation from a \"local\" code or as a primary code, or 2)  a local code only if no suitable LOINC exists,  or 3)  both the local and the LOINC translation.   Systems SHALL be capable of sending the local code if one exists.  When using LOINC , Use either the SHORTNAME or LONG_COMMON_NAME field for the display.; right: *All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.",
       "requirements" : "Knowing what kind of observation is being made is essential to understanding the observation.",
       "alias" : ["Name",
       "Test Name",
@@ -591,7 +591,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "LOINC codes",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c273846d-5c59-455d-b69d-6adf126aabd5-51"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9c6b32b9-bc76-4e01-9cc2-4b645a97d4eb-54"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -959,14 +959,14 @@
         "severity" : "warning",
         "human" : "SHOULD use Snomed CT for coded Results",
         "expression" : "valueCodeableConcept.coding.system.empty() or valueCodeableConcept.coding.system = 'http://snomed.info/sct'",
-        "xpath" : "not(exists(f:valueCodeableConcept/f:coding/f:system) ) or  f:valueCodeableConcept/f:coding/f:system[@value='http://snomed.info/sct']"
+        "xpath" : "not(exists(f:valueCodeableConcept/f:coding/f:system) ) or f:valueCodeableConcept/f:coding/f:system[@value='http://snomed.info/sct']"
       },
       {
         "key" : "us-core-3",
         "severity" : "error",
         "human" : "SHALL use UCUM for coded quantity units.",
         "expression" : "valueQuantity.system.empty() or valueQuantity.system = 'http://unitsofmeasure.org'",
-        "xpath" : "not(exists(f:valueQuantity/f:system) ) or  f:valueQuantity/f:system[@value='http://unitsofmeasure.org']"
+        "xpath" : "not(exists(f:valueQuantity/f:system) ) or f:valueQuantity/f:system[@value='http://unitsofmeasure.org']"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -1298,7 +1298,8 @@
         "severity" : "error",
         "human" : "Must have at least a low or a high or text",
         "expression" : "low.exists() or high.exists() or text.exists()",
-        "xpath" : "(exists(f:low) or exists(f:high)or exists(f:text))"
+        "xpath" : "(exists(f:low) or exists(f:high)or exists(f:text))",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
       }],
       "mustSupport" : false,
       "isModifier" : false,

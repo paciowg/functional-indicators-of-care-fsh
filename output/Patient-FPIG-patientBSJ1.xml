@@ -55,6 +55,6 @@
     <preferred value="true"/>
   </communication>
   <generalPractitioner>
-    <reference value="Practitioner-JohnSmith"/>
+    <reference value="Practitioner/FPIG-Practitioner-JohnSmith"/>
   </generalPractitioner>
 </Patient>

@@ -46,7 +46,8 @@
      fhir:CodeableConcept.coding [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-functioning-cs" ];
-       fhir:Coding.code [ fhir:value "functioning" ]
+       fhir:Coding.code [ fhir:value "functioning" ];
+       fhir:Coding.display [ fhir:value "Functioning" ]
      ]
   ];
   fhir:Observation.code [
