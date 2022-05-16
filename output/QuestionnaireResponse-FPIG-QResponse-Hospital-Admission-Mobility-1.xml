@@ -39,7 +39,7 @@
   </subject>
   <authored value="2020-07-08T16:00:00-05:00"/>
   <author>
-    <reference value="PractitionerRole/Role-PT-SallySmith"/>
+    <reference value="PractitionerRole/FPIG-Role-PT-SallySmith"/>
   </author>
   <item>
     <linkId value="Section-37"/>

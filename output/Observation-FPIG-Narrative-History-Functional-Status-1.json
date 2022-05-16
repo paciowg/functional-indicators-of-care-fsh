@@ -36,7 +36,8 @@
       "coding": [
         {
           "system": "http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-functioning-cs",
-          "code": "functioning"
+          "code": "functioning",
+          "display": "Functioning"
         }
       ]
     }

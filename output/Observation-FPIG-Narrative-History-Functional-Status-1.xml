@@ -27,6 +27,7 @@
     <coding>
       <system value="http://hl7.org/fhir/us/pacio-fp/CodeSystem/fp-functioning-cs"/>
       <code value="functioning"/>
+      <display value="Functioning"/>
     </coding>
   </category>
   <code>

@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "c273846d-5c59-455d-b69d-6adf126aabd5-128",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/c273846d-5c59-455d-b69d-6adf126aabd5-128",
+  "id" : "9c6b32b9-bc76-4e01-9cc2-4b645a97d4eb-146",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9c6b32b9-bc76-4e01-9cc2-4b645a97d4eb-146",
   "name" : "UnionUSCoreCommonSDOHAssessmentsAndLOINCCodes",
-  "title" : "Union of US Core Common SDOH Assessments ValueSet And LOINC Codes",
+  "title" : "Union of US Core Common SDOH Assessments And LOINC Codes",
   "status" : "active",
-  "date" : "2022-04-26T11:43:57-04:00",
+  "date" : "2022-05-13T16:08:17-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -15,94 +15,168 @@
   "compose" : {
     "include" : [{
       "concept" : [{
-        "code" : "88123-5"
+        "code" : "93028-9"
       },
       {
-        "code" : "88122-7"
+        "code" : "93025-5"
       },
       {
-        "code" : "96779-4"
+        "code" : "69861-3"
       },
       {
-        "code" : "71802-3"
-      },
-      {
-        "code" : "93029-7"
-      },
-      {
-        "code" : "76437-3"
+        "code" : "93027-1"
       },
       {
         "code" : "81375-8"
       },
       {
-        "code" : "93038-8"
+        "code" : "93034-7"
       },
       {
-        "code" : "96780-2"
-      },
-      {
-        "code" : "67875-5"
-      },
-      {
-        "code" : "95618-5"
-      },
-      {
-        "code" : "93031-3"
-      },
-      {
-        "code" : "93030-5"
-      },
-      {
-        "code" : "63586-2"
-      },
-      {
-        "code" : "93031-3"
-      },
-      {
-        "code" : "93031-3"
-      },
-      {
-        "code" : "93031-3"
+        "code" : "68516-4"
       },
       {
         "code" : "96782-8"
       },
       {
+        "code" : "93029-7"
+      },
+      {
+        "code" : "68517-2"
+      },
+      {
+        "code" : "96842-0"
+      },
+      {
+        "code" : "88123-5"
+      },
+      {
+        "code" : "76501-6"
+      },
+      {
+        "code" : "95618-5"
+      },
+      {
+        "code" : "93038-8"
+      },
+      {
+        "code" : "69858-9"
+      },
+      {
+        "code" : "93159-2"
+      },
+      {
+        "code" : "96780-2"
+      },
+      {
+        "code" : "44250-9"
+      },
+      {
+        "code" : "68524-8"
+      },
+      {
+        "code" : "88121-9"
+      },
+      {
+        "code" : "93026-3"
+      },
+      {
+        "code" : "82589-3"
+      },
+      {
+        "code" : "89555-7"
+      },
+      {
+        "code" : "96781-0"
+      },
+      {
+        "code" : "95530-2"
+      },
+      {
+        "code" : "56799-0"
+      },
+      {
+        "code" : "63586-2"
+      },
+      {
+        "code" : "96779-4"
+      },
+      {
         "code" : "93677-3"
+      },
+      {
+        "code" : "63512-8"
+      },
+      {
+        "code" : "76437-3"
+      },
+      {
+        "code" : "88124-3"
+      },
+      {
+        "code" : "32624-9"
+      },
+      {
+        "code" : "97023-6"
+      },
+      {
+        "code" : "93035-4"
+      },
+      {
+        "code" : "54899-0"
+      },
+      {
+        "code" : "93033-9"
+      },
+      {
+        "code" : "93031-3"
+      },
+      {
+        "code" : "56051-6"
+      },
+      {
+        "code" : "88122-7"
+      },
+      {
+        "code" : "93030-5"
+      },
+      {
+        "code" : "97027-7"
+      },
+      {
+        "code" : "71802-3"
+      },
+      {
+        "code" : "44255-8"
+      },
+      {
+        "code" : "67875-5"
+      },
+      {
+        "code" : "76513-1"
       }]
     }]
   },
   "expansion" : {
     "contains" : [{
       "system" : "http://loinc.org",
-      "code" : "88123-5",
-      "display" : "Within the past 12 months the food we bought just didn't last and we didn't have money to get more [U.S. FSS]"
+      "code" : "93028-9",
+      "display" : "Have you spent more than 2 nights in a row in a jail, prison, detention center, or juvenile correctional facility in past 1 year [PRAPARE]"
     },
     {
       "system" : "http://loinc.org",
-      "code" : "88122-7",
-      "display" : "Within the past 12 months we worried whether our food would run out before we got money to buy more [U.S. FSS]"
+      "code" : "93025-5",
+      "display" : "Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences [PRAPARE]"
     },
     {
       "system" : "http://loinc.org",
-      "code" : "96779-4",
-      "display" : "Has the electric, gas, oil, or water company threatened to shut off services in your home in past 12 months"
+      "code" : "69861-3",
+      "display" : "Because of a physical, mental, or emotional condition, do you have difficulty doing errands alone such as visiting a physician's office or shopping"
     },
     {
       "system" : "http://loinc.org",
-      "code" : "71802-3",
-      "display" : "Housing status"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "93029-7",
-      "display" : "How often do you see or talk to people that you care about and feel close to [PRAPARE]"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "76437-3",
-      "display" : "Primary insurance"
+      "code" : "93027-1",
+      "display" : "Are you a refugee"
     },
     {
       "system" : "http://loinc.org",
@@ -111,38 +185,13 @@
     },
     {
       "system" : "http://loinc.org",
-      "code" : "93038-8",
-      "display" : "Stress level"
+      "code" : "93034-7",
+      "display" : "Discharged from the U.S. Armed Forces"
     },
     {
       "system" : "http://loinc.org",
-      "code" : "96780-2",
-      "display" : "Wants help finding or keeping work or a job"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "67875-5",
-      "display" : "Employment status - current"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "95618-5",
-      "display" : "Physically hurt you [HITS]"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "93031-3",
-      "display" : "Have you or any family members you live with been unable to get any of the following when it was really needed in past 1 year [PRAPARE]"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "93030-5",
-      "display" : "Has lack of transportation kept you from medical appointments, meetings, work, or from getting things needed for daily living"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "63586-2",
-      "display" : "What was your best estimate of the total income of all family members from all sources, before taxes, in last year [PhenX]"
+      "code" : "68516-4",
+      "display" : "On those days that you engage in moderate to strenuous exercise, how many minutes, on average, do you exercise"
     },
     {
       "system" : "http://loinc.org",
@@ -151,8 +200,198 @@
     },
     {
       "system" : "http://loinc.org",
+      "code" : "93029-7",
+      "display" : "How often do you see or talk to people that you care about and feel close to [PRAPARE]"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "68517-2",
+      "display" : "How many times in the past year have you have X or more drinks in a day"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "96842-0",
+      "display" : "How often have you used any tobacco product in past 12 months"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "88123-5",
+      "display" : "Within the past 12 months the food we bought just didn't last and we didn't have money to get more [U.S. FSS]"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "76501-6",
+      "display" : "Within the last year, have you been afraid of your partner or ex-partner"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "95618-5",
+      "display" : "Physically hurt you [HITS]"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "93038-8",
+      "display" : "Stress level"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "69858-9",
+      "display" : "Because of a physical, mental, or emotional condition, do you have serious difficulty concentrating, remembering, or making decisions"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "93159-2",
+      "display" : "How often do you feel lonely or isolated from those around you [CMS Assessment]"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "96780-2",
+      "display" : "Wants help finding or keeping work or a job"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "44250-9",
+      "display" : "Little interest or pleasure in doing things in last 2 weeks"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "68524-8",
+      "display" : "How many times in the past year have you used an illegal drug or used a prescription medication for non-medical reasons"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "88121-9",
+      "display" : "Hunger Vital Sign [HVS]"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "93026-3",
+      "display" : "Do you feel physically and emotionally safe where you currently live [PRAPARE]"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "82589-3",
+      "display" : "Highest level of education"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "89555-7",
+      "display" : "How many days per week did you engage in moderate to strenuous physical activity in the last 30 days"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "96781-0",
+      "display" : "Able to get help with daily activities when needed"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "95530-2",
+      "display" : "Prescription drug use for non-medical reasons in the past year"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "56799-0",
+      "display" : "Address"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "63586-2",
+      "display" : "What was your best estimate of the total income of all family members from all sources, before taxes, in last year [PhenX]"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "96779-4",
+      "display" : "Has the electric, gas, oil, or water company threatened to shut off services in your home in past 12 months"
+    },
+    {
+      "system" : "http://loinc.org",
       "code" : "93677-3",
       "display" : "Do you need help with legal issues [WellRx]"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "63512-8",
+      "display" : "How many people are living or staying at this address [#]"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "76437-3",
+      "display" : "Primary insurance"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "88124-3",
+      "display" : "Food insecurity risk [HVS]"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "32624-9",
+      "display" : "Race"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "97023-6",
+      "display" : "Accountable health communities (AHC) health-related social needs (HRSN) supplemental questions"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "93035-4",
+      "display" : "Has season or migrant farm work been your or your family's main source of income at any point in past 2 years [PRAPARE]"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "54899-0",
+      "display" : "Preferred language"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "93033-9",
+      "display" : "Are you worried about losing your housing [PRAPARE]"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "93031-3",
+      "display" : "Have you or any family members you live with been unable to get any of the following when it was really needed in past 1 year [PRAPARE]"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "56051-6",
+      "display" : "Hispanic or Latino"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "88122-7",
+      "display" : "Within the past 12 months we worried whether our food would run out before we got money to buy more [U.S. FSS]"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "93030-5",
+      "display" : "Has lack of transportation kept you from medical appointments, meetings, work, or from getting things needed for daily living"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "97027-7",
+      "display" : "Speaks a language other than English at home"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "71802-3",
+      "display" : "Housing status"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "44255-8",
+      "display" : "Feeling down, depressed, or hopeless in last 2 weeks"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "67875-5",
+      "display" : "Employment status - current"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "76513-1",
+      "display" : "How hard is it for you to pay for the very basics like food, housing, medical care, and heating"
     },
     {
       "system" : "http://loinc.org",

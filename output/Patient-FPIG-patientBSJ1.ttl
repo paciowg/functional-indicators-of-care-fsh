@@ -79,8 +79,11 @@
   ];
   fhir:Patient.generalPractitioner [
      fhir:index 0;
-     fhir:Reference.reference [ fhir:value "Practitioner-JohnSmith" ]
+     fhir:link <http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-JohnSmith>;
+     fhir:Reference.reference [ fhir:value "Practitioner/FPIG-Practitioner-JohnSmith" ]
   ] .
+
+<http://hl7.org/fhir/us/pacio-fp/Practitioner/FPIG-Practitioner-JohnSmith> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 

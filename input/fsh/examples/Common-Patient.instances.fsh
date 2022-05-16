@@ -36,4 +36,4 @@ Description: "An instance of USCorePatientProfile"
 * contact.telecom.system = #phone
 * contact.telecom.value = "(210) 222-3333"
 
-* generalPractitioner = Reference(Practitioner-JohnSmith)
+* generalPractitioner = Reference(FPIG-Practitioner-JohnSmith)

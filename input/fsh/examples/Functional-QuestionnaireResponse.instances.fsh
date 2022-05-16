@@ -8,7 +8,7 @@ Usage: #example
 * status = #completed
 * subject = Reference(Patient/FPIG-patientBSJ1)
 * authored = "2020-07-08T16:00:00-05:00"
-* author = Reference(PractitionerRole/Role-PT-SallySmith)
+* author = Reference(PractitionerRole/FPIG-Role-PT-SallySmith)
 * item.linkId = "Section-37"
 * item.text = "Functional abilities and goals - admission [CMS Assessment]"
 * item.item.linkId = "Section-37/GG0170_1"
@@ -75,7 +75,7 @@ Usage: #example
 * status = #completed
 * subject = Reference(Patient/FPIG-patientBSJ1)
 * authored = "2020-07-10T14:34:00-05:00"
-* author = Reference(PractitionerRole/Role-PT-RonMarble)
+* author = Reference(PractitionerRole/FPIG-Role-PT-RonMarble)
 * item.linkId = "Section-37"
 * item.text = "Functional abilities and goals - discharge [CMS Assessment]"
 * item.item.linkId = "Section-37/GG0170_3"
@@ -142,7 +142,7 @@ Usage: #example
 * status = #completed
 * subject = Reference(Patient/FPIG-patientBSJ1)
 * authored = "2020-07-11T16:32:00-05:00"
-* author = Reference(PractitionerRole/Role-OT-JenCadbury)
+* author = Reference(PractitionerRole/FPIG-Role-OT-JenCadbury)
 * item.linkId = "Section-37"
 * item.text = "Functional abilities and goals - admission [CMS Assessment]"
 * item.item.linkId = "Section-37/GG0130_1"

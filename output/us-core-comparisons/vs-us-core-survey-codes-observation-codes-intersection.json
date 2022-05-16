@@ -1,0 +1,111 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9c6b32b9-bc76-4e01-9cc2-4b645a97d4eb-159",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9c6b32b9-bc76-4e01-9cc2-4b645a97d4eb-159",
+  "name" : "IntersectionUSCoreSurveyCodesAndLOINCCodes",
+  "title" : "Intersection of US Core Survey Codes And LOINC Codes",
+  "status" : "active",
+  "date" : "2022-05-13T16:08:17-04:00",
+  "expansion" : {
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "100002-5",
+      "display" : "Specimen care is maintained"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100003-3",
+      "display" : "Team communication is maintained throughout care"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100004-1",
+      "display" : "Demonstrates knowledge of the expected psychosocial responses to the procedure"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100005-8",
+      "display" : "Demonstrates knowledge of nutritional management related to the procedure"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100006-6",
+      "display" : "Demonstrates knowledge of medication management"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100007-4",
+      "display" : "Demonstrates knowledge of pain management"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100008-2",
+      "display" : "Demonstrates knowledge of wound management"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100009-0",
+      "display" : "Demonstrates knowledge of the procedure and expected results"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100010-8",
+      "display" : "No injury related to procedure equipment, medical supplies, or instrumentation"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100011-6",
+      "display" : "No injury related to an electrical source"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100012-4",
+      "display" : "Participates in decisions affecting the patient's plan of care"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100013-2",
+      "display" : "Participates in the discharge process"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100014-0",
+      "display" : "Psychosocial health is maintained at or improved from baseline"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100015-7",
+      "display" : "No injury related to positioning due to care or procedure"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100016-5",
+      "display" : "No injury related to a laser source"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100017-3",
+      "display" : "Perioperative nursing data set outcomes panel [PNDS]"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100030-6",
+      "display" : "Axis I: Temporal aspects score [Mainz Pain Staging System]"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100031-4",
+      "display" : "Axis II: Spatial aspects score [Mainz Pain Staging System]"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100032-2",
+      "display" : "Axis III: Drug taking behavior score [Mainz Pain Staging System]"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100033-0",
+      "display" : "Axis IV: Utilization of the health care system score [Mainz Pain Staging System]"
+    }]
+  }
+}

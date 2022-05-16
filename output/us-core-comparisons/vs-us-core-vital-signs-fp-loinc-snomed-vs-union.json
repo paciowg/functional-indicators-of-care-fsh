@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "c273846d-5c59-455d-b69d-6adf126aabd5-5",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/c273846d-5c59-455d-b69d-6adf126aabd5-5",
+  "id" : "9c6b32b9-bc76-4e01-9cc2-4b645a97d4eb-5",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9c6b32b9-bc76-4e01-9cc2-4b645a97d4eb-5",
   "name" : "UnionUsCoreVitalSignsAndFunctionalPerformanceLOINCSNOMEDVS",
   "title" : "Union of US Core Vital Signs ValueSet And Functional Performance ValueSet LOINC SNOMED",
   "status" : "active",
-  "date" : "2022-04-26T11:43:56-04:00",
+  "date" : "2022-05-13T16:08:15-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -73,92 +73,66 @@
     },
     {
       "system" : "http://loinc.org",
-      "abstract" : false,
-      "inactive" : false,
       "code" : "85353-1",
       "display" : "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"
     },
     {
       "system" : "http://loinc.org",
-      "abstract" : false,
-      "inactive" : false,
       "code" : "9279-1",
       "display" : "Respiratory rate"
     },
     {
       "system" : "http://loinc.org",
-      "abstract" : false,
-      "inactive" : false,
       "code" : "8867-4",
       "display" : "Heart rate"
     },
     {
       "system" : "http://loinc.org",
-      "abstract" : false,
-      "inactive" : false,
       "code" : "2708-6",
       "display" : "Oxygen saturation in Arterial blood"
     },
     {
       "system" : "http://loinc.org",
-      "abstract" : false,
-      "inactive" : false,
       "code" : "8310-5",
       "display" : "Body temperature"
     },
     {
       "system" : "http://loinc.org",
-      "abstract" : false,
-      "inactive" : false,
       "code" : "8302-2",
       "display" : "Body height"
     },
     {
       "system" : "http://loinc.org",
-      "abstract" : false,
-      "inactive" : false,
       "code" : "9843-4",
       "display" : "Head Occipital-frontal circumference"
     },
     {
       "system" : "http://loinc.org",
-      "abstract" : false,
-      "inactive" : false,
       "code" : "29463-7",
       "display" : "Body weight"
     },
     {
       "system" : "http://loinc.org",
-      "abstract" : false,
-      "inactive" : false,
       "code" : "39156-5",
       "display" : "Body mass index (BMI) [Ratio]"
     },
     {
       "system" : "http://loinc.org",
-      "abstract" : false,
-      "inactive" : false,
       "code" : "85354-9",
       "display" : "Blood pressure panel with all children optional"
     },
     {
       "system" : "http://loinc.org",
-      "abstract" : false,
-      "inactive" : false,
       "code" : "8480-6",
       "display" : "Systolic blood pressure"
     },
     {
       "system" : "http://loinc.org",
-      "abstract" : false,
-      "inactive" : false,
       "code" : "8462-4",
       "display" : "Diastolic blood pressure"
     },
     {
       "system" : "http://loinc.org",
-      "abstract" : false,
-      "inactive" : false,
       "code" : "8478-0",
       "display" : "Mean blood pressure"
     },

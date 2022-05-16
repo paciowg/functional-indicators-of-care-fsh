@@ -36,8 +36,8 @@
   ];
   fhir:QuestionnaireResponse.authored [ fhir:value "2020-07-08T16:00:00-05:00"^^xsd:dateTime];
   fhir:QuestionnaireResponse.author [
-     fhir:link <http://hl7.org/fhir/us/pacio-fp/PractitionerRole/Role-PT-SallySmith>;
-     fhir:Reference.reference [ fhir:value "PractitionerRole/Role-PT-SallySmith" ]
+     fhir:link <http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-PT-SallySmith>;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/FPIG-Role-PT-SallySmith" ]
   ];
   fhir:QuestionnaireResponse.item [
      fhir:index 0;
@@ -274,7 +274,7 @@
 
 <http://hl7.org/fhir/us/pacio-fp/Patient/FPIG-patientBSJ1> a fhir:us .
 
-<http://hl7.org/fhir/us/pacio-fp/PractitionerRole/Role-PT-SallySmith> a fhir:us .
+<http://hl7.org/fhir/us/pacio-fp/PractitionerRole/FPIG-Role-PT-SallySmith> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 
